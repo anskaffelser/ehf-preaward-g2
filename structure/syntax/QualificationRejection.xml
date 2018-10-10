@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>QualificationRejection</Term>
+    <Term>qual-rejection</Term>
     <Name>Qualification rejection</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
@@ -18,7 +18,7 @@
             </Description>
             <Value type="FIXED">2.2</Value>
         </Element>
-        
+
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
@@ -127,7 +127,7 @@
             </Element>
 
         </Element>
-        
+
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver party</Name>
@@ -177,7 +177,7 @@
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
             <Name>Document response</Name>
-            
+
             <Element>
                 <Term>cac:Response</Term>
                 <Name>Response</Name>

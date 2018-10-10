@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>EHF Pre-Award G2</Name>
+
+    <!-- Syntax -->
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
+        <Title>EHF Qualification Reception Confirmation 1.0</Title>
+    </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/QualificationRejection.xml</Path>
+        <Title>EHF Qualification Rejection 1.0</Title>
+    </Resource>
+
+</Project>

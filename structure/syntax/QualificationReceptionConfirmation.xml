@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>QualificationRejection</Term>
-    <Name>Qualification rejection</Name>
+    <Term>qual-reception-confirmation</Term>
+    <Name>Qualification reception confirmation</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -159,11 +159,11 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>cac:ResolutionDocumentReference</Term>
             <Name>Resolution document reference</Name>
-            
+
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Qualification document digest</Name>
@@ -177,7 +177,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:ExternalReference</Term>
                     <Name>External reference</Name>
-                    
+
                     <Element cardinality="0..1">
                         <Term>aba:DocumentHash</Term>
                         <Name>Qualification document digest</Name>
@@ -192,7 +192,7 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="1..n">
             <Term>cac:QualificationResolution</Term>
             <Name>Qualification resolution</Name>
