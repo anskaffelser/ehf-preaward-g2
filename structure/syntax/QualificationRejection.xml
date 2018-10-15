@@ -72,7 +72,7 @@
             <Value type="EXAMPLE">13:30:00</Value>
         </Element>
 
-        <Element cardinality="0..n">
+        <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Response textual notes</Name>
             <Description>Comments or instructions relevant to the response, including the date that the reported decision becomes
