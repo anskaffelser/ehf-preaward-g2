@@ -4,6 +4,9 @@
     <Term>qualification-rejection</Term>
     <Name>Qualification Response</Name>
 
+    <Property key="sch:prefix">EHF-QR</Property>
+    <Property key="sch:identifier">qualification-response-basic</Property>
+
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>

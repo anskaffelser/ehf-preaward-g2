@@ -4,6 +4,9 @@
     <Term>qualification</Term>
     <Name>Qualification</Name>
 
+    <Property key="sch:prefix">EHF-Q</Property>
+    <Property key="sch:identifier">qualification-basic</Property>
+
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 

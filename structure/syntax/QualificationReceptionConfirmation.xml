@@ -4,6 +4,9 @@
     <Term>qualification-reception-confirmation</Term>
     <Name>Qualification Reception Confirmation</Name>
 
+    <Property key="sch:prefix">EHF-QRC</Property>
+    <Property key="sch:identifier">qualification-reception-confirmation-basic</Property>
+
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
