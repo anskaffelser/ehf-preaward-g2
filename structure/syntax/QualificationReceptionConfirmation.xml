@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>qual-reception-confirmation</Term>
-    <Name>Qualification reception confirmation</Name>
+    <Term>qualification-reception-confirmation</Term>
+    <Name>Qualification Reception Confirmation</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>

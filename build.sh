@@ -13,7 +13,7 @@ fi
 docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target:/target \
-    difi/vefa-structure:0.6
+    difi/vefa-structure:0.7
 
 echo
 
@@ -21,7 +21,7 @@ echo
 #docker run --rm -i \
 #    -v $PROJECT:/src \
 #    difi/vefa-validator \
-#    build -x -t -n no.difi.ehf.postaward.g3 -a rules -target target/validator /src
+#    build -x -t -n no.difi.ehf.preaward.g2 -a rules -target target/validator /src
 
 #echo
 

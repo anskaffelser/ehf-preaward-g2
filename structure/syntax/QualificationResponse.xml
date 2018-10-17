@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>qual-rejection</Term>
-    <Name>Qualification rejection</Name>
+    <Term>qualification-rejection</Term>
+    <Name>Qualification Response</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -211,7 +211,6 @@
                 </Element>
             </Element>
         </Element>
-
 
     </Document>
 

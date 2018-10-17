@@ -6,13 +6,27 @@
     <!-- Syntax -->
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
-        <Title>EHF Qualification Reception Confirmation 1.0</Title>
+        <Path>structure/syntax/Qualification.xml</Path>
+        <Title>EHF Qualification 1.0</Title>
+        <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/QualificationRejection.xml</Path>
-        <Title>EHF Qualification Rejection 1.0</Title>
+        <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
+        <Title>EHF Qualification Reception Confirmation 1.0</Title>
+        <Tag>dps-qualification</Tag>
     </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/QualificationResponse.xml</Path>
+        <Title>EHF Qualification Response 1.0</Title>
+        <Tag>dps-qualification</Tag>
+    </Resource>
+
+    <!-- Tags -->
+    <Tag>
+        <Identifier>dps-qualification</Identifier>
+        <Title>DPS Qualification</Title>
+    </Tag>
 
 </Project>
