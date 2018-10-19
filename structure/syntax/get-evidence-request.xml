@@ -82,12 +82,20 @@
             <Description>Information on the evidence requested for this operator</Description>
 
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
                 <Name>Criterion ID</Name>
                 <Description>Criterion identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
+                <Value type="EXAMPLE">87b3fa26-3549-4f92-b8e0-3fd8f04bf5c7</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:CriterionTypeCode</Term>
+                <Name>Criterion Type code</Name>
+                <Description>Criterion code, to be referenced in the response. Use the criterion code from the Critierion Taxonomy</Description>
+                <DataType>Identifier</DataType>
+                <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
             </Element>
 
 
