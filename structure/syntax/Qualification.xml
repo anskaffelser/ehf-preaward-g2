@@ -79,6 +79,7 @@
         <Element>
             <Term>cac:Signature</Term>
             <Name>Tender signature</Name>
+            <Description>The signature of the document. Used to add the signature for this tender document.</Description>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -319,7 +320,7 @@
                     <Description>Fyll inn</Description> <!-- MÅ fylle inn -->
                 </Element>
             </Element>
-            
+
         </Element>
 
 
