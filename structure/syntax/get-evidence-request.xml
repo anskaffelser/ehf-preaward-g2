@@ -5,7 +5,7 @@
     <Name>EHF Get Evidence Request</Name>
     <Description>Document type used to request evidences.</Description>
 
-    <Property key="sch:prefix">EHF-GetEvidence-REQ</Property>
+    <Property key="sch:prefix">EHF-GE-REQ</Property>
     <Property key="sch:identifier">request-basic</Property>
 
     <Namespace prefix="ge-req">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
@@ -20,7 +20,7 @@
         <Name>EHF Get Evidence Request document</Name>
 
         <Include>part/responder.xml</Include>
-   
+
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization Identifier</Name>
@@ -41,7 +41,7 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Document identifier</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. 
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
                 The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
             <DataType>Identifier</DataType>
             <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
@@ -60,7 +60,7 @@
                 <Value type="EXAMPLE">NGOJ</Value>
             </Attribute>
             <Value type="EXAMPLE">18/00001</Value>
-         
+
         </Element>
 
         <Element>
@@ -71,10 +71,9 @@
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
 
-
         <Include>part/contracting-party.xml</Include>
-        <Include>part/eo-party.xml</Include>
 
+        <Include>part/eo-party.xml</Include>
 
         <Element>
             <Term>cac:TenderingCriterion</Term>
@@ -90,7 +89,7 @@
                 <DataType>Identifier</DataType>
                 <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
             </Element>
-         
+
 
             <Element cardinality="1..n">
                 <Term>cac:TenderingCriterionPropertyGroup</Term>

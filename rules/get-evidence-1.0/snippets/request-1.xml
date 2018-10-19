@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ge-req:QualificationApplicationRequest 
-    xmlns:ge-req ="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:ge-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"

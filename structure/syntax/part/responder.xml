@@ -54,7 +54,7 @@
                         <Description>Valid organizational number for the responding party</Description>
                         <DataType>Identifier</DataType>
                         
-                        <Attribute usage="optional">
+                        <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Reference type="CODE_LIST">ICD</Reference>

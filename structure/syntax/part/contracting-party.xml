@@ -35,7 +35,7 @@
                 <Description>The identifier of the contracting party, as it is legally registered</Description>
                 <DataType>Identifier</DataType>
 
-                <Attribute usage="optional">
+                <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Reference type="CODE_LIST">ICD</Reference>
