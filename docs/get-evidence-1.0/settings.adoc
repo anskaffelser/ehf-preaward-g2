@@ -1,0 +1,32 @@
+//
+:revision: 1.0.0
+:release: 2018.08.30
+
+// Folders
+:rules-dir: /tmp/rules
+:snippet-dir: ../../../rules/get-evidence-1.0/snippets
+
+//Internal
+
+:link-codelist: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/[Code list section]
+:codelist-ICD: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/ICD/[ICD list]
+
+// Difi
+:link-github: https://github.com/difi/vefa-ehf-getevidence
+:link-issues: https://github.com/difi/vefa-ehf-getevidence/issues
+:link-portal: https://vefa.difi.no/
+
+:name-difi-en: Agency of Public Management and eGovernment
+:name-difi-no: Direktoratet for forvaltning og IKT
+
+//ISO:
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]
+
+// External
+:link-directive: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=EN[eProcurement Directive (2014/24/EU)]
+:link-cen-bii: http://www.cenbii.eu/
+:link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
+:link-oasis-ubl: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html[UBL2.2]
+:link-request-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceRequest/tree/[GetEvidenceRequest structure]
+:link-response-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceResponse/tree/[GetEvidenceResponse structure]

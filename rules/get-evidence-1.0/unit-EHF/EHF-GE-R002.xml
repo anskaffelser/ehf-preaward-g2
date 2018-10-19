@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-ge-request-1.0">
+	<assert>
+		<scope>EHF-GE-R002</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>No errors when no empty elements are present.</description>
+			<success>EHF-GE-R002</success>
+		</assert>
+		<QualificationApplicationRequest
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+			
+			<cac:ContractingParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0192">991825827</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<cbc:Name>Difi</cbc:Name>
+					</cac:PartyName>
+				</cac:Party>
+			</cac:ContractingParty>
+			
+		</QualificationApplicationRequest>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when empty elements are present.</description>
+			<error number="2">EHF-GE-R002</error>
+		</assert>
+		<QualificationApplicationRequest
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+			
+			
+			<cac:ContractingParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
+					<cac:PartyIdentification>
+					</cac:PartyIdentification>
+					<cac:PartyName/>
+						
+				</cac:Party>
+			</cac:ContractingParty>
+			
+		</QualificationApplicationRequest>
+	</test>
+	
+</testSet>

@@ -1,0 +1,15 @@
+= Open issues
+
+* Use cases
+* Kodelister
+* Bevis/dokument id - krav fra Altinn?
+
+* Knytning mot criteria taxonomy?
+* Feilmeldinger - normalt ikke brukt i EHF...
+* Vedlegg - i Asic? Base64
+* Ted/Doffin -> Legg inn schemeID
+
+* Regler
+* Datatyper
+* Validator
+* id til transport

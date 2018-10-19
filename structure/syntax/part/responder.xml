@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>ext:UBLExtensions</Term>
+    <Property key="doc">structure/docs/responder.adoc</Property>
+    
+    <Element>
+        <Term>ext:UBLExtension</Term>
+       
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Extension identifier</Name>
+            <Value type="FIXED">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Value>
+            <DataType>Identifier</DataType>
+        </Element>
+        
+        <Element>
+            <Term>cbc:Name</Term>
+            <Name>Extension name</Name>
+            <Value type="FIXED">Responder information</Value>
+            <DataType>Text</DataType>
+        </Element>
+        
+        <Element>
+            <Term>ext:ExtensionContent</Term>
+            
+            <Element>
+                <Term>resp:ResponderParty</Term>
+                <Description>The party that has to respond to the request</Description>
+                
+                
+                <Element>
+                    <Term>resp:EndpointID</Term>
+                    <Name>Responder party electronic address</Name>
+                    <Description>The electronic address for the responder party</Description>
+                    <DataType>Identifier</DataType>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>The applicable codelist for this is not published yet, so code list or fixed values will be added later</Description>
+                        <Value type="EXAMPLE">NO:ORGNR</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">998877654</Value>
+                    
+                </Element>
+                
+                <Element>
+                    <Term>resp:PartyIdentification</Term>
+                    <Name>Party identification</Name>
+                    
+                    <Element>
+                        <Term>resp:ID</Term>
+                        <Name>Responder party identifier</Name>
+                        <Description>Valid organizational number for the responding party</Description>
+                        <DataType>Identifier</DataType>
+                        
+                        <Attribute usage="optional">
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Reference type="CODE_LIST">ICD</Reference>
+                            <Value type="FIXED">0192</Value>
+                        </Attribute>
+                        
+                        <Value type="EXAMPLE">998877654</Value>
+                    </Element>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>resp:PartyName</Term>
+                    <Name>Party name</Name>
+                    
+                    <Element>
+                        <Term>resp:Name</Term>
+                        <Name>Responding party name</Name>
+                        <Description>The name of the responding</Description>
+                        <DataType>Text</DataType>
+                        
+                        <Value type="FIXED">Altinn</Value>
+                    </Element>
+                </Element>
+                
+            </Element>
+            
+        </Element>
+        
+    </Element>
+    
+</Element>

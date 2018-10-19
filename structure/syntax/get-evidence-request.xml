@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+
+    <Term>GetEvidenceRequest</Term>
+    <Name>EHF Get Evidence Request</Name>
+    <Description>Document type used to request evidences.</Description>
+
+    <Property key="sch:prefix">EHF-GetEvidence-REQ</Property>
+    <Property key="sch:identifier">request-basic</Property>
+
+    <Namespace prefix="ge-req">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
+    <Namespace prefix="resp">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Namespace>
+
+
+    <Document>
+        <Term>ge-req:QualificationApplicationRequest</Term>
+        <Name>EHF Get Evidence Request document</Name>
+
+        <Include>part/responder.xml</Include>
+   
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Customization Identifier</Name>
+            <Description>Identifies a user-defined customization of UBL for a specific use.</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:getevidence:1.0</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Profile Identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way.</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:01:1.0</Value>
+        </Element>
+
+
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Document identifier</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. 
+                The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
+            <DataType>Identifier</DataType>
+            <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Ted/Doffin reference</Name>
+            <Description>Ted or Doffin reference number</Description>
+            <DataType>Identifier</DataType>
+            <Attribute>
+                <Term>schemeID</Term>
+                <Name>Scheme identifier</Name>
+                <Description>Scheme identifier, allowed values are TED_CN or NGOJ (Doffin)</Description>
+                <Reference type="CODE_LIST">DocRefContentType</Reference>
+                <Value type="EXAMPLE">NGOJ</Value>
+            </Attribute>
+            <Value type="EXAMPLE">18/00001</Value>
+         
+        </Element>
+
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Issue date</Name>
+            <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
+            <DataType>Date</DataType>
+            <Value type="EXAMPLE">2017-12-26</Value>
+        </Element>
+
+
+        <Include>part/contracting-party.xml</Include>
+        <Include>part/eo-party.xml</Include>
+
+
+        <Element>
+            <Term>cac:TenderingCriterion</Term>
+            <Name>Request information</Name>
+            <Description>Information on the evidence requested for this operator</Description>
+
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Criterion ID</Name>
+                <Description>Criterion identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                <DataType>Identifier</DataType>
+                <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
+            </Element>
+
+
+            <Element cardinality="1..n">
+                <Term>cac:TenderingCriterionPropertyGroup</Term>
+                <Name>Tendering criterion property group</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Criteria property group id</Name>
+                    <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">098fd3cc-466e-4233-af1a-affe09471bce</Value>
+                </Element>
+
+                <Element cardinality="1..n">
+                    <Term>cac:TenderingCriterionProperty</Term>
+                    <Name>Tendering criterion property</Name>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Criteria property id</Name>
+                        <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                        <DataType>Identifier</DataType>
+                        <Value type="EXAMPLE">9052cc59-cfe5-41c6-a314-02a7f378ffe8</Value>
+                    </Element>
+
+
+                    <Element cardinality="1..n">
+                        <Term>cac:TemplateEvidence</Term>
+                        <Name>Requested evidence</Name>
+
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Name>Evidence identifier</Name>
+                            <Description>The identifier of the evidence requested</Description>
+                            <DataType>Identifier</DataType>
+                            <Value type="EXAMPLE">e1</Value>
+                        </Element>
+                        <Element>
+                            <Term>cbc:EvidenceTypeCode</Term>
+                            <Name>Evidence type code</Name>
+                            <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
+                            <DataType>Code</DataType>
+                            <Value type="EXAMPLE">SKATTEATTEST</Value>
+                        </Element>
+
+                    </Element>
+                </Element>
+
+            </Element>
+
+        </Element>
+
+    </Document>
+</Structure>

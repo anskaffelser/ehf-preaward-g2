@@ -1,0 +1,11 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Contracting party
+
+The contracting party is the party requesting the evidence(s), and is mandatory in the EHF GetEvidence request.
+
+.UBL example of contracting party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=ca]
+----

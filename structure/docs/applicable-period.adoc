@@ -1,0 +1,11 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Applicable period
+
+For each criterion response, an applicable period can be provided.
+
+.UBL example of applicable period
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=period]
+----

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1"
+            elementFormDefault="qualified" version="1.0">
+
+    <xsd:element name="ResponderParty" type="ResponderPartyType"/>
+
+    <xsd:complexType name="ResponderPartyType">
+        <xsd:sequence>
+            <xsd:element name="EndpointID">
+                <xsd:complexType>
+              <xsd:simpleContent>
+                  <xsd:extension base="xsd:normalizedString">
+                      <xsd:attribute name="schemeID" use="required"/>
+                  </xsd:extension>
+              </xsd:simpleContent>                
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="PartyIdentification" type="PartyIdentificationType"/>
+            <xsd:element name="PartyName" type="PartyNameType" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="PartyIdentificationType">
+        <xsd:sequence>
+            <xsd:element name="ID">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:normalizedString">
+                            <xsd:attribute name="schemeID" use="optional"/>
+                        </xsd:extension>
+                    </xsd:simpleContent>                
+                </xsd:complexType>       
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="PartyNameType">
+        <xsd:sequence>
+            <xsd:element name="Name"  type="xsd:normalizedString"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

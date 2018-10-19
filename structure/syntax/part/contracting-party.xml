@@ -1,0 +1,66 @@
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>cac:ContractingParty</Term>
+    <Name>Contracting party</Name>
+    <Description>The party requesting the evidence, normally the contracting authority in a procurement procedure</Description>
+    <Property key="doc">structure/docs/ca.adoc</Property>
+    
+<!--    <Property key="doc">structure/docs/contracting-party.adoc</Property>-->
+    
+    <Element>
+        <Term>cac:Party</Term>
+        <Name>Party information</Name>
+        
+    <Element>
+        <Term>cbc:EndpointID</Term>
+        <Name>Contracting party electronic address</Name>
+        <Description>The electronic address for the contracting authority</Description>
+        <DataType>Identifier</DataType>
+        <Attribute>
+            <Term>schemeID</Term>
+            <Name>Scheme identifier</Name>
+            <Description>The applicable codelist for this is not published yet, so code list or fixed values will be added later</Description>
+            <Value type="EXAMPLE">NO:ORGNR</Value>
+        </Attribute>
+        <Value type="EXAMPLE">991825827</Value>
+        
+    </Element>
+
+        <Element>
+            <Term>cac:PartyIdentification</Term>
+            <Name>Party identification</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Contracting party identifier</Name>
+                <Description>The identifier of the contracting party, as it is legally registered</Description>
+                <DataType>Identifier</DataType>
+
+                <Attribute usage="optional">
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+
+                <Value type="EXAMPLE">991825827</Value>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name</Name>
+
+            <Element>
+                <Term>cbc:Name</Term>
+                <Name>Contracting party name</Name>
+                <Description>The name of the contracting authority</Description>
+                <DataType>Text</DataType>
+                <Value type="EXAMPLE">Difi</Value>
+            </Element>
+        </Element>
+
+  
+    </Element>
+
+    </Element>
+

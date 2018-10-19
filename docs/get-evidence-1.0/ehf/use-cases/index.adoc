@@ -1,0 +1,11 @@
+
+= Use cases
+
+.Sources of evidences used in public procurement
+image::images/get-evidence-bpmn.png[align="left"]
+
+:leveloffset: +1
+
+include::use-case-1.adoc[]
+
+:leveloffset: -1

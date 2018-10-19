@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-ge-response-1.0">
+	<assert>
+		<scope>EHF-GE-R030</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify date element contains a valid date.</description>
+			<success>EHF-GE-R030</success>
+		</assert>
+		<QualificationApplicationResponse
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+			
+
+			<cbc:IssueDate>2017-01-01</cbc:IssueDate>
+
+		</QualificationApplicationResponse>
+	</test>
+
+		<test>
+			<assert>
+				<description>Verify date element contains a valid date.</description>
+				<error number="3">EHF-GE-R030</error>
+			</assert>
+			<QualificationApplicationResponse
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+				xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+				
+				
+				<cbc:IssueDate>2017-01-01Z</cbc:IssueDate>
+				<cac:TenderingCriterionResponse>
+					<cac:ApplicablePeriod>
+						<cbc:StartDate>2017</cbc:StartDate>
+						<cbc:EndDate>2017-02-31</cbc:EndDate>
+					</cac:ApplicablePeriod>
+				</cac:TenderingCriterionResponse>
+				
+			</QualificationApplicationResponse>
+	</test>
+		
+</testSet>

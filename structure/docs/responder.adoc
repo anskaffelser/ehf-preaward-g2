@@ -1,0 +1,11 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Get Evidence responder
+
+The party responding to the request, i.e Altinn.
+
+.UBL example of responder
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=responder]
+----

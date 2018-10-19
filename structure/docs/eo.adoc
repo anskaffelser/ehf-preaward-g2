@@ -1,0 +1,11 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Economic operator party
+
+The economic operator (EO) party is the party for whom the evidence(s) are valid, and is normally the party participating in a tendering procedure. Economic operator is mandatory information in the Get Evidence request and response.
+
+.UBL example of economic operator party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=eo]
+----

@@ -1,0 +1,21 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Response information
+
+A response to a Get Evidence request can be one or several types of response values, like amounts, dates etc. A response can also be provided as an attachment, or as a combination of values and attachment(s).
+
+Response information is provided in the class TenderingCriterionResponse, which is mandatory in the GetEvidence response message. It is mandatory to provide the reference/identification of the criterion the response is valid for.
+
+.UBL example of a response amount
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=response-amount]
+----
+
+
+.UBL example of a response attachment
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/response-1.xml[tags=response-attachment]
+----
+<1> Identification of evidence supplied

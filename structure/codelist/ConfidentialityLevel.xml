@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
+    <Title>HL7 v3 Code System Confidentiality</Title>
+    <Identifier>ConfidentialityLevel</Identifier>
+    <Version>3</Version>
+    <Agency>HL7</Agency>
+    <Subset>EHF</Subset>
+    
+    <Code>
+        <Id>R</Id>
+        <Name>Restricted</Name>
+    </Code>
+    <Code>
+        <Id>U</Id>
+        <Name>Unrestricted</Name>
+    </Code>
+</CodeList>

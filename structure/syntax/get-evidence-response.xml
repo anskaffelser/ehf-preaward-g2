@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    
+    <Term>GetEvidenceResponse</Term>
+    <Name>EHF Get Evidence Response</Name>
+    <Description>Document type used to respond to a get evidence request</Description>
+    
+    <Property key="sch:prefix">EHF-GE-resp</Property>
+    <Property key="sch:identifier">response-basic</Property>
+    
+    <Namespace prefix="ge-resp">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
+    <Namespace prefix="resp">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Namespace>
+    
+    
+    <Document>
+        <Term>ge-resp:QualificationApplicationResponse</Term>
+        <Name>EHF Get Evidence Response document</Name>
+        
+        <Include>part/responder.xml</Include>
+        
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Customization Identifier</Name>
+            <Description>Identifies a user-defined customization of UBL for a specific use.</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:getevidence:1.0</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Profile Identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way.</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:01:1.0</Value>
+        </Element>
+        
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Document identifier</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. 
+                The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
+            <DataType>Identifier</DataType>
+            <Value type="EXAMPLE">88a2cebf-9b7b-4f13-8490-e615fea498b8</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Ted/Doffin reference</Name>
+            <Description>Ted or Doffin reference number</Description>
+            <DataType>Identifier</DataType>
+            <Attribute>
+                <Term>schemeID</Term>
+                <Name>Scheme identifier</Name>
+                <Description>Scheme identifier, allowed values are TED_CN or NGOJ (Doffin)</Description>
+                <Reference type="CODE_LIST">DocRefContentType</Reference>
+                <Value type="EXAMPLE">NGOJ</Value>
+            </Attribute>
+            <Value type="EXAMPLE">18/00001</Value>
+            
+        </Element>
+        
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Issue date</Name>
+            <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
+            <DataType>Date</DataType>
+            <Value type="EXAMPLE">2017-12-26</Value>
+        </Element>
+        
+        
+        <Include>part/contracting-party.xml</Include>
+        <Include>part/eo-party.xml</Include>
+        
+        
+        <Element cardinality="1..n">
+            <Term>cac:TenderingCriterionResponse</Term>
+            <Name>Response information</Name>
+            <Description>Response information on the evidence requested for this operator</Description>
+            <Property key="doc">structure/docs/response.adoc</Property>
+            
+            
+            <Element cardinality="0..1">
+                <Term>cbc:ID</Term>
+                <Name>Criterion response ID</Name>
+                <Description>Identifier for the criterion as sent in the request. Use UUID from the Critierion Taxonomy</Description>
+                <DataType>Identifier</DataType>
+                <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
+            </Element>
+            
+            
+            <Element cardinality="0..n">
+                <Term>cac:ResponseValue</Term>
+                <Name>Tendering criterion property response value</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Identifier for the response</Name>
+                    <Description>The identifier for this response, value must be the same as in the element Requested Evidence/Evidence identifier. 
+                        Note that several response values can refer to same evidence identifier.</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">e1</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Response</Term>
+                    <Name>Criteria response string</Name>
+                    <Description>Used if the response is a string</Description>
+                    <DataType>Text</DataType>
+                    <Value type="EXAMPLE">test string</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseAmount</Term>
+                    <Name>Criteria response amount</Name>
+                    <Description>An amount as evidence</Description>
+                    <DataType>Amount</DataType>
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Name>Currency identifier</Name>
+                        <Reference type="CODE_LIST">ISO4217</Reference>
+                        <Value type="EXAMPLE">EUR</Value>
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">10000000</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseCode</Term>
+                    <Name>Criteria response code</Name>
+                    <Description>A code used as evidence</Description>
+                    <DataType>Code</DataType>
+                    <Value type="EXAMPLE">A2</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseDate</Term>
+                    <Name>Criteria response date</Name>
+                    <Description>A date used as evidence. Format = "YYYY-MM-DD"</Description>
+                    <DataType>Date</DataType>
+                    <Value type="EXAMPLE">2017-03-15</Value>
+                </Element>
+                
+              
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseID</Term>
+                    <Name>Criteria response identifier</Name>
+                    <Description>An identifier used as evidence.</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">987654321</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseIndicator</Term>
+                    <Name>Criteria response indicator</Name>
+                      <Description>An indicator (boolean) used as evidence. Only allowed values are true or false</Description>
+                    <DataType>Boolean</DataType>
+                    <Reference type="CODE_LIST">TrueFalse</Reference>
+                    <Value type="EXAMPLE">false</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseMeasure</Term>
+                    <Name>Criteria response measure</Name>
+                    <Description>A measure used as evidence.</Description>
+                   
+                    <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Response measure unit code</Name>
+                        <Description>The unit code used for the response measure</Description>
+                        <Value type="EXAMPLE">C62</Value>
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">123</Value>
+                    
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseNumeric</Term>
+                    <Name>Criteria response number</Name>
+                    <Description>A number used as evidence. Use float values to represent percentages (e.g. 0.3)</Description>
+                    <DataType>Numeric</DataType>
+                    <Value type="EXAMPLE">32</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseQuantity</Term>
+                    <Name>Criteria response quantity</Name>
+                    <Description>A quantity used as evidence. Three different types of quantities can be provided. 
+                        A quantity in a specific unit of measure, a non-negative integer to specify a year (unit code = 'ANN') , and a generic quantity without any particular unit of measure.</Description>
+                    <DataType>Quantity</DataType>
+                    
+                    <Attribute usage="optional">
+                        <Term>unitCode</Term>
+                        <Name>Response quantity unit code</Name>
+                        <Description>The unit code used for the response measure</Description>
+                        <Value type="EXAMPLE">ANN</Value>
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">987654321</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseTime</Term>
+                    <Name>Criteria response time</Name>
+                    <Description>A time used as evidence. Format = "hh:mi:ss"</Description>
+                    <DataType>Time</DataType>
+                    <Value type="EXAMPLE">12:34:23</Value>
+                </Element>
+               
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:ApplicablePeriod</Term>
+                <Name>Applicable period</Name>
+                <Description>Applicable period is provided if the evidences has a limited validity period.</Description>
+                <Property key="doc">structure/docs/applicable-period.adoc</Property>
+                
+                        
+                <Element>
+                    <Term>cbc:StartDate</Term>
+                    <Name>Start date</Name>
+                    <Description>Start date of the applicable period for the provided evidence. Format YYYY-MM-DD</Description>
+                    <DataType>Date</DataType>
+                    <Value type="EXAMPLE">2017-12-26</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:EndDate</Term>
+                    <Name>End date</Name>
+                    <Description>End date of the applicable period for the provided evidence. End date must be the same, or later than the start date. Format YYYY-MM-DD</Description>
+                    <DataType>Date</DataType>
+                    <Value type="EXAMPLE">2018-12-26</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:EvidenceSupplied</Term>
+                <Name>Evidence supplied</Name>
+                <Description>Used to identify evidences supplied for the criterion</Description>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Evidence identifier</Name>
+                    <Description>An identifier for supplied evidence</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">e1</Value>
+                </Element>
+            </Element>
+            
+        </Element>
+        
+        <Element>
+            <Term>cac:AdditionalDocumentReference</Term>
+            <Name>Reference to request document</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Use the same value as in the QualificationApplicationRequest/cbc:ID element</Name>
+                <Description>Identifies the request document this document is responding to</Description>
+                <DataType>Identifier</DataType>
+                <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
+            </Element>
+        </Element>
+        
+        
+        
+        <Element cardinality="0..1">
+            <Term>cac:Evidence</Term>
+            <Name>Evidences</Name>
+            <Description>Evidences attached</Description>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Evidence identifier</Name>
+                <Description>An identifier for supplied evidence, must be the same as the identifier in the supplied evidence class</Description>
+                <DataType>Identifier</DataType>
+                <Value type="EXAMPLE">e1</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:EvidenceTypeCode</Term>
+                <Name>Evidence type code</Name>
+                <Description>The type of evidence in this response. 
+                    If used, this code must correspond to the requested evidence code sent in the GetEvidence request in the Requested Evidence/Evidence type code. The code list is not yet available, will be published when list is ready.</Description>
+                <DataType>Code</DataType>
+                <Value type="EXAMPLE">SKATTEATTEST</Value>
+            </Element>
+            
+            <Element>
+                <Term>cac:DocumentReference</Term>
+                <Name>Document reference</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Document identifier</Name>
+                    <Description>An identifier for this document</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">d1</Value>
+                </Element>
+                   
+                    <Element cardinality="0..1">
+                        <Term>cac:Attachment</Term>
+                        <Name>Attachment</Name>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                            <Name>Attached document</Name>
+                            <Description>An attached document embedded as binary object (Base64)</Description>
+                            <DataType>Binary object</DataType>
+                            <Attribute>
+                                <Term>mimeCode</Term>
+                                <Name>Attached document Mime code</Name>
+                                <Description>The mime code of the attached document.</Description>
+                                <Reference type="CODE_LIST">MimeCode</Reference>
+                                <Value type="EXAMPLE">application/pdf</Value>
+                            </Attribute>
+                            
+                            <Attribute>
+                                <Term>filename</Term>
+                                <Name>Attached document Filename</Name>
+                                <Description>The file name of the attached document</Description>
+                                <Value type="EXAMPLE">attest.pdf</Value>
+                                
+                            </Attribute>
+                            
+                            <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+                        </Element>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cac:ExternalReference</Term>
+                            <Name>EXTERNAL REFERENCE</Name>
+                            
+                            <Element>
+                                <Term>cbc:URI</Term>
+                                <Name>External document location</Name>
+                                <Description>The URL (Uniform Resource Locator) that identifies where the external document is located.  
+                                    A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.
+                                </Description>
+                                <DataType>Text</DataType>
+                                <Value type="EXAMPLE">http://www.example.com/index.html</Value>
+                            </Element>
+                        </Element>
+                    </Element>
+               
+               
+            </Element>
+           
+        </Element>
+        
+    </Document>
+</Structure>

@@ -3,6 +3,14 @@
 
     <Name>EHF Pre-Award G2</Name>
 
+    <!-- Documentation -->
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>get-evidence-1.0/ehf/</Path>
+        <Title>EHF Get Evidence documentation</Title>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
     <!-- Syntax -->
     <Resource>
         <Type>Syntax-1</Type>
@@ -23,10 +31,110 @@
         <Tag>dps-qualification</Tag>
     </Resource>
 
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/get-evidence-request.xml</Path>
+        <Title>EHF Get Evidence Request</Title>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/get-evidence-response.xml</Path>
+        <Title>EHF Get Evidence Response</Title>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
+    <!-- Rules -->
+    <Resource>
+        <Identifier>ge-common</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/get-evidence-1.0/sch/parts/common.sch</Path>
+        <Title>Common rules</Title>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>ge-empty-elements</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/get-evidence-1.0/sch/parts/empty-elements.sch</Path>
+        <Title>Empty elements</Title>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>ge-request</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/get-evidence-1.0/sch/EHF-GE-REQUEST.sch</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>ge-response</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/get-evidence-1.0/sch/EHF-GE-RESPONSE.sch</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
+    <!-- Files -->
+    <Resource>
+        <Type>native:File</Type>
+        <Path>target/generated/ehf-preaward-g2-examples.zip</Path>
+        <Title>Example files</Title>
+        <Description>Zip file containing examples of all document types part of EHF Pre-Award G2.</Description>
+        <Property key="download">ehf-preaward-g2-examples.zip</Property>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Schematron files</Title>
+        <Description>Zip file containing Schematron files part of EHF Pre-Award G2.</Description>
+        <Property key="download">ehf-preaward-g2-schematron.zip</Property>
+        <Property key="filename">ehf-preaward-g2-schematron.zip</Property>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>tools/xsd/Responder-1.0.xsd</Path>
+        <Title>XSD Schema for Responder 1.0</Title>
+        <Description>XSD Schema file for Responder provided by Difi.</Description>
+        <Property key="download">Responder-1.0.xsd</Property>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
+    <!-- Code lists-->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TrueFalse.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/DocRefContentType.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+
     <!-- Tags -->
+    <Tag>
+        <Identifier>get-evidence-1.0</Identifier>
+        <Title>EHF Get Evidence 1.0</Title>
+    </Tag>
     <Tag>
         <Identifier>dps-qualification</Identifier>
         <Title>DPS Qualification</Title>
+        <Property key="hidden">true</Property>
     </Tag>
 
 </Project>
