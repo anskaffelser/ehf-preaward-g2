@@ -55,15 +55,18 @@
     </cac:TenderingCriterionResponse>
     <cac:TenderingCriterionResponse>
         <cac:ResponseValue>
-            <cbc:ID>OrganizationNumber</cbc:ID>
+            <cbc:ID>1</cbc:ID>
+            <cbc:Description>OrganizationNumber</cbc:Description>
             <cbc:ResponseID>999999956</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>OrganizationName</cbc:ID>
+            <cbc:ID>2</cbc:ID>
+            <cbc:Description>OrganizationName</cbc:Description>
             <cbc:ResponseID>TEST ASA</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>IndustryCode1</cbc:ID>
+            <cbc:ID>3</cbc:ID>
+            <cbc:Description>IndustryCode1</cbc:Description>
             <cbc:ResponseCode>62.030</cbc:ResponseCode>
         </cac:ResponseValue>
         <cac:EvidenceSupplied>
