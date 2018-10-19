@@ -17,8 +17,7 @@
         <Element cardinality="0..1">
             <Term>cbc:UBLVersionID</Term>
             <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
-                the elements that might be encountered in the current instance.
-            </Description>
+                the elements that might be encountered in the current instance.</Description>
             <Value type="FIXED">2.2</Value>
         </Element>
 
@@ -27,8 +26,7 @@
             <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
                 business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
-                extensions applied. The identification may include the version of the specification.
-            </Description>
+                extensions applied. The identification may include the version of the specification.</Description>
         </Element>
 
         <Element>
@@ -79,8 +77,7 @@
             <Term>cbc:Note</Term>
             <Name>Response textual notes</Name>
             <Description>Comments or instructions relevant to the response, including the date that the reported decision becomes
-                effective.
-            </Description>
+                effective.</Description>
             <Value type="EXAMPLE">Write something....</Value>
         </Element>
 

@@ -7,10 +7,322 @@
     <Property key="sch:prefix">EHF-Q</Property>
     <Property key="sch:identifier">qualification-basic</Property>
 
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
     <Document>
-        <Term>cac:ToDo</Term>
+        <Term>ubl:TendererQualification</Term>
+
+        <Element cardinality="0..1">
+            <Term>cbc:UBLVersionID</Term>
+            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
+                the elements that might be encountered in the current instance.</Description>
+            <Value type="FIXED">2.2</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Specification identification</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
+                business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
+                extensions applied. The identification may include the version of the specification.
+            </Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Business process type identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the
+                invoice in an appropriate way.</Description>
+        </Element>
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Qualification identifier</Name>
+            <Description>Identifier for the qualification document. An transaction instance must contain an identifier. 
+                The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Reference number</Name>
+            <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is
+                also known as procurement project identifier, procurement reference number or contract folder identifier. A reference to the procurement
+                process to which this Qualification document is delivered as a response.</Description>
+        </Element>
+        
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Qualification issue date</Name>
+            <Description>The date on which the qualification document instance was issued.</Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:IssueTime</Term>
+            <Name>Qualification issue time</Name>
+            <Description>The time on which the qualification document instance was issued. The time zone has to be informed following the BII Guideline on Data Formats</Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:Note</Term>
+            <Name>Call for tender reference</Name>
+            <Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.</Description>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:VersionID</Term>
+            <Name>Qualification document version identifier</Name>
+            <Description>Identifies the version of the document.</Description>
+        </Element>
+        
+        <Element>
+            <Term>cac:Signature</Term>
+            <Name>Tender signature</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Tender identifier</Name>
+                <Description>Identifier of the tender document.</Description>
+            </Element>
+
+            <Element>
+                <Term>cac:SignatoryParty</Term>
+                <Name>Signing party</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Language</Term>
+                    <Name>Tender language</Name>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Tender language name</Name>
+                        <Description>The language used to write the tender.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+        
+        
+        <Element>
+            <Term>cac:TendererPartyQualification</Term>
+            <Name>Tenderer party qualification</Name>
+            
+            <Element>
+                <Term>cac:MainQualifyingParty</Term>
+                <Name>Main qualifying party</Name>
+                
+                <Element cardinality="1..n">
+                    <Term>cac:Party</Term>
+                    <Name>Economic operator</Name>
+                    <Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary
+                        association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of
+                        services on the market. Information about the party submitting the qualification.</Description>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cac:PartyIdentification</Term>
+                        <Name>Party identification</Name>
+
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Name>Economic operator identifier</Name>
+                            <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+                        </Element>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:PartyName</Term>
+                        <Name>Party name</Name>
+
+                        <Element>
+                            <Term>cbc:Name</Term>
+                            <Name>Economic operator name</Name>
+                            <Description>The name of the economic operator.</Description>
+                        </Element>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:PostalAddress</Term>
+                        <Name>Postal address</Name>
+                        <Description>Address information.</Description>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:StreetName</Term>
+                            <Name>Address line 1</Name>
+                            <Description>The main address line in an address. Usually the street name and number or post office box.</Description>
+                            <Value type="EXAMPLE">Sinsenkrysset 34</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:AdditionalStreetName</Term>
+                            <Name>Address line 2</Name>
+                            <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:CityName</Term>
+                            <Name>City</Name>
+                            <Description>The common name of a city where the address is located.</Description>
+                            <Value type="EXAMPLE">Oslo</Value>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:PostalZone</Term>
+                            <Name>Post Code</Name>
+                            <Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
+                            <Value type="EXAMPLE">5010</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:CountrySubentity</Term>
+                            <Name>Country subdivision</Name>
+                            <Description>The subdivision of a country such as region, county, state, province etc.</Description>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cac:Country</Term>
+                            <Name>Country</Name>
+
+                            <Element>
+                                <Term>cbc:IdentificationCode</Term>
+                                <Name>Country code</Name>
+                                <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
+                                    "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
+                                <Value type="EXAMPLE">NO</Value>
+                            </Element>
+                        </Element>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:PartyLegalEntity</Term>
+                        <Name>Party legal entity</Name>
+                        
+                        <Element>
+                            <Term>cbc:CompanyLegalForm</Term>
+                            <Name>Economic operator legal form</Name>
+                            <Description>A textual description of the legal form of the economic operator.</Description>
+                        </Element>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:Contact</Term>
+                        <Name>Contacting details</Name>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:Name</Term>
+                            <Name>Contact person name</Name>
+                            <Description>The name of the contact person.</Description>
+                            <Value type="EXAMPLE">Hans Hansen</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:Telephone</Term>
+                            <Name>Contact telephone number</Name>
+                            <Description>A phone number for the contact person.</Description>
+                            <Value type="EXAMPLE">22110121</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:Telefax</Term>
+                            <Name>Contact Telefax number</Name>
+                            <Description>A fax number for the contact persons.</Description>
+                            <Value type="EXAMPLE">22110122</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:ElectronicMail</Term>
+                            <Name>Contact email address</Name>
+                            <Description>The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
+                            <Value type="EXAMPLE">hans.hansen@contact.no</Value>
+                        </Element>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:Peron</Term>
+                        <Name>Economic operator person</Name>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:RoleCode</Term>
+                            <Name>Economic operator role code</Name>
+                            <Description>The role of the economic operator when bidding from a consortium.</Description>
+                        </Element>
+                    </Element>
+
+                </Element>
+            </Element>
+        </Element>
+        
+
+        <Element>
+            <Term>cac:ContractingParty</Term>
+            <Name>Contracting body</Name>
+            <Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure
+                as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
+
+            <Element> <!-- MÅ fylle inn -->
+                <Term>cac:Party</Term>
+                <Name>Party</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cac:PartyIdentification</Term>
+                    <Name>Party identification</Name>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Contracting body identifier</Name>
+                        <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO).</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:PartyName</Term>
+                    <Name>Party name</Name>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Contracting body name</Name>
+                        <Description>The name of the contracting body as it is registered.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:AdditionalDocument</Term>
+            <Name>Provided document</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Document identifier</Name>
+                <Description>Identifier of a document.</Description>
+            </Element>
+
+            <Element> <!-- MÅ fylle inn -->
+                <Term>cbc:DocumentTypeCode</Term>
+                <Name>Document type code</Name>
+                <Description>A code specifying the type of the document. The mime type code.</Description>
+            </Element>
+
+            <Element> <!-- MÅ fylle inn -->
+                <Term>cbc:DocumentDescription</Term>
+                <Name>Document description</Name>
+                <Description>Textual description of the document.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:Attachment</Term>
+                <Name>Attachment</Name>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                    <Name>Attached document</Name>
+                    <Description>Fyll inn</Description> <!-- MÅ fylle inn -->
+                </Element>
+            </Element>
+            
+        </Element>
+
+
+
     </Document>
 </Syntax>
