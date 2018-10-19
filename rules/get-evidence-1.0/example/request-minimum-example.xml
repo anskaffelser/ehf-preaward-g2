@@ -36,7 +36,6 @@
     </cac:ContractingParty>
     <cac:EconomicOperatorParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0192">999999956</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID>999999956</cbc:ID>
             </cac:PartyIdentification>
@@ -47,6 +46,7 @@
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                 <cac:TemplateEvidence>
+                    <cbc:ID>e1</cbc:ID>
                     <cbc:EvidenceTypeCode>SKATTEATTEST</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>
