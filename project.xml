@@ -134,7 +134,6 @@
     <Tag>
         <Identifier>dps-qualification</Identifier>
         <Title>DPS Qualification</Title>
-        <Property key="hidden">true</Property>
     </Tag>
 
 </Project>
