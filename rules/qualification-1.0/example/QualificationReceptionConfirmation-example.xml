@@ -16,7 +16,7 @@
             <cbc:ID schemeID="0088">123456</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Ole Hansen</cbc:Name>
+            <cbc:Name>X-Company AS</cbc:Name>
         </cac:PartyName>
     </cac:SenderParty>
 
@@ -26,7 +26,7 @@
             <cbc:ID schemeID="0072">566645</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Jeanette Nyland</cbc:Name>
+            <cbc:Name>Y-Company AS</cbc:Name>
         </cac:PartyName>
     </cac:ReceiverParty>
 
@@ -34,10 +34,17 @@
         <cbc:ID>132164654</cbc:ID>
         <cac:Attachment>
             <cac:ExternalReference>
-
+                <cbc:DocumentHash></cbc:DocumentHash>
+                <cbc:HashAlgorithmMethod></cbc:HashAlgorithmMethod>
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:ResolutionDocumentReference>
+
+    <cac:QualificationResolution>
+        <cbc:AdmissionCode>1234</cbc:AdmissionCode>
+        <cbc:ResolutionDate>2018-09-10</cbc:ResolutionDate>
+        <cbc:ResolutionTime>18:00:00</cbc:ResolutionTime>
+    </cac:QualificationResolution>
 
 
 </qualification-reception-confirmation>

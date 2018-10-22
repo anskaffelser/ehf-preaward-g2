@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>qualification-rejection</Term>
+    <Term>qualification-response</Term>
     <Name>Qualification Response</Name>
 
     <Property key="sch:prefix">EHF-QR</Property>
@@ -76,8 +76,7 @@
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Response textual notes</Name>
-            <Description>Comments or instructions relevant to the response, including the date that the reported decision becomes
-                effective.</Description>
+            <Description>Comments or instructions relevant to the response, including the date that the reported decision becomes effective.</Description>
             <Value type="EXAMPLE">Write something....</Value>
         </Element>
 
