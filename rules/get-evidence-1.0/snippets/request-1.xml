@@ -43,13 +43,14 @@
     <cac:EconomicOperatorParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0192">999999956</cbc:ID>
+                <cbc:ID schemeID="0192">999999956</cbc:ID>             
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>TenderCompany AS</cbc:Name>
             </cac:PartyName>
         </cac:Party>
     </cac:EconomicOperatorParty>
+    <!-- tag::basic[] -->
     <cac:TenderingCriterion>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
@@ -60,17 +61,21 @@
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
+    <!-- end::basic[] -->
+    <!-- tag::criterion[] -->
     <cac:TenderingCriterion>
         <cbc:ID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                 <cac:TemplateEvidence>
-                    <cbc:ID>e1</cbc:ID>
+                    <cbc:ID>e2</cbc:ID>
                     <cbc:EvidenceTypeCode>CERTIFICATE_OF_REGISTRATION_PDF_LINK</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
+    <!-- end::criterion[] -->
+    <!-- tag::property[] -->
     <cac:TenderingCriterion>
         <cbc:ID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_AVERAGE</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
@@ -78,10 +83,11 @@
             <cac:TenderingCriterionProperty>
                 <cbc:ID>5aacceb3-280e-42f1-b2da-3d8ac7877fe9</cbc:ID>
                 <cac:TemplateEvidence>
-                    <cbc:ID>e1</cbc:ID>
+                    <cbc:ID>e3</cbc:ID>
                     <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
+    <!-- end::property[] -->
 </ge-req:QualificationApplicationRequest>

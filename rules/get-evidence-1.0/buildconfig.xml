@@ -7,7 +7,7 @@
 
     <configuration>
         <identifier>ehf-ge-request-1.0</identifier>
-        <title>EHF GetEvidence request 1.0 </title>
+        <title>EHF Get Evidence Request 1.0 </title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:01:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:getevidence:1.0</customizationId>
         <file source="sch/EHF-GE-REQUEST.sch" path="xsl/EHF-GE-REQUEST.xsl"  />
@@ -15,7 +15,7 @@
 
     <configuration>
         <identifier>ehf-ge-response-1.0</identifier>
-        <title>EHF GetEvidence response 1.0</title>
+        <title>EHF Get Evidence Response 1.0</title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:01:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:getevidence:1.0</customizationId>
         <file source="sch/EHF-GE-RESPONSE.sch" path="xsl/EHF-GE-RESPONSE.xsl"  />

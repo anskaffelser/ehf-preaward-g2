@@ -1,0 +1,25 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Criterion information
+
+In the request you can ask for supporting documents based on a criteria from the Criteria Taxonomy, both the UUID and/or the criteria type code can be used. Request can also be based on a criteria group or a criteria property. Basic open data about the economic operator can also be requested, without referring to a criteria.
+
+Please note that to request supporting documents at criteria group or property level, the UUID from the Criteria Taxonomy must be used at the appropriate level.
+
+.UBL example of requesting open data about the economic operator
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/request-1.xml[tags=basic]
+----
+
+.UBL example of requesting supporting documents based on the criteria
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/request-1.xml[tags=criterion]
+----
+
+.UBL example of requesting supporting documents based on the criteria property
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/request-1.xml[tags=property]
+----

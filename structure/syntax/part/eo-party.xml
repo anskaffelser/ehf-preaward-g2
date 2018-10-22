@@ -5,39 +5,43 @@
     <Description>Economic operator party</Description>
     <Property key="doc">structure/docs/eo.adoc</Property>
 
-
     <Element>
-        <Term>cac:PartyIdentification</Term>
-        <Name>Party identification</Name>
-
+        <Term>cac:Party</Term>
+        <Name>Party information</Name>
         <Element>
-            <Term>cbc:ID</Term>
-            <Name>Economic operator party identifier</Name>
-            <Description>Valid organizational number for the party whom the evidence is requested</Description>
-            <DataType>Identifier</DataType>
+            <Term>cac:PartyIdentification</Term>
+            <Name>Party identification</Name>
 
-            <Attribute usage="optional">
-                <Term>schemeID</Term>
-                <Name>Scheme identifier</Name>
-                <Reference type="CODE_LIST">ICD</Reference>
-                <Value type="FIXED">0192</Value>
-            </Attribute>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Economic operator party identifier</Name>
+                <Description>Valid organizational number for the party whom the evidence is
+                    requested</Description>
+                <DataType>Identifier</DataType>
 
-            <Value type="EXAMPLE">999999956</Value>
+                <Attribute usage="Optional">
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+
+                <Value type="EXAMPLE">999999956</Value>
+            </Element>
         </Element>
-    </Element>
 
-    <Element cardinality="0..1">
-        <Term>cac:PartyName</Term>
-        <Name>Party name</Name>
+        <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>Party name</Name>
 
-        <Element>
-            <Term>cbc:Name</Term>
-            <Name>Economic operator name</Name>
-            <DataType>Text</DataType>
-            <Description>The name of the party for whom the evidence is reqested</Description>
-            
-            <Value type="EXAMPLE">TenderCompany AS</Value>
+            <Element>
+                <Term>cbc:Name</Term>
+                <Name>Economic operator name</Name>
+                <DataType>Text</DataType>
+                <Description>The name of the party for whom the evidence is reqested</Description>
+
+                <Value type="EXAMPLE">TenderCompany AS</Value>
+            </Element>
         </Element>
     </Element>
 

@@ -21,7 +21,7 @@
         </ext:UBLExtension>
     </ext:UBLExtensions>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:getevidence:1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.0</cbc:ProfileID>
     <cbc:ID>88a2cebf-9b7b-4f13-8490-e615fea498b8</cbc:ID>
     <cbc:ContractFolderID schemeID="NGOJ">18/0001</cbc:ContractFolderID>
     <cbc:IssueDate>2018-08-27</cbc:IssueDate>
