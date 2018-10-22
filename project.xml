@@ -75,11 +75,13 @@
     <!-- Files -->
     <Resource>
         <Type>native:File</Type>
-        <Path>target/generated/ehf-preaward-g2-examples.zip</Path>
         <Title>Example files</Title>
         <Description>Zip file containing examples of all document types part of EHF Pre-Award G2.</Description>
         <Property key="download">ehf-preaward-g2-examples.zip</Property>
+        <Property key="filename">examples.zip</Property>
+        <Property key="virtual">true</Property>
         <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>native:File</Type>
@@ -87,16 +89,19 @@
         <Title>Schematron files</Title>
         <Description>Zip file containing Schematron files part of EHF Pre-Award G2.</Description>
         <Property key="download">ehf-preaward-g2-schematron.zip</Property>
-        <Property key="filename">ehf-preaward-g2-schematron.zip</Property>
+        <Property key="filename">schematron.zip</Property>
+        <Property key="virtual">true</Property>
         <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
     </Resource>
 
     <Resource>
         <Type>native:File</Type>
-        <Path>tools/xsd/Responder-1.0.xsd</Path>
         <Title>XSD Schema for Responder 1.0</Title>
         <Description>XSD Schema file for Responder provided by Difi.</Description>
-        <Property key="download">Responder-1.0.xsd</Property>
+        <Property key="download">xsd-responder-1.0.zip</Property>
+        <Property key="filename">xsd-responder-1.0.zip</Property>
+        <Property key="virtual">true</Property>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
 
