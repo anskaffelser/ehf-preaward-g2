@@ -26,8 +26,7 @@
             <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
                 business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
-                extensions applied. The identification may include the version of the specification.
-            </Description>
+                extensions applied. The identification may include the version of the specification.</Description>
         </Element>
 
         <Element>
@@ -252,7 +251,6 @@
                 </Element>
             </Element>
         </Element>
-        
 
         <Element>
             <Term>cac:ContractingParty</Term>
@@ -320,7 +318,6 @@
                     <Description>Fyll inn</Description> <!-- MÅ fylle inn -->
                 </Element>
             </Element>
-
         </Element>
 
 

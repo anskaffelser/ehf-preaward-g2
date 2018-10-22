@@ -182,7 +182,7 @@
                     <Name>External reference</Name>
 
                     <Element cardinality="0..1">
-                        <Term>aba:DocumentHash</Term>
+                        <Term>cbc:DocumentHash</Term>
                         <Name>Qualification document digest</Name>
                         <Description>Digest of the document.</Description>
                     </Element>
