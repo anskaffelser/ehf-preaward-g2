@@ -44,17 +44,17 @@
         <cac:ResponseValue>
             <cbc:ID>e1</cbc:ID>
             <cbc:Description>Year1</cbc:Description>
-            <cbc:ResponseQuantity unitCode='ANN'>2017</cbc:ResponseQuantity>
+            <cbc:ResponseNumber>2017</cbc:ResponseNumber>
         </cac:ResponseValue>
         <cac:ResponseValue>
             <cbc:ID>e1</cbc:ID>
             <cbc:Description>Year2</cbc:Description>
-            <cbc:ResponseQuantity unitCode='ANN'>2016</cbc:ResponseQuantity>
+            <cbc:ResponseNumber>2016</cbc:ResponseNumber>
         </cac:ResponseValue>
         <cac:ResponseValue>
             <cbc:ID>e1</cbc:ID>
             <cbc:Description>Year3</cbc:Description>
-            <cbc:ResponseQuantity unitCode='ANN'>2015</cbc:ResponseQuantity>
+            <cbc:ResponseNumber>2015</cbc:ResponseNumber>
         </cac:ResponseValue>
         <cac:EvidenceSupplied>
             <cbc:ID>ev-1</cbc:ID>
