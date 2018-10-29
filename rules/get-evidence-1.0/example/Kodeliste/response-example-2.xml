@@ -1,0 +1,79 @@
+<QualificationApplicationResponse
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+    xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2">
+    <ext:UBLExtensions>
+        <ext:UBLExtension>
+            <cbc:ID>urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</cbc:ID>
+            <cbc:Name>Responder information</cbc:Name>
+            <ext:ExtensionContent>
+                <resp:ResponderParty>
+                    <resp:EndpointID schemeID="0192">999999956</resp:EndpointID>
+                    <resp:PartyIdentification>
+                        <resp:ID>998877654</resp:ID>
+                    </resp:PartyIdentification>
+                </resp:ResponderParty>
+            </ext:ExtensionContent>
+        </ext:UBLExtension>
+    </ext:UBLExtensions>
+
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:getevidence:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.0</cbc:ProfileID>
+    <cbc:ID>376e1848-06c9-4328-8d17-2f8130d057c0</cbc:ID>
+    <cbc:ContractFolderID schemeID="NGOJ">18/00001</cbc:ContractFolderID>
+    <cbc:IssueDate>2018-08-21</cbc:IssueDate>
+    <cac:ContractingParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID>991825827</cbc:ID>
+            </cac:PartyIdentification>
+        </cac:Party>
+    </cac:ContractingParty>
+    <cac:EconomicOperatorParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>999999956</cbc:ID>
+            </cac:PartyIdentification>
+        </cac:Party>
+    </cac:EconomicOperatorParty>
+    <cac:TenderingCriterionResponse>
+        <cbc:ID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:ID>
+        <cac:ResponseValue>
+            <cbc:ID>e1</cbc:ID>
+            <cbc:Description>Year1</cbc:Description>
+            <cbc:ResponseQuantity unitCode='ANN'>2017</cbc:ResponseQuantity>
+        </cac:ResponseValue>
+        <cac:ResponseValue>
+            <cbc:ID>e1</cbc:ID>
+            <cbc:Description>Year2</cbc:Description>
+            <cbc:ResponseQuantity unitCode='ANN'>2016</cbc:ResponseQuantity>
+        </cac:ResponseValue>
+        <cac:ResponseValue>
+            <cbc:ID>e1</cbc:ID>
+            <cbc:Description>Year3</cbc:Description>
+            <cbc:ResponseQuantity unitCode='ANN'>2015</cbc:ResponseQuantity>
+        </cac:ResponseValue>
+        <cac:EvidenceSupplied>
+            <cbc:ID>ev-1</cbc:ID>
+        </cac:EvidenceSupplied>
+    </cac:TenderingCriterionResponse>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
+    </cac:AdditionalDocumentReference>
+    <cac:Evidence>
+        <cbc:ID>ev-1</cbc:ID>
+        <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
+        <cac:DocumentReference>
+            <cbc:ID>doc-2</cbc:ID>
+            <cac:Attachment>
+                <cac:ExternalReference>
+                    <cbc:URI>http://www.example.com/document2.pdf</cbc:URI>
+                </cac:ExternalReference>
+            </cac:Attachment>
+        </cac:DocumentReference>
+    </cac:Evidence>
+
+</QualificationApplicationResponse>
