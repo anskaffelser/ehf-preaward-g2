@@ -28,4 +28,6 @@ include::binary.adoc[]
 
 include::boolean.adoc[]
 
+include::integer.adoc[]
+
 :leveloffset: -1

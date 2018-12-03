@@ -130,6 +130,21 @@
         <Path>structure/codelist/MimeCode.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-duration.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/evidence-codes.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
 
     <!-- Tags -->
     <Tag>

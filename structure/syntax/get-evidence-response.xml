@@ -82,14 +82,22 @@
             <Property key="doc">structure/docs/response.adoc</Property>
 
 
-            <Element cardinality="0..1">
+            <Element>
                 <Term>cbc:ID</Term>
-                <Name>Criterion response ID</Name>
-                <Description>Identifier for the criterion as sent in the request.</Description>
+                <Name>Supplied evidence id</Name>
+                <Description>The identifier of the requested evidence, as sent in the request.</Description>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
+                <Value type="EXAMPLE">1</Value>
             </Element>
 
+            <Element cardinality="0..1">
+                <Term>cbc:ValidatedCriterionPropertyID</Term>
+                <Name>Supplied evidence type code</Name>
+                <Description>The code of the requested evidence, as sent in the request.</Description>
+                <DataType>Code</DataType>
+                <Reference type="CODE_LIST">evidence</Reference>
+                <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
+            </Element>
 
             <Element cardinality="0..n">
                 <Term>cac:ResponseValue</Term>
@@ -98,7 +106,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Identifier for the response</Name>
-                    <Description>The identifier for this response.</Description>
+                    <Description>The identifier for this response, normally a sequential number</Description>
                     <DataType>Identifier</DataType>
                     <Value type="EXAMPLE">1</Value>
                 </Element>
@@ -133,6 +141,31 @@
 
                     <Value type="EXAMPLE">10000000</Value>
                 </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseBinaryObject</Term>
+                    <Name>Attached document</Name>
+                    <Description>An attached document embedded as binary object (Base64)</Description>
+                    <DataType>Binary object</DataType>
+                    
+                    <Attribute>
+                        <Term>mimeCode</Term>
+                        <Name>Attached document Mime code</Name>
+                        <Description>The mime code of the attached document.</Description>
+                        <Reference type="CODE_LIST">MimeCode</Reference>
+                        <Value type="EXAMPLE">application/pdf</Value>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>filename</Term>
+                        <Name>Attached document Filename</Name>
+                        <Description>The file name of the attached document</Description>
+                        <Value type="EXAMPLE">attest.pdf</Value>
+                        
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+                </Element>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseCode</Term>
@@ -149,8 +182,6 @@
                     <DataType>Date</DataType>
                     <Value type="EXAMPLE">2017-03-15</Value>
                 </Element>
-
-
 
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseID</Term>
@@ -178,6 +209,7 @@
                         <Term>unitCode</Term>
                         <Name>Response measure unit code</Name>
                         <Description>The unit code used for the response measure</Description>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">C62</Value>
                     </Attribute>
 
@@ -217,6 +249,16 @@
                     <DataType>Time</DataType>
                     <Value type="EXAMPLE">12:34:23</Value>
                 </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseURI</Term>
+                    <Name>Criteria response URI</Name>
+                    <Description>The URL (Uniform Resource Locator) that identifies where the external document is located.
+                        A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Value type="EXAMPLE">http://www.example.com/index.html</Value>
+                </Element>
 
             </Element>
 
@@ -242,20 +284,7 @@
                     <DataType>Date</DataType>
                     <Value type="EXAMPLE">2018-12-26</Value>
                 </Element>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:EvidenceSupplied</Term>
-                <Name>Evidence supplied</Name>
-                <Description>Used to identify evidences supplied for the criterion</Description>
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Evidence identifier</Name>
-                    <Description>An identifier for supplied evidence</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">e1</Value>
-                </Element>
+                
             </Element>
 
         </Element>
@@ -271,91 +300,6 @@
                 <DataType>Identifier</DataType>
                 <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
             </Element>
-        </Element>
-
-
-
-        <Element cardinality="0..1">
-            <Term>cac:Evidence</Term>
-            <Name>Evidences</Name>
-            <Description>Evidences attached</Description>
-
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Evidence identifier</Name>
-                <Description>An identifier for supplied evidence, must be the same as the identifier in the supplied evidence class</Description>
-                <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">e1</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:EvidenceTypeCode</Term>
-                <Name>Evidence type code</Name>
-                <Description>The type of evidence in this response.
-                    If used, this code must correspond to the requested evidence code sent in the GetEvidence request in the Requested Evidence/Evidence type code. The code list is not yet available, will be published when list is ready.</Description>
-                <DataType>Code</DataType>
-                <Value type="EXAMPLE">SKATTEATTEST</Value>
-            </Element>
-
-            <Element>
-                <Term>cac:DocumentReference</Term>
-                <Name>Document reference</Name>
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Document identifier</Name>
-                    <Description>An identifier for this document</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">d1</Value>
-                </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cac:Attachment</Term>
-                        <Name>Attachment</Name>
-
-                        <Element cardinality="0..1">
-                            <Term>cbc:EmbeddedDocumentBinaryObject</Term>
-                            <Name>Attached document</Name>
-                            <Description>An attached document embedded as binary object (Base64)</Description>
-                            <DataType>Binary object</DataType>
-                            <Attribute>
-                                <Term>mimeCode</Term>
-                                <Name>Attached document Mime code</Name>
-                                <Description>The mime code of the attached document.</Description>
-                                <Reference type="CODE_LIST">MimeCode</Reference>
-                                <Value type="EXAMPLE">application/pdf</Value>
-                            </Attribute>
-
-                            <Attribute>
-                                <Term>filename</Term>
-                                <Name>Attached document Filename</Name>
-                                <Description>The file name of the attached document</Description>
-                                <Value type="EXAMPLE">attest.pdf</Value>
-
-                            </Attribute>
-
-                            <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
-                        </Element>
-
-                        <Element cardinality="0..1">
-                            <Term>cac:ExternalReference</Term>
-                            <Name>EXTERNAL REFERENCE</Name>
-
-                            <Element>
-                                <Term>cbc:URI</Term>
-                                <Name>External document location</Name>
-                                <Description>The URL (Uniform Resource Locator) that identifies where the external document is located.
-                                    A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.
-                                </Description>
-                                <DataType>Text</DataType>
-                                <Value type="EXAMPLE">http://www.example.com/index.html</Value>
-                            </Element>
-                        </Element>
-                    </Element>
-
-
-            </Element>
-
         </Element>
 
     </Document>

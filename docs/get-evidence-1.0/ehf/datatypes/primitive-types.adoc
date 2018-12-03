@@ -19,4 +19,7 @@ Semantic data type content may be of the following primitive types. These primit
 
 |String
 |A finite sequence of characters.
+
+|Integer
+|A whole number (not a fraction) that can be positive, negative or zero.
 |===

@@ -23,8 +23,9 @@
 
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name>Customization Identifier</Name>
-            <Description>Identifies a user-defined customization of UBL for a specific use.</Description>
+            <Name>Specification Identifier</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
+                The identification may include the version of the specification as well as any customizations applied.</Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:getevidence:1.0</Value>
         </Element>
@@ -41,8 +42,7 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Document identifier</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
-                The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
+            <Description>A transaction instance must have an identifier. The identifier enables referencing the transaction for various purposes such as from other transactions that are part of the same process. Use UUID (universally unique identifier), version 4</Description>
             <DataType>Identifier</DataType>
             <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
         </Element>
@@ -79,29 +79,12 @@
             <Term>cac:TenderingCriterion</Term>
             <Name>Request information</Name>
             <Description>Information on the evidence requested for this operator</Description>
-            <Property key="doc">structure/docs/criterion.adoc</Property>
-
-
-            <Element cardinality="0..1">
-                <Term>cbc:ID</Term>
-                <Name>Criterion ID</Name>
-                <Description>Criterion identifier, to be referenced in the response. Use the criterion code from the Critierion Taxonomy</Description>
-                <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
-            </Element>
+            <Property key="doc">structure/docs/criterion.adoc</Property><!-- Correct example -->
 
 
             <Element cardinality="1..n">
                 <Term>cac:TenderingCriterionPropertyGroup</Term>
                 <Name>Tendering criterion property group</Name>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Criteria property group id</Name>
-                    <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">098fd3cc-466e-4233-af1a-affe09471bce</Value>
-                </Element>
 
                 <Element cardinality="1..n">
                     <Term>cac:TenderingCriterionProperty</Term>
@@ -109,34 +92,92 @@
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
-                        <Name>Criteria property id</Name>
-                        <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                        <Name>Requested evidence identifier</Name>
+                        <Description>The identifier of the evidence requested, often a sequential number. The identifier must be unique within each request</Description>
                         <DataType>Identifier</DataType>
-                        <Value type="EXAMPLE">9052cc59-cfe5-41c6-a314-02a7f378ffe8</Value>
+                        <!-- Add rule -->
+                        <Value type="EXAMPLE">1</Value>
                     </Element>
-
-
-                    <Element cardinality="1..n">
-                        <Term>cac:TemplateEvidence</Term>
-                        <Name>Requested evidence</Name>
-
-                        <Element>
-                            <Term>cbc:ID</Term>
-                            <Name>Evidence identifier</Name>
-                            <Description>The identifier of the evidence requested</Description>
-                            <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">e1</Value>
-                        </Element>
-                        <Element>
-                            <Term>cbc:EvidenceTypeCode</Term>
-                            <Name>Evidence type code</Name>
-                            <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
-                            <DataType>Code</DataType>
-                            <Value type="EXAMPLE">CERTIFICATE_OF_REGISTRATION_PDF_LINK</Value>
-                        </Element>
-
+                    <Element>
+                        <Term>cbc:TypeCode</Term>
+                        <Name>Requested evidence type code</Name>
+                        <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
+                        <Reference type="CODE_LIST">evidence</Reference>
+                        <DataType>Code</DataType>
+                        
+                        <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
                     </Element>
-                </Element>
+                    
+                    <!-- Need further description/examples -->
+                    <Element cardinality="0..1">
+                        <Term>cbc:ExpectedID</Term>
+                        <Name>Expected identifier</Name>
+                        <Description>The identifier for which the evidence is requested</Description>
+                        <DataType>Identifier</DataType>
+                        <Value type="EXAMPLE">987654321</Value>
+                    </Element>
+                    
+                    <!-- Need further description/examples -->
+                    <Element cardinality="0..1">
+                        <Term>cbc:ExpectedCode</Term>
+                        <Name>Expected code</Name>
+                          <Description>The code value for which the evidence is requested</Description>
+                        <DataType>Code</DataType>
+                        <Value type="EXAMPLE">A12</Value>
+                    </Element>
+                    
+                    <!-- Need further description/examples -->
+                    <Element cardinality="0..1">
+                        <Term>cbc:ExpectedValueNumeric</Term>
+                        <Name>Expected identifier</Name>
+                        <Description>The identifier for which the evidence is requested</Description>
+                        <DataType>Integer</DataType>
+                        <Value type="EXAMPLE">10</Value>
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cac:ApplicablePeriod</Term>
+                        <Name>Requested evidence period</Name>
+                        <Description>Requested evidence period is used to specify dates (start and end date) or durations for the requested evidences. To indicate the last three years, use duration, if you request specific years/periods, use start and end date</Description>
+                        <Property key="doc">structure/docs/applicable-period.adoc</Property>
+                        
+                        
+                        <Element>
+                            <Term>cbc:StartDate</Term>
+                            <Name>Start date</Name>
+                            <Description>Start date of the requested period for the evidence. Format YYYY-MM-DD</Description>
+                            <DataType>Date</DataType>
+                            <Value type="EXAMPLE">2017-12-26</Value>
+                        </Element>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cbc:EndDate</Term>
+                            <Name>End date</Name>
+                            <Description>End date of the requested period for the evidence. End date must be the same, or later than the start date. Format YYYY-MM-DD</Description>
+                            <DataType>Date</DataType>
+                            <Value type="EXAMPLE">2018-12-26</Value>
+                        </Element>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cbc:DurationMeasure</Term>
+                            <Name>Duration</Name>
+                            <Description>The duration for the requested evidences</Description>
+                            <DataType>Text</DataType>
+                            
+                            <Attribute>
+                                <Term>unitCode</Term>
+                                <Name>Duration unit</Name>
+                                <Description>The unit used for the duration, can be years, months or days.</Description>
+                                <Reference type="CODE_LIST">duration</Reference>
+                                <Value type="EXAMPLE">ANN</Value>
+                            </Attribute>
+                            
+                            <Value type="EXAMPLE">5</Value>
+                        </Element>
+                    </Element>
+                    
+
+                  </Element>
 
             </Element>
 
