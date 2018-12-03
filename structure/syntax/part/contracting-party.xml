@@ -18,8 +18,8 @@
         <Attribute>
             <Term>schemeID</Term>
             <Name>Scheme identifier</Name>
-            <Description>The applicable codelist for this is not published yet, so code list or fixed values will be added later</Description>
-            <Value type="EXAMPLE">NO:ORGNR</Value>
+            <Reference type="CODE_LIST">eaid</Reference>
+            <Value type="EXAMPLE">0192</Value>
         </Attribute>
         <Value type="EXAMPLE">991825827</Value>
         

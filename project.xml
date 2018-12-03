@@ -118,6 +118,11 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/eaid.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/TrueFalse.xml</Path>
     </Resource>
     <Resource>

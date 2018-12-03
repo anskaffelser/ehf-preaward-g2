@@ -102,8 +102,9 @@
                         <Term>cbc:TypeCode</Term>
                         <Name>Requested evidence type code</Name>
                         <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
-                        <Reference type="CODE_LIST">evidence</Reference>
                         <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">evidence</Reference>
+                        
                         
                         <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
                     </Element>
