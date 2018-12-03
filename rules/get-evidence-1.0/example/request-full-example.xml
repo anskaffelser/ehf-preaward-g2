@@ -53,34 +53,27 @@
     <cac:TenderingCriterion>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>UNIT_BASIC_INFORMATION</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
     <cac:TenderingCriterion>
-        <cbc:ID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>CERTIFICATE_OF_REGISTRATION_PDF_LINK</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
     <cac:TenderingCriterion>
-        <cbc:ID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_AVERAGE</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
-            <cbc:ID>e1886054-ada4-473c-9afc-2fde82c24cf4</cbc:ID>
             <cac:TenderingCriterionProperty>
-                <cbc:ID>5aacceb3-280e-42f1-b2da-3d8ac7877fe9</cbc:ID>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_AVERAGE</cbc:TypeCode>
+                <cac:ApplicablePeriod>
+                    <cbc:DurationMeasure unitCode="ANN">5</cbc:DurationMeasure>
+                </cac:ApplicablePeriod>       
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>

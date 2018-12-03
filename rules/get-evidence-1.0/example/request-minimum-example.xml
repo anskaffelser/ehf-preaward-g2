@@ -42,13 +42,10 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterion>
-        <cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>SKATTEATTEST</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>

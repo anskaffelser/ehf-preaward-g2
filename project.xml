@@ -137,7 +137,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20.xml</Path>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
