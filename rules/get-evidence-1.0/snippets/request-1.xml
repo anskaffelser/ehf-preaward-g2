@@ -75,7 +75,7 @@
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                     <cbc:ID>e3</cbc:ID>
-                    <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SPECIFIC_AVERAGE</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
                 <cac:ApplicablePeriod>
                     <cbc:DurationMeasure unitCode="ANN">3</cbc:DurationMeasure>
                 </cac:ApplicablePeriod>

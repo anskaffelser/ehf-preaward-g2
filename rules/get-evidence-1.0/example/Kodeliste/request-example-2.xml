@@ -42,13 +42,11 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterion>
-        <cbc:ID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
+                
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>

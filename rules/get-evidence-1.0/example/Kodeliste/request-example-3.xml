@@ -44,10 +44,9 @@
     <cac:TenderingCriterion>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>UNIT_BASIC_INFORMATION</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode>
+                
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
