@@ -17,7 +17,7 @@ v{revision}
 
 :leveloffset: +1
 
-include::introduction.adoc[]
+include::introduction/index.adoc[]
 
 include::definitions.adoc[]
 
