@@ -11,6 +11,12 @@
         <Tag>get-evidence-1.0</Tag>
     </Resource>
 
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>qualification/ehf/</Path>
+        <Title>EHF Qualification</Title>
+    </Resource>
+
     <!-- Syntax -->
     <Resource>
         <Type>Syntax-1</Type>
