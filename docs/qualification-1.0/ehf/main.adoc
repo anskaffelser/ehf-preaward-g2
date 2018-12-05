@@ -1,3 +1,5 @@
+include::../settings.adoc[]
+
 = {doctitle}
 v{revision}
 :description: This document describes the Qualification profile. The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
