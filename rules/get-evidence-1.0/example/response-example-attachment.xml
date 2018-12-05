@@ -47,24 +47,14 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
-        <cac:EvidenceSupplied>
-            <cbc:ID>ev-1</cbc:ID>
-        </cac:EvidenceSupplied>
+        <cbc:ID>1</cbc:ID>
+        <cac:ResponseValue>
+            <cbc:ID>1</cbc:ID>
+            <cbc:ResponseURI>http://www.example.comhtml/index.html</cbc:ResponseURI>
+        </cac:ResponseValue>
     </cac:TenderingCriterionResponse>
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
     </cac:AdditionalDocumentReference>
-    <cac:Evidence>
-        <cbc:ID>ev-1</cbc:ID>
-        <cac:DocumentReference>
-            <cbc:ID>doc-1</cbc:ID>
-            <cac:Attachment>
-                <cac:ExternalReference>
-                    <cbc:URI>http://www.example.com/index.html</cbc:URI>
-                </cac:ExternalReference>
-            </cac:Attachment>
-        </cac:DocumentReference>
-    </cac:Evidence>
     
 </QualificationApplicationResponse>

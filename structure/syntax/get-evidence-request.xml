@@ -143,7 +143,7 @@
                         <Property key="doc">structure/docs/applicable-period.adoc</Property>
                         
                         
-                        <Element>
+                        <Element cardinality="0..1">
                             <Term>cbc:StartDate</Term>
                             <Name>Start date</Name>
                             <Description>Start date of the requested period for the evidence. Format YYYY-MM-DD</Description>

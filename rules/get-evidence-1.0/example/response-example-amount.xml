@@ -47,7 +47,7 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
+        <cbc:ID>1</cbc:ID>
         <cac:ResponseValue>
             <cbc:ID>e1</cbc:ID>
             <cbc:ResponseAmount currencyID="NOK">23000000</cbc:ResponseAmount>

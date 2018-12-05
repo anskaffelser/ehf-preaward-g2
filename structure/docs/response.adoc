@@ -18,4 +18,3 @@ include::../{snippet-dir}/response-1.xml[tags=response-amount]
 ----
 include::../{snippet-dir}/response-1.xml[tags=response-attachment]
 ----
-<1> Identification of evidence supplied

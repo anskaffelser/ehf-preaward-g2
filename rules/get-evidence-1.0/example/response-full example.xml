@@ -48,12 +48,15 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ID>
-        <cac:EvidenceSupplied>
-            <cbc:ID>e2</cbc:ID>
-        </cac:EvidenceSupplied>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ValidatedCriterionPropertyID>
+        <cac:ResponseValue>
+            <cbc:ID>1</cbc:ID>
+            <cbc:ResponseURI>http://www.example.com/document.pdf</cbc:ResponseURI>
+        </cac:ResponseValue>
     </cac:TenderingCriterionResponse>
     <cac:TenderingCriterionResponse>
+        <cbc:ID>2</cbc:ID>
         <cac:ResponseValue>
             <cbc:ID>1</cbc:ID>
             <cbc:Description>OrganizationNumber</cbc:Description>
@@ -69,47 +72,22 @@
             <cbc:Description>IndustryCode1</cbc:Description>
             <cbc:ResponseCode>62.030</cbc:ResponseCode>
         </cac:ResponseValue>
-        <cac:EvidenceSupplied>
-            <cbc:ID>e1</cbc:ID>
-        </cac:EvidenceSupplied>
     </cac:TenderingCriterionResponse>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>5aacceb3-280e-42f1-b2da-3d8ac7877fe9</cbc:ID>
+        <cbc:ID>3</cbc:ID>
         <cac:ResponseValue>
             <cbc:ID>Year1</cbc:ID>
             <cbc:ResponseNumeric>2017</cbc:ResponseNumeric>
+            <cbc:ResponseURI>http://www.example.com/document2.pdf</cbc:ResponseURI>
         </cac:ResponseValue>
         <cac:ResponseValue>
             <cbc:ID>Year2</cbc:ID>
             <cbc:ResponseNumeric>2016</cbc:ResponseNumeric>
+            <cbc:ResponseURI>http://www.example.com/document2.pdf</cbc:ResponseURI>
         </cac:ResponseValue>
     </cac:TenderingCriterionResponse>
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
     </cac:AdditionalDocumentReference>
-    <cac:Evidence>
-        <cbc:ID>e2</cbc:ID>
-        <cbc:EvidenceTypeCode>CERTIFICATE_OF_REGISTRATION_PDF_LINK</cbc:EvidenceTypeCode>
-        <cac:DocumentReference>
-            <cbc:ID>doc-1</cbc:ID>
-            <cac:Attachment>
-                <cac:ExternalReference>
-                    <cbc:URI>http://www.example.com/document.pdf</cbc:URI>
-                </cac:ExternalReference>
-            </cac:Attachment>
-        </cac:DocumentReference>
-    </cac:Evidence>
-    <cac:Evidence>
-        <cbc:ID>e3</cbc:ID>
-        <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
-        <cac:DocumentReference>
-            <cbc:ID>doc-2</cbc:ID>
-            <cac:Attachment>
-                <cac:ExternalReference>
-                    <cbc:URI>http://www.example.com/document2.pdf</cbc:URI>
-                </cac:ExternalReference>
-            </cac:Attachment>
-        </cac:DocumentReference>
-    </cac:Evidence>
 </QualificationApplicationResponse>
     
