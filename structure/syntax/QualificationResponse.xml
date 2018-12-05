@@ -4,8 +4,10 @@
     <Term>qualification-response</Term>
     <Name>Qualification Response</Name>
 
-    <Property key="sch:prefix">EHF-QR</Property>
-    <Property key="sch:identifier">qualification-response-basic</Property>
+    <Property tag="ack" key="sch:prefix">EHF-QA</Property>
+    <Property tag="ack" key="sch:identifier">qualification-reception-basic</Property>
+    <Property tag="res" key="sch:prefix">EHF-QR</Property>
+    <Property tag="res" key="sch:identifier">qualification-response-basic</Property>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -27,6 +29,8 @@
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
                 business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
                 extensions applied. The identification may include the version of the specification.</Description>
+            <Value tag="ack" type="FIXED">urn:fdc:difi.no:2017:ehf:dps:qualification-reception-confirmation:1.0</Value>
+            <Value tag="res" type="FIXED">urn:fdc:difi.no:2017:ehf:dps:qualification-response:1.0</Value>
         </Element>
 
         <Element>
@@ -34,14 +38,13 @@
             <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the
                 invoice in an appropriate way.</Description>
+            <Value type="FIXED">...</Value>
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Response identifier</Name>
-            <Description>A response identifier enables  referencing the document instance for various purposes including referencing
-                between transactions that are part of the same process.
-            </Description>
+            <Description>Response identifier for referencing of the document instance.</Description>
             <Value type="EXAMPLE">123554</Value>
         </Element>
 
@@ -57,27 +60,6 @@
             <Name>Response issue time</Name>
             <Description>The time at which the transaction instance was issued.</Description>
             <Value type="EXAMPLE">12:30:00</Value>
-        </Element>
-
-        <Element>
-            <Term>cbc:ResponseDate</Term>
-            <Name>Document reception date</Name>
-            <Description>Date when the referred document was received.</Description>
-            <Value type="EXAMPLE">2017-02-05</Value>
-        </Element>
-
-        <Element>
-            <Term>cbc:ResponseTime</Term>
-            <Name>Document reception time</Name>
-            <Description>Document reception time</Description>
-            <Value type="EXAMPLE">13:30:00</Value>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:Note</Term>
-            <Name>Response textual notes</Name>
-            <Description>Comments or instructions relevant to the response, including the date that the reported decision becomes effective.</Description>
-            <Value type="EXAMPLE">Write something....</Value>
         </Element>
 
         <Element>
@@ -184,33 +166,33 @@
                 <Element>
                     <Term>cbc:ResponseCode</Term>
                     <Name>Response code</Name>
-                    <Description>A code that specifies the sellers decision given in the response.
-                        The code of the response must be included, it is a description about the result of the transaction, in the
-                        case of the Publication request, the description can be "in progress", "publish", "rejected" or "received".
-                    </Description>
+                    <Description tag="ack">A code indicating reception.</Description>
+                    <Description tag="res">A code indicating acceptance or rejection of qualification.</Description>
+                    <Reference tag="res" type="CODE_LIST">ResponseCodePosNeg</Reference>
+
+                    <Value tag="ack" type="FIXED">RECEIVED</Value>
+                    <Value tag="res" type="EXAMPLE">ACCEPTED</Value>
+                </Element>
+
+                <Element tag="res" cardinality="0..1">
+                    <Term>cbc:Description</Term>
+                    <Name>Reason for rejection</Name>
                 </Element>
 
             </Element>
 
-            <Element cardinality="1..n">
+            <Element>
                 <Term>cac:DocumentReference</Term>
-                <Name>Document reference</Name>
+                <Name>Qualification reference</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Received notification request</Name>
-                    <Description>Identifier of the received notification for publication. Identifies the notification request that was received.</Description>
+                    <Name>Qualification identifier</Name>
+                    <Description>Identifier of the qualification of which this is a response to.</Description>
                     <Value type="EXAMPLE">525</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:DocumentTypeCode</Term>
-                    <Name>Notice form code</Name>
-                    <Description>Code specifying the type of forms.</Description>
                 </Element>
             </Element>
         </Element>
-
     </Document>
 
 </Syntax>

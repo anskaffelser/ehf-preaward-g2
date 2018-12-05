@@ -1,0 +1,16 @@
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>Positive or negative response code</Title>
+    <Identifier>ResponseCodePosNeg</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+    
+    <Code>
+        <Id>ACCEPTED</Id>
+        <Name>Positive response</Name>
+    </Code>
+    
+    <Code>
+        <Id>REJECTED</Id>
+        <Name>Negative response</Name>
+    </Code>
+</CodeList>

@@ -19,15 +19,19 @@
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
+        <Identifier>qual-res-ack</Identifier>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
+        <Path>structure/syntax/QualificationResponse.xml</Path>
         <Title>EHF Qualification Reception Confirmation 1.0</Title>
+        <Property key="select">ack</Property>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
+        <Identifier>qual-response</Identifier>
         <Type>Syntax-1</Type>
         <Path>structure/syntax/QualificationResponse.xml</Path>
         <Title>EHF Qualification Response 1.0</Title>
+        <Property key="select">res</Property>
         <Tag>dps-qualification</Tag>
     </Resource>
 
@@ -148,6 +152,11 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/evidence-codes.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ResponseCodePosNeg.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
 
