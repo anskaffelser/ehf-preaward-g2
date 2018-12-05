@@ -13,9 +13,9 @@
     <cbc:Note>2018-10-04 we decided that...</cbc:Note>
 
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="0088">12324656</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123246569</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0045">1546468</cbc:ID>
+            <cbc:ID schemeID="0192">154646841</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Hildmansen AS</cbc:Name>
@@ -23,9 +23,9 @@
     </cac:SenderParty>
 
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="0048">314644536</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">314644536</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0044">654686</cbc:ID>
+            <cbc:ID schemeID="0192">654686654</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Bamsenes AS</cbc:Name>
@@ -41,7 +41,6 @@
             <cbc:DocumentTypeCode>120</cbc:DocumentTypeCode>
         </cac:DocumentReference>
     </cac:DocumentResponse>
-
 
 
 </ApplicationResponse>

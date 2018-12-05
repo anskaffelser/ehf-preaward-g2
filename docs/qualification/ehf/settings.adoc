@@ -1,0 +1,9 @@
+:lang: en
+
+//include::../settings.adoc[]
+
+:doctitle: EHF Qualification
+
+:date-review: dd. mm.yyyy
+:date-release: dd.mm.yyyy
+:date-mandatory: dd.mm.yyyy

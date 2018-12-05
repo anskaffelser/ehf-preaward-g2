@@ -1,0 +1,9 @@
+= Use Cases
+
+:leveloffset: +1
+
+include::usecase1.adoc[]
+
+include::usecase2.adoc[]
+
+:leveloffset: -1

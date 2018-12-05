@@ -1,0 +1,5 @@
+= Use Case 1- Restricted Procedure
+
+An economic operator finds an interesting business opportunity after a search on a platform with published notices. He knows how to respond to the opportunity because he can find all the relevant information in the contract notice. He receives the call for tenders with all supporting documents.
+The documents are a structured ESPD request and other structured and unstructured tender documents. The economic operator prepares his qualification information in his system. He creates an ESPD response based on the ESPD request provided by the contracting body and sends his tender through PEPPOL eDelivery network. Contracting authority receives tendering documents and his system gives a confirmation. He uses content from ESPD response in his tendering system to do an automatically check of evidence.
+Based on the results tendering system sends either qualification response positive or negative.

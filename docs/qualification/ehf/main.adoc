@@ -1,0 +1,35 @@
+= {doctitle}
+v{revision}
+:description: This document describes the Qualification profile. The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+{description}
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::definitions.adoc[]
+
+include::background.adoc[]
+
+include::use-cases/index.adoc[]
+
+include::detailed-descriptions.adoc[]
+
+include::codes/index.adoc[]
+
+include::datatypes/index.adoc[]
+
+include::appendix/index.adoc[]
+
+
+:leveloffset: -1
