@@ -42,13 +42,10 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterion>
-        <cbc:ID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ID>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
-                <cac:TemplateEvidence>
                     <cbc:ID>e1</cbc:ID>
-                    <cbc:EvidenceTypeCode>CERTIFICATE_OF_REGISTRATION_PDF_LINK</cbc:EvidenceTypeCode>
-                </cac:TemplateEvidence>
+                    <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
