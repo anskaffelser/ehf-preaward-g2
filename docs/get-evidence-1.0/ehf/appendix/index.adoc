@@ -4,7 +4,10 @@
 
 include::profiles/index.adoc[]
 
+include::namespace.adoc[]
+
 // UBL 2.2
-include::../{shared-dir}/appendix/ubl.adoc[]
+include::../../../shared/appendix/ubl.adoc[]
+
 * link:{link-request}
 * link:{link-response}
