@@ -166,12 +166,13 @@
         <Path>structure/codelist/ResponseCodePosNeg.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
+    <!--
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
-
+-->
     <!-- Tags -->
     <Tag>
         <Identifier>get-evidence-1.0</Identifier>
