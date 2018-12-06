@@ -43,6 +43,21 @@
     </Resource>
 
     <Resource>
+        <Identifier>unsubscription-request</Identifier>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/dps-unsubscription.xml</Path>
+        <Property key="select">req</Property>
+        <Tag>dps-unsubscription</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>unsubscription-response</Identifier>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/dps-unsubscription.xml</Path>
+        <Property key="select">res</Property>
+        <Tag>dps-unsubscription</Tag>
+    </Resource>
+
+    <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/get-evidence-request.xml</Path>
         <Title>EHF Get Evidence Request</Title>
@@ -181,6 +196,11 @@
     <Tag>
         <Identifier>dps-qualification</Identifier>
         <Title>DPS Qualification</Title>
+    </Tag>
+    <Tag>
+        <Identifier>dps-unsubscription</Identifier>
+        <Title>DPS Unsubscription</Title>
+        <Description>Process for unsubscription of DPS.</Description>
     </Tag>
 
 </Project>

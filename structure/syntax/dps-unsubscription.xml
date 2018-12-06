@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Term tag="req">unsubscription-request</Term>
+    <Term tag="res">unsubscription-response</Term>
+
+    <Name tag="req">Unsubscription Request</Name>
+    <Name tag="res">Unsubscription Response</Name>
+
+    <Description tag="req">Document type to request unsubscription from DPS.</Description>
+    <Description tag="res">Document type to confirm unsubscription from DPS.</Description>
+
+    <Property tag="req" key="sch:prefix">EHF-US</Property>
+    <Property tag="req" key="sch:identifier">unsubscription-request</Property>
+    <Property tag="res" key="sch:prefix">EHF-QR</Property>
+    <Property tag="res" key="sch:identifier">unsubscription-response</Property>
+
+    <Namespace prefix="ubl" tag="req">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureRequest-2</Namespace>
+    <Namespace prefix="ubl" tag="res">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureResponse-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+    <Document>
+        <Term tag="req">UnsubscribeFromProcedureRequest</Term>
+        <Term tag="res">UnsubscribeFromProcedureResponse</Term>
+
+        <Include select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
+
+        <Element tag="res">
+            <Term>cac:UnsubscribeToProcedureDocumentReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+            </Element>
+        </Element>
+
+        <Include select="economic-operator val-eo endpoint identification name">part-dps/party.xml</Include>
+        <Include select="contracting val-ca endpoint identification name">part-dps/party.xml</Include>
+
+        <Element>
+            <Term>cac:ProcurementProject</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Procurement folder identifier</Name>
+            </Element>
+        </Element>
+    </Document>
+
+</Syntax>

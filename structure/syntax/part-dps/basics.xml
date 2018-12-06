@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partial xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <!-- <Element>
+        <Term>cbc:UBLVersion</Term>
+
+        <Value type="FIXED">2.2</Value>
+    </Element> -->
+
+    <Element>
+        <Term>cbc:CustomizationID</Term>
+        <Name>Specification identification</Name>
+    </Element>
+
+    <Element>
+        <Term>cbc:ProfileID</Term>
+        <Name>Business process identifier</Name>
+    </Element>
+
+    <Element>
+        <Term>cbc:ID</Term>
+        <Name>Document identifier</Name>
+
+        <Value type="EXAMPLE">76482</Value>
+    </Element>
+
+    <Partial tag="uuid">
+        <Element cardinality="0..1">
+            <Term>cbc:UUID</Term>
+            <Name>Unique uniform identifier (UUID)</Name>
+
+            <Value type="EXAMPLE">d13ba97c-3982-4771-95b7-d2ffa3d18d34</Value>
+        </Element>
+    </Partial>
+
+    <Partial tag="contract-folder">
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Contract folder identifier</Name>
+        </Element>
+    </Partial>
+    
+    <Element>
+        <Term>cbc:IssueDate</Term>
+        <Name>Issue date</Name>
+        <Description>Date of document generation.</Description>
+
+        <Value type="EXAMPLE">2018-12-06</Value>
+    </Element>
+
+    <Partial tag="issue-time">
+        <Element>
+            <Term>cbc:IssueTime</Term>
+            <Name>Issue time</Name>
+            <Description>Time of document generation.</Description>
+
+            <Value type="EXAMPLE">14:52:28</Value>
+        </Element>
+    </Partial>
+
+</Partial>

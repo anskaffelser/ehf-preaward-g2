@@ -62,8 +62,8 @@
             <Value type="EXAMPLE">12:30:00</Value>
         </Element>
 
-        <Include select="sender val-b endpoint identification name">part-dps/party.xml</Include>
-        <Include select="receiver val-a endpoint identification name">part-dps/party.xml</Include>
+        <Include select="sender val-ca endpoint identification name">part-dps/party.xml</Include>
+        <Include select="receiver val-eo endpoint identification name">part-dps/party.xml</Include>
 
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
