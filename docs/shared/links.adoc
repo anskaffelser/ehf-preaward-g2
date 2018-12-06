@@ -1,0 +1,4 @@
+
+//UBL
+:ubl: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2 homepage]
+:link-oasis-ubl-22-resources: http://docs.oasis-open.org/ubl/os-UBL-2.2/

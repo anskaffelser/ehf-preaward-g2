@@ -25,7 +25,7 @@
     </rule>
    
    
-    <rule context="cbc:IssueDate|cbc:StartDate|cbc:EndDate">
+    <rule context="cbc:IssueDate|cbc:StartDate|cbc:EndDate|cbc:ResponseDate">
       <assert id="EHF-GE-R030"
               test="(string(.) castable as xs:date) and (string-length(.) = 10)"
               flag="fatal">A date must be formatted YYYY-MM-DD.</assert>

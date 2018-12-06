@@ -2,16 +2,16 @@
 
 = Electronic address identifier scheme identifier
 
-All electronic address identifiers (`cbc:EndpointID/@schemeID`) use of a code list to be maintained by CEF.
-#This code list is still not available. Use PEPPOL Policy for identifiers until code list is available#
+All electronic address identifiers (`cbc:EndpointID/@schemeID`) use the EAS code list maintained by CEF.
+For this specification, the only allowed value is `0192` to indicate a Norwegian business registry number (Organisasjonsnummer)
 
-.Examples of usage in `cbc:EndpointID`
-[source,xml, indent="0"]
-----
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
 
-	<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID> <1>
-
-----
-<1> schemeID attribute is mandatory
-
-  
+| Electronic address identifiers (Endpoint)
+| cbc:EndpointID/@schemeID
+a| {eaid}
+|===

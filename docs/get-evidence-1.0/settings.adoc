@@ -1,3 +1,6 @@
+
+include::../shared/links.adoc[]
+
 //
 :revision: 1.0.0
 :release: 2018.08.30
@@ -10,6 +13,7 @@
 
 :link-codelist: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/[Code list section]
 :codelist-ICD: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/ICD/[ICD list]
+:eaid: https://test-vefa.difi.no/alt440/pacr/codelist/eaid/[Code list for electronic address scheme]
 
 // Difi
 :link-github: https://github.com/difi/vefa-ehf-getevidence
@@ -28,5 +32,5 @@
 :link-cen-bii: http://www.cenbii.eu/
 :link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
 :link-oasis-ubl: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html[UBL2.2]
-:link-request-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceRequest/tree/[GetEvidenceRequest structure]
-:link-response-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceResponse/tree/[GetEvidenceResponse structure]
+:link-request: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-QualificationApplicationRequest-2.2.xsd[Request schema]
+:link-response: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-QualificationApplicationResponse-2.2.xsd[Response schema]

@@ -53,26 +53,19 @@
     <!-- tag::basic[] -->
     <cac:TenderingCriterion>
         <cac:TenderingCriterionPropertyGroup>
+            <!-- tag::basic[] -->
             <cac:TenderingCriterionProperty>   
                     <cbc:ID>e1</cbc:ID>
                     <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
-        </cac:TenderingCriterionPropertyGroup>
-    </cac:TenderingCriterion>
     <!-- end::basic[] -->
     <!-- tag::criterion[] -->
-    <cac:TenderingCriterion>
-        <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                     <cbc:ID>e2</cbc:ID>
                 <cbc:TypeCode>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
-        </cac:TenderingCriterionPropertyGroup>
-    </cac:TenderingCriterion>
     <!-- end::criterion[] -->
     <!-- tag::property[] -->
-    <cac:TenderingCriterion>
-        <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                     <cbc:ID>e3</cbc:ID>
                 <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
@@ -80,7 +73,7 @@
                     <cbc:DurationMeasure unitCode="ANN">3</cbc:DurationMeasure>
                 </cac:ApplicablePeriod>
             </cac:TenderingCriterionProperty>
+    <!-- end::property[] -->
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
-    <!-- end::property[] -->
 </ge-req:QualificationApplicationRequest>

@@ -29,4 +29,6 @@ include::datatypes/index.adoc[]
 
 include::codes/index.adoc[]
 
+include::appendix/index.adoc[]
+
 :leveloffset: -1

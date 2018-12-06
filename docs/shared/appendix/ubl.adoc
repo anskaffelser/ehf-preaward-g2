@@ -1,0 +1,6 @@
+[appendix]
+= UBL 2.2 [[appendix-ubl]]
+
+This implementation guide builds upon UBL 2.2 Schemas available from OASIS. These schemas are used when performing syntax validation.
+
+Please see the {ubl} for information about the standard or link:{link-oasis-ubl-22-resources}[further resources available].

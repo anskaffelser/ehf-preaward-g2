@@ -39,30 +39,19 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ID>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ValidatedCriterionPropertyID>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>NumberOfEmployees</cbc:Description>
+            <cbc:ID>NumberOfEmployees</cbc:ID>
             <cbc:ResponseNumeric>231</cbc:ResponseNumeric>
         </cac:ResponseValue>
-        <cac:EvidenceSupplied>
-            <cbc:ID>ev-1</cbc:ID>
-        </cac:EvidenceSupplied>
+        <cac:ResponseValue>
+            <cbc:ID>CertificateOfRegistrationPdfUrl</cbc:ID>
+            <cbc:ResponseURI>http://www.example.com/document.pdf</cbc:ResponseURI>
+        </cac:ResponseValue>
     </cac:TenderingCriterionResponse>
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
     </cac:AdditionalDocumentReference>
-    <cac:Evidence>
-        <cbc:ID>ev-1</cbc:ID>
-        <cbc:EvidenceTypeCode>CERTIFICATE_OF_REGISTRATION_PDF_LINK</cbc:EvidenceTypeCode>
-        <cac:DocumentReference>
-            <cbc:ID>doc-1</cbc:ID>
-            <cac:Attachment>
-                <cac:ExternalReference>
-                    <cbc:URI>http://www.example.com/document.pdf</cbc:URI>
-                </cac:ExternalReference>
-            </cac:Attachment>
-        </cac:DocumentReference>
-    </cac:Evidence>
 </QualificationApplicationResponse>
     
