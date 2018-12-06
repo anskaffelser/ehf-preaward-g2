@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Roles:
+    sender - Sender Party
+    receiver - Receiver Party
+
+Fields:
+    endpoint - cbc:EndpointID
+    identification - cac:PartyIdentification
+    name - cac:Name
+
+Example value sets:
+    val-a - Penny Pencils Inc.
+    val-b - Benny Buyer Inc.
+
+-->
+<Partial xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Partial tag="receiver sender">
+        <Element>
+            <Term tag="receiver">cac:ReceiverParty</Term>
+            <Term tag="sender">cac:SenderParty</Term>
+
+            <Name tag="receiver">Receiver party</Name>
+            <Name tag="sender">Sender party</Name>
+
+            <Include tag="endpoint">#endpoint-id</Include>
+            <Include tag="identification">#party-identification</Include>
+            <Include tag="name">#party-name</Include>
+        </Element>
+    </Partial>
+
+    <Partial id="endpoint-id">
+        <Element>
+            <Term>cbc:EndpointID</Term>
+
+            <Name tag="receiver">Receiver electronic address identifier</Name>
+            <Name tag="sender">Sender electronic address identifier</Name>
+
+            <Description tag="receiver">Identifier of the party receiving the document. Electronic address of the party receiving the document.</Description>
+            <Description tag="sender">Electronic address of the party sending the document.</Description>
+
+            <Attribute>
+                <Term>schemeID</Term>
+                <Value tag="val-a val-b" type="EXAMPLE">0192</Value>
+            </Attribute>
+
+            <Value tag="val-a" type="EXAMPLE">987654325</Value>
+            <Value tag="val-b" type="EXAMPLE">999777225</Value>
+        </Element>
+
+    </Partial>
+
+    <Partial id="party-identification">
+        <Element cardinality="0..n">
+            <Term>cac:PartyIdentification</Term>
+            <Name>Party identification</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+
+                <Name tag="receiver">Receiver identifier</Name>
+                <Name tag="sender">Sender identifier</Name>
+
+                <Description tag="receiver">Identifier of the party receiving the document.</Description>
+                <Description tag="sender">Identifier of the party sending the document.</Description>
+
+                <Attribute usage="Recommended">
+                    <Term>schemeID</Term>
+                    <Value tag="val-a val-b" type="EXAMPLE">0192</Value>
+                </Attribute>
+
+                <Value tag="val-a" type="EXAMPLE">987654325</Value>
+                <Value tag="val-b" type="EXAMPLE">999777225</Value>
+            </Element>
+        </Element>
+    </Partial>
+
+    <Partial id="party-name">
+        <Element>
+            <Term>cac:PartyName</Term>
+            <Name>Party name</Name>
+
+            <Element>
+                <Term>cbc:Name</Term>
+
+                <Name tag="receiver">Receiver name</Name>
+                <Name tag="sender">Sender name</Name>
+
+                <Description tag="receiver">Name of the party receiver the document.</Description>
+                <Description tag="sender">Name of the party sending the document.</Description>
+
+                <Value tag="val-a" type="EXAMPLE">Penny Pencils Inc.</Value>
+                <Value tag="val-b" type="EXAMPLE">Benny Buyer Inc.</Value>
+            </Element>
+        </Element>
+    </Partial>
+
+</Partial>
