@@ -28,5 +28,5 @@
 :link-cen-bii: http://www.cenbii.eu/
 :link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
 :link-oasis-ubl: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html[UBL2.2]
-:link-request-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceRequest/tree/[GetEvidenceRequest structure]
-:link-response-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceResponse/tree/[GetEvidenceResponse structure]
+:link-request: xsd/maindoc/UBL-QualificationApplicationRequest-2.2.xsd[Request]
+:link-resonse: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-QualificationApplicationResponse-2.2.xsd[Response]

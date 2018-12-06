@@ -1,0 +1,10 @@
+
+
+
+
+include::profiles/index.adoc[]
+
+// UBL 2.2
+include::../{shared-dir}/appendix/ubl.adoc[]
+* link:{link-request}
+* link:{link-response}
