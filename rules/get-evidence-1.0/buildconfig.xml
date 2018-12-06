@@ -4,13 +4,28 @@
     <testfolder>unit-EHF</testfolder>
     <testfolder>snippets</testfolder>
     <testfolder>example</testfolder>
+    
+    
+    <configuration>
+        <identifier>ehf-ge-request-basic-1.0</identifier>
+        <title>EHF Get Evidence Request Basic</title>
+        <inherit>ubl-qualificationapplicationrequest-2.2</inherit>
+        <file source="sch/EHF-GE-REQUEST.sch" path="xsl/EHF-GE-REQUEST.xsl"  />
+    </configuration>
+    <configuration>
+        <identifier>ehf-ge-response-basic-1.0</identifier>
+        <title>EHF Get Evidence Response Basic</title>
+        <inherit>ubl-qualificationapplicationresponse-2.2</inherit>
+        <file source="sch/EHF-GE-RESPONSE.sch" path="xsl/EHF-GE-RESPONSE.xsl"  />
+    </configuration>
 
     <configuration>
         <identifier>ehf-ge-request-1.0</identifier>
-        <title>EHF Get Evidence Request 1.0 </title>
+        <title>EHF Get Evidence Response Basic</title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:01:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:getevidence:1.0</customizationId>
-        <file source="sch/EHF-GE-REQUEST.sch" path="xsl/EHF-GE-REQUEST.xsl"  />
+        <inherit>ehf-ge-request-basic-1.0</inherit>
+     
     </configuration>
 
     <configuration>
@@ -18,7 +33,8 @@
         <title>EHF Get Evidence Response 1.0</title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:01:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:getevidence:1.0</customizationId>
-        <file source="sch/EHF-GE-RESPONSE.sch" path="xsl/EHF-GE-RESPONSE.xsl"  />
+        <inherit>ehf-ge-response-basic-1.0</inherit>
+     
     </configuration>
 
 </buildConfigurations>

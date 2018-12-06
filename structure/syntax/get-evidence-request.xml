@@ -82,7 +82,7 @@
             <Property key="doc">structure/docs/criterion.adoc</Property><!-- Correct example -->
 
 
-            <Element cardinality="1..n">
+            <Element>
                 <Term>cac:TenderingCriterionPropertyGroup</Term>
                 <Name>Tendering criterion property group</Name>
 

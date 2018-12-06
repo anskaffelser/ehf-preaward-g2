@@ -27,6 +27,10 @@
         <Name>The economic operator’s number of managerial staff for the last three years</Name>
     </Code>
     <Code>
+        <Id>CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY</Id>
+        <Name>Is the economic operator bankrupt?</Name>
+    </Code>
+    <Code>
         <Id>CRITERION.EXCLUSION.BUSINESS.INSOLVENCY</Id>
         <Name>Is the economic operator the subject of insolvency or winding-up?</Name>
     </Code>
@@ -38,4 +42,5 @@
         <Id>UNIT_BASIC_INFORMATION</Id>
         <Name>Basic information about the economic operator</Name>
     </Code>
+    
 </CodeList>
