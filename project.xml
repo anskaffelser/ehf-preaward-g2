@@ -13,7 +13,7 @@
 
     <Resource>
         <Type>Doc-1</Type>
-        <Path>docs/qualification-1.0/ehf/</Path>
+        <Path>qualification-1.0/ehf/</Path>
         <Title>EHF Qualification</Title>
         <Tag>dps-qualification</Tag>
     </Resource>
@@ -165,6 +165,11 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ResponseCodePosNeg.xml</Path>
         <Tag>get-evidence-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/IS3166-1_Alpha2.xml</Path>
+        <Tag>dps-qualification</Tag>
     </Resource>
 
     <!-- Tags -->
