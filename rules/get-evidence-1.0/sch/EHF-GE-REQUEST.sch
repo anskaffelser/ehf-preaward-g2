@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" schemaVersion="iso" queryBinding="xslt2"
-        xmlns:u="utils" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    xmlns:u="utils" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <title>EHF Get Evidence Request</title>
 
@@ -12,6 +12,10 @@
     <ns prefix="u" uri="utils"/>
     <ns prefix="resp" uri="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1"/>
 
+
+    <xsl:key name="k_lineId"  match="cac:TenderingCriterionProperty" use="cbc:ID"/>
+    
+    
     <!-- Functions -->
 
     <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
@@ -24,6 +28,7 @@
 
     <include href="parts/empty-elements.sch"/>
     <include href="parts/common.sch"/>
+    <include href="parts/EHF-GE-REQUEST-M.sch"/>
     <include href="../../../target/generated/request-basic.sch"/>
 
 </schema>

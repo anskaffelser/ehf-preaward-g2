@@ -132,6 +132,7 @@
                     <Name>Criteria response amount</Name>
                     <Description>An amount as evidence</Description>
                     <DataType>Amount</DataType>
+                    
                     <Attribute>
                         <Term>currencyID</Term>
                         <Name>Currency identifier</Name>
@@ -180,6 +181,7 @@
                     <Name>Criteria response date</Name>
                     <Description>A date used as evidence. Format = "YYYY-MM-DD"</Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-GE-R030</Reference>
                     <Value type="EXAMPLE">2017-03-15</Value>
                 </Element>
 
@@ -236,6 +238,7 @@
                         <Term>unitCode</Term>
                         <Name>Response quantity unit code</Name>
                         <Description>The unit code used for the response measure</Description>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">ANN</Value>
                     </Attribute>
 

@@ -58,12 +58,32 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <!-- end::eo[] -->
-    <!-- tag::response-amount[] -->
+    <!-- tag::response-staff[] -->
     <cac:TenderingCriterionResponse>
         <cbc:ID>1</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:ValidatedCriterionPropertyID>
         <cac:ResponseValue>
-            <cbc:ID>1</cbc:ID>
-            <cbc:ResponseAmount currencyID="NOK">23000000</cbc:ResponseAmount>
+            <cbc:ID>NumberOfEmployees</cbc:ID>
+            <cbc:ResponseNumeric>23</cbc:ResponseNumeric>
+        </cac:ResponseValue>
+        <cac:ResponseValue>
+            <cbc:ID>CertificateOfRegistrationPdfUrl</cbc:ID>
+            <cbc:ResponseURI>http://www.example.com/index.html</cbc:ResponseURI>
+        </cac:ResponseValue> 
+    </cac:TenderingCriterionResponse>
+    <!-- end::response-staff[] -->
+    
+    <!-- tag::response-tax[] -->
+    <cac:TenderingCriterionResponse>
+        <cbc:ID>8</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:ValidatedCriterionPropertyID>
+        <cac:ResponseValue>
+            <cbc:ID>UnpaidTax</cbc:ID>
+            <cbc:ResponseAmount currencyID="NOK">0</cbc:ResponseAmount>
+        </cac:ResponseValue>
+        <cac:ResponseValue>
+            <cbc:ID>UnpaidVAT</cbc:ID>
+            <cbc:ResponseAmount currencyID="NOK">0</cbc:ResponseAmount>
         </cac:ResponseValue>
         <!-- tag::period[] -->
         <cac:ApplicablePeriod>
@@ -72,17 +92,8 @@
         </cac:ApplicablePeriod>
         <!-- end::period[] -->
     </cac:TenderingCriterionResponse>
-    <!-- end::response-amount[] -->
-    
-    <!-- tag::response-attachment[] -->
-    <cac:TenderingCriterionResponse>
-        <cbc:ID>2</cbc:ID>
-        <cac:ResponseValue>
-            <cbc:ID>1</cbc:ID>
-            <cbc:ResponseURI>http://www.example.com/index.html</cbc:ResponseURI>
-        </cac:ResponseValue>
-    </cac:TenderingCriterionResponse>
-    <!-- end::response-attachment[] -->
+    <!-- end::response-tax[] -->
+
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
     </cac:AdditionalDocumentReference>

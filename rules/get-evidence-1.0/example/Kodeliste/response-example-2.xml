@@ -40,40 +40,25 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
-        <cbc:ID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:ID>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:ValidatedCriterionPropertyID>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>Year1</cbc:Description>
+            <cbc:ID>Year1</cbc:ID>
             <cbc:ResponseNumber>2017</cbc:ResponseNumber>
+            <cbc:ResponseURI>http://urltilpdfforaar2017</cbc:ResponseURI>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>Year2</cbc:Description>
+            <cbc:ID>Year2</cbc:ID>
             <cbc:ResponseNumber>2016</cbc:ResponseNumber>
+            <cbc:ResponseURI>http://urltilpdfforaar2016</cbc:ResponseURI>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>Year3</cbc:Description>
+            <cbc:ID>Year3</cbc:ID>
             <cbc:ResponseNumber>2015</cbc:ResponseNumber>
+            <cbc:ResponseURI>http://urltilpdfforaar2015</cbc:ResponseURI>
         </cac:ResponseValue>
-        <cac:EvidenceSupplied>
-            <cbc:ID>ev-1</cbc:ID>
-        </cac:EvidenceSupplied>
     </cac:TenderingCriterionResponse>
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
     </cac:AdditionalDocumentReference>
-    <cac:Evidence>
-        <cbc:ID>ev-1</cbc:ID>
-        <cbc:EvidenceTypeCode>ANNUAL_FINANCIAL_REPORT_3Y_PDF_LINK</cbc:EvidenceTypeCode>
-        <cac:DocumentReference>
-            <cbc:ID>doc-2</cbc:ID>
-            <cac:Attachment>
-                <cac:ExternalReference>
-                    <cbc:URI>http://www.example.com/document2.pdf</cbc:URI>
-                </cac:ExternalReference>
-            </cac:Attachment>
-        </cac:DocumentReference>
-    </cac:Evidence>
-
 </QualificationApplicationResponse>

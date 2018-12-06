@@ -40,66 +40,54 @@
         </cac:Party>
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterionResponse>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ValidatedCriterionPropertyID>UNIT_BASIC_INFORMATION</cbc:ValidatedCriterionPropertyID>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>OrganizationNumber</cbc:Description>
+            <cbc:ID>OrganizationNumber</cbc:ID>
             <cbc:ResponseID>999999956</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>OrganizationName</cbc:Description>
+            <cbc:ID>OrganizationName</cbc:ID>
             <cbc:ResponseID>TEST ASA</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>OrganizationForm</cbc:Description>
+            <cbc:ID>OrganizationForm</cbc:ID>
             <cbc:ResponseID>ASA</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>IndustryCode1</cbc:Description>
-            <cbc:Response>Forvaltning og drift av IT-systemer</cbc:Response>
+            <cbc:ID>IndustryCode1</cbc:ID>
             <cbc:ResponseCode>62.030</cbc:ResponseCode>         
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>IndustryCode2</cbc:Description>
-            <cbc:Response>Hovedkontortjenester</cbc:Response>
+            <cbc:ID>IndustryCode2</cbc:ID>
             <cbc:ResponseCode>70.100</cbc:ResponseCode>          
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>BusinessAddressStreet</cbc:Description>
+            <cbc:ID>BusinessAddressStreet</cbc:ID>
             <cbc:ResponseID>Snarøyveien 30A</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>BusinessAddressZip</cbc:Description>
+            <cbc:ID>BusinessAddressZip</cbc:ID>
             <cbc:ResponseID>1360</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>BusinessAddressCity</cbc:Description>
+            <cbc:ID>BusinessAddressCity</cbc:ID>
             <cbc:ResponseID>Fornebu</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>PostalAddressStreet</cbc:Description>
+            <cbc:ID>PostalAddressStreet</cbc:ID>
             <cbc:ResponseID>Postboks 4</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>PostalAddressZip</cbc:Description>
+            <cbc:ID>PostalAddressZip</cbc:ID>
             <cbc:ResponseID>1330</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>PostalAddressCity</cbc:Description>
+            <cbc:ID>PostalAddressCity</cbc:ID>
             <cbc:ResponseID>Bærum</cbc:ResponseID>
         </cac:ResponseValue>
         <cac:ResponseValue>
-            <cbc:ID>e1</cbc:ID>
-            <cbc:Description>PostalAddresscountry</cbc:Description>
+            <cbc:ID>PostalAddresscountry</cbc:ID>
             <cbc:ResponseID>NO</cbc:ResponseID>
         </cac:ResponseValue>
     </cac:TenderingCriterionResponse>

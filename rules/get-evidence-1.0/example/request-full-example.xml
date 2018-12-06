@@ -76,15 +76,15 @@
                 <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.INSOLVENCY</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
             <cac:TenderingCriterionProperty>
-                <cbc:ID>5</cbc:ID>
+                <cbc:ID>6</cbc:ID>
                 <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
             <cac:TenderingCriterionProperty>
-                <cbc:ID>6</cbc:ID>
+                <cbc:ID>7</cbc:ID>
                 <cbc:TypeCode>CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
                 <cac:TenderingCriterionProperty>
-                    <cbc:ID>7</cbc:ID>
+                    <cbc:ID>8</cbc:ID>
                     <cbc:TypeCode>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:TypeCode>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>

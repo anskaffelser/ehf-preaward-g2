@@ -46,7 +46,10 @@
             <cac:TenderingCriterionProperty>
                     <cbc:ID>e1</cbc:ID>
                     <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
-                
+                <cac:ApplicablePeriod>
+                    <cbc:StartDate>2017-01-01</cbc:StartDate>
+                    <cbc:EndDate>2017-12-31</cbc:EndDate>
+                </cac:ApplicablePeriod>              
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>

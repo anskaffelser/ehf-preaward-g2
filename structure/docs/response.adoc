@@ -6,15 +6,14 @@ A response to a Get Evidence request can be one or several types of response val
 
 Response information is provided in the class TenderingCriterionResponse, which is mandatory in the GetEvidence response message. It is mandatory to provide the reference/identification of the criterion the response is valid for.
 
-.UBL example of a response amount
+.UBL example of a response on the number of managerial staff
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=response-amount]
+include::../{snippet-dir}/response-1.xml[tags=response-staff]
 ----
 
-
-.UBL example of a response attachment
+.UBL example of a response on the criteria of payment of taxes
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=response-attachment]
+include::../{snippet-dir}/response-1.xml[tags=response-tax]
 ----
