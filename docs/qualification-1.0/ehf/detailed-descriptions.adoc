@@ -4,5 +4,28 @@ This chapter describes selected parts of the information contents of the Qualifi
 
 == Parties and Roles
 
+The important parties and roles in DPS Qualification process are described below.
 
-:TODO! Lim inn rolle diagrammet.
+****
+Contracting authority (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Economic operator (EO)::
+Party participating with a tender in a procurement process to sell goods, services or works.
+
+Customer::
+The customer is the legal person or organization who is in demand of a product, service or works. Examples of customer roles are buyer, consignee, debtor and contracting body.
+
+Supplier::
+The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
+****
+
+The following diagram illustrates the parties and roles involved in the DPS Qualification process.
+
+{empty} +
+{empty} +
+
+.EHF Catalogue and request rolediagram.
+image::images/rolediagram.png[align="center",1200, 800]
+
+{empty} +
