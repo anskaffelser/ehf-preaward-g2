@@ -1,12 +1,8 @@
 
-= Process and Typical Use cases
+= Use cases
 
-== Process Diagram
-
-.Qualification process diagram.
-image::images/dps-processdiagram.png[align="center"]
-
-== Use Cases
+.Sources of evidences used in public procurement
+image::images/get-evidence-bpmn.png[align="left"]
 
 == Use case 1 – Supporting documents available in open databases
 
@@ -23,5 +19,3 @@ In this scenario, the economic operator has sent an ESPD Response as part of the
 == Use case 3 – Contract phase
 
 In this scenario, the economic operator has an ongoing contract with the contracting authority. The contract states that the contracting authority at any time can check if the economic operator still meets the qualification criteria. The contracting authority retrieves the supporting documents from the open databases and check them accordingly.
-
-
