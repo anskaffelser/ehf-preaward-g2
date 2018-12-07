@@ -28,9 +28,9 @@ include::use-cases/index.adoc[]
 
 include::detailed-descriptions.adoc[]
 
-include::codes/index.adoc[]
-
 include::datatypes/index.adoc[]
+
+include::codes/index.adoc[]
 
 include::appendix/index.adoc[]
 

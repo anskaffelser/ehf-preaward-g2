@@ -2,17 +2,23 @@
 
 ****
 Supplier::
-Person or company supplying goods or services on own or someone else’s behalf.
+The supplier is the legal person or organization who provides a product or service.
+Examples of supplier roles: seller, despatch party, creditor, economic operator.
 
 Customer::
 Person or organization acquiring the ownership of a product or a service against agreed price and payment terms.
+
+Seller::
+The seller is the legal person or organization who sells goods or services to the customer. The role is carried out by the supplier or on behalf of the supplier.
+
+Customer::
+The customer is the legal person or organization who is in demand of a product or service.
+Examples of customer roles: buyer, consignee, debtor, contracting authority.
 
 Sender::
 The party sending an electronicqualification document back to the sending party of the business document.
 
 Receiver::
 The party, an electronic qualification document response was addressed to, and who is supposed to process the qualification document.
-
-Economic operator::
 
 ****
