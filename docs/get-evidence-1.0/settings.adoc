@@ -11,9 +11,9 @@ include::../shared/links.adoc[]
 
 //Internal
 
-:link-codelist: /ehf-pre/g2/codelist/
-:codelist-ICD: /ehf-pre/g2/codelist/ICD/[ICD Code list]
-:eas: /ehf-pre/g2/codelist/EAS/[Code list for electronic address scheme]
+:link-codelist: link:/ehf-pre/g2/codelist/[Code list section]
+:codelist-ICD: link:/ehf-pre/g2/codelist/ICD/[ICD Code list]
+:eas: link:/ehf-pre/g2/codelist/EAS/[Electronic address Scheme]
 
 // Difi
 :link-github: https://github.com/difi/vefa-ehf-getevidence
