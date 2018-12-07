@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Partial xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <!-- <Element>
-        <Term>cbc:UBLVersion</Term>
-
-        <Value type="FIXED">2.2</Value>
-    </Element> -->
-
     <Element>
         <Term>cbc:CustomizationID</Term>
         <Name>Specification identification</Name>
