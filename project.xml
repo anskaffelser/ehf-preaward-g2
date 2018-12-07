@@ -68,6 +68,14 @@
         <Tag>dps-awarded</Tag>
     </Resource>
     <Resource>
+        <Identifier>awarded-response</Identifier>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/dps-awarding.xml</Path>
+        <Title>EHF Awarded Notification Response 1.0</Title>
+        <Property key="select">res</Property>
+        <Tag>dps-awarded</Tag>
+    </Resource>
+    <Resource>
         <Identifier>unawarded</Identifier>
         <Type>Syntax-1</Type>
         <Path>structure/syntax/dps-awarding.xml</Path>
@@ -223,7 +231,7 @@
     <Tag>
         <Identifier>dps-qualification</Identifier>
         <Title>DPS Qualification</Title>
-        <Description>Process for qualification ti a DPS project.</Description>
+        <Description>Process for qualification to a DPS project.</Description>
     </Tag>
     <Tag>
         <Identifier>dps-unsubscription</Identifier>
