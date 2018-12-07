@@ -13,5 +13,5 @@ For this specification, the only allowed value is `0192` to indicate a Norwegian
 
 | Electronic address identifiers (Endpoint)
 | cbc:EndpointID/@schemeID
-a| {eaid}
+a| {eas}
 |===

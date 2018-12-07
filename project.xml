@@ -160,11 +160,19 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
         <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
+        <Tag>dps-unsubscription</Tag>
+        <Tag>dps-awarded</Tag>
+        <Tag>dps-unawarded</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/eaid.xml</Path>
+        <Path>structure/codelist/EAS.xml</Path>
         <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
+        <Tag>dps-unsubscription</Tag>
+        <Tag>dps-awarded</Tag>
+        <Tag>dps-unawarded</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

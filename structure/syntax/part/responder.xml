@@ -10,15 +10,15 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Extension identifier</Name>
-            <Value type="FIXED">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Value>
             <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Value>
         </Element>
         
         <Element>
             <Term>cbc:Name</Term>
             <Name>Extension name</Name>
-            <Value type="FIXED">Responder information</Value>
             <DataType>Text</DataType>
+            <Value type="FIXED">Responder information</Value>
         </Element>
         
         <Element>
@@ -37,7 +37,7 @@
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Reference type="CODE_LIST">eaid</Reference>
+                        <Reference type="CODE_LIST">EAS</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">998877654</Value>
