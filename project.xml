@@ -206,7 +206,7 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ResponseCodePosNeg.xml</Path>
-        <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
     </Resource>
     <!--
     <Resource>
