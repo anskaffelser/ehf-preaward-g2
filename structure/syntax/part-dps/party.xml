@@ -6,6 +6,7 @@ Roles:
     receiver - Receiver Party
     contracting - Contracting Party
     economic-operator - Economic Operator Party
+    winning - Winning party
 
 Fields:
     endpoint - cbc:EndpointID
@@ -15,6 +16,7 @@ Fields:
 Example value sets:
     val-eo - Penny Pencils Inc.
     val-ca - Benny Buyer Inc.
+    val-wi - Arthur Awarded Inc.
 
 -->
 <Partial xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
@@ -31,13 +33,15 @@ Example value sets:
         </Element>
     </Partial>
 
-    <Partial tag="contracting economic-operator">
+    <Partial tag="contracting economic-operator winning">
         <Element>
             <Term tag="contracting">cac:ContractingParty</Term>
             <Term tag="economic-operator">cac:EconomicOperatorParty</Term>
+            <Term tag="winning">cac:WinningParty</Term>
 
             <Name tag="contracting">Contracting authority party</Name>
             <Name tag="economic-operator">Economic operator party</Name>
+            <Name tag="winning">Winning party</Name>
 
             <Element>
                 <Term>cac:Party</Term>
@@ -60,14 +64,16 @@ Example value sets:
 
             <Name tag="val-eo">Electronic address identifier of economic operator.</Name>
             <Name tag="val-ca">Electronic address identifier of contracting authority.</Name>
+            <Name tag="val-wi">Electronic address identifier of winning economic operator.</Name>
 
             <Attribute>
                 <Term>schemeID</Term>
-                <Value tag="val-a val-b" type="EXAMPLE">0192</Value>
+                <Value type="EXAMPLE">0192</Value>
             </Attribute>
 
             <Value tag="val-eo" type="EXAMPLE">987654325</Value>
             <Value tag="val-ca" type="EXAMPLE">999777225</Value>
+            <Value tag="val-wi" type="EXAMPLE">998888888</Value>
         </Element>
 
     </Partial>
@@ -82,17 +88,20 @@ Example value sets:
 
                 <Name tag="val-eo">Economic operator identifier</Name>
                 <Name tag="val-ca">Contracting authority identifier</Name>
+                <Name tag="val-wi">Winning economic operator identifier</Name>
 
                 <Description tag="val-eo">Identifier of economic operator.</Description>
                 <Description tag="val-ca">Identifier of contracting authority.</Description>
+                <Description tag="val-wi">Identifier of winning economic operator.</Description>
 
                 <Attribute usage="Recommended">
                     <Term>schemeID</Term>
-                    <Value tag="val-a val-b" type="EXAMPLE">0192</Value>
+                    <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
                 <Value tag="val-eo" type="EXAMPLE">987654325</Value>
                 <Value tag="val-ca" type="EXAMPLE">999777225</Value>
+                <Value tag="val-wi" type="EXAMPLE">998888888</Value>
             </Element>
         </Element>
     </Partial>
@@ -107,12 +116,15 @@ Example value sets:
 
                 <Name tag="val-eo">Economic operator name</Name>
                 <Name tag="val-ca">Contracting authority name</Name>
+                <Name tag="val-wi">Winning economic operator name</Name>
 
                 <Description tag="val-eo">Name of the economic operator.</Description>
                 <Description tag="val-ca">Name of the contracting authority.</Description>
+                <Description tag="val-wi">Name of the winning economic operator.</Description>
 
                 <Value tag="val-eo" type="EXAMPLE">Penny Pencils Inc.</Value>
                 <Value tag="val-ca" type="EXAMPLE">Benny Buyer Inc.</Value>
+                <Value tag="val-wi" type="EXAMPLE">Arthur Awarded Inc.</Value>
             </Element>
         </Element>
     </Partial>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Term tag="pos">awarded</Term>
+    <Term tag="neg">unawarded</Term>
+
+    <Name tag="pos">Awarded Notification</Name>
+    <Name tag="neg">Unawarded Notification</Name>
+
+    <Property tag="pos" key="sch:prefix">EHF-AN</Property>
+    <Property tag="pos" key="sch:identifier">awarded</Property>
+    <Property tag="neg" key="sch:prefix">EHF-UN</Property>
+    <Property tag="neg" key="sch:identifier">unawarded</Property>
+
+    <Namespace prefix="ubl" tag="pos">urn:oasis:names:specification:ubl:schema:xsd:AwardedNotification-2</Namespace>
+    <Namespace prefix="ubl" tag="neg">urn:oasis:names:specification:ubl:schema:xsd:UnawardedNotification-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+    <Document>
+        <Term tag="pos">ubl:AwardedNotification</Term>
+        <Term tag="neg">ubl:UnawardedNotification</Term>
+
+        <Include select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
+
+        <Include select="sender val-ca endpoint identification name">part-dps/party.xml</Include>
+        <Include select="receiver val-eo endpoint identification name">part-dps/party.xml</Include>
+
+        <Element>
+            <Term>cac:TenderResult</Term>
+            
+            <Element>
+                <Term>cbc:AwardDate</Term>
+            </Element>
+            
+            <Element>
+                <Term>cbc:AwardTime</Term>
+            </Element>
+
+            <Include tag="neg" select="winning val-wi identification name">part-dps/party.xml</Include>
+        </Element>
+
+    </Document>
+</Syntax>

@@ -21,8 +21,8 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
     <Document>
-        <Term tag="req">UnsubscribeFromProcedureRequest</Term>
-        <Term tag="res">UnsubscribeFromProcedureResponse</Term>
+        <Term tag="req">ubl:UnsubscribeFromProcedureRequest</Term>
+        <Term tag="res">ubl:UnsubscribeFromProcedureResponse</Term>
 
         <Include select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
 

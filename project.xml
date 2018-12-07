@@ -46,6 +46,7 @@
         <Identifier>unsubscription-request</Identifier>
         <Type>Syntax-1</Type>
         <Path>structure/syntax/dps-unsubscription.xml</Path>
+        <Title>EHF Unsubscription Request 1.0</Title>
         <Property key="select">req</Property>
         <Tag>dps-unsubscription</Tag>
     </Resource>
@@ -53,8 +54,26 @@
         <Identifier>unsubscription-response</Identifier>
         <Type>Syntax-1</Type>
         <Path>structure/syntax/dps-unsubscription.xml</Path>
+        <Title>EHF Unsubscription Response 1.0</Title>
         <Property key="select">res</Property>
         <Tag>dps-unsubscription</Tag>
+    </Resource>
+
+    <Resource>
+        <Identifier>awarded</Identifier>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/dps-awarding.xml</Path>
+        <Title>EHF Awarded Notification 1.0</Title>
+        <Property key="select">pos</Property>
+        <Tag>dps-awarded</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>unawarded</Identifier>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/dps-awarding.xml</Path>
+        <Title>EHF Unawarded Notification 1.0</Title>
+        <Property key="select">neg</Property>
+        <Tag>dps-unawarded</Tag>
     </Resource>
 
     <Resource>
@@ -196,11 +215,22 @@
     <Tag>
         <Identifier>dps-qualification</Identifier>
         <Title>DPS Qualification</Title>
+        <Description>Process for qualification ti a DPS project.</Description>
     </Tag>
     <Tag>
         <Identifier>dps-unsubscription</Identifier>
         <Title>DPS Unsubscription</Title>
-        <Description>Process for unsubscription of DPS.</Description>
+        <Description>Process for unsubscription from DPS project.</Description>
+    </Tag>
+    <Tag>
+        <Identifier>dps-awarded</Identifier>
+        <Title>DPS Awarded Notification</Title>
+        <Description>Process to notify winning party in a DPS procurement.</Description>
+    </Tag>
+    <Tag>
+        <Identifier>dps-unawarded</Identifier>
+        <Title>DPS Unawarded Notification</Title>
+        <Description>Process to notify loosing parties in a DPS procurement.</Description>
     </Tag>
 
 </Project>
