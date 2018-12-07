@@ -1,10 +1,25 @@
-= Use Cases
+
+= Process and Typical Use cases
+
+== Process Diagram
+
+The following diagram illustrates DPS Qualification:
+
+image::images/dps-processdiagram.png[align="center"]
+
+== Use Cases
+
+=== Use Case 1- Restricted Procedure
+
+An economic operator finds an interesting business opportunity after a search on a platform with published notices. He knows how to respond to the opportunity because he can find all the relevant information in the contract notice. He receives the call for tenders with all supporting documents.
+The documents are a structured ESPD request and other structured and unstructured tender documents. The economic operator prepares his qualification information in his system. He creates an ESPD response based on the ESPD request provided by the contracting body and sends his tender through PEPPOL eDelivery network. Contracting authority receives tendering documents and his system gives a confirmation. He uses content from ESPD response in his tendering system to do an automatically check of evidence.
+Based on the results tendering system sends either qualification response positive or negative.
 
 
-:leveloffset: +1
+=== Use Case 2- Dynamic Purchasing System (DPS)
 
-include::usecase1.adoc[]
+An economic operator finds an interesting business opportunity after a search on a platform with published notices. He sees that the contracting authority has established a Dynamic Purchasing System (DPS).
+In the notice he can read that first phase of the DPS is to qualify in to a group of suppliers that can receive tenders from contracting authority based on one or more needs. He also read that he can stay in the group as long as the DPS exists and he can deregister if he like.
 
-include::usecase2.adoc[]
-
-:leveloffset: -1
+Economic operator shows interest through his system and the contracting authority sends ESPD request.  His system fills in ESPD response based on ESPD request and he checks the content before sending to the tendering system through PEPPOL eDelivery network. The contracting authority’s tendering system sends automatically confirmation message.
+He uses content from ESPD response in his tendering system to do an automatically check of evidence. Based on the results tendering system send either qualification response positive or negative. If qualification response is negative economic operator updates his evidence and perform the process again until contracting authority send a qualification response positive.  Then the economic operator waits for tenders in the form of a pre-award catalogue request and other structured documents.

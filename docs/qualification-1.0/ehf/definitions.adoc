@@ -1,0 +1,18 @@
+= Definitions
+
+****
+Supplier::
+Person or company supplying goods or services on own or someone else’s behalf.
+
+Customer::
+Person or organization acquiring the ownership of a product or a service against agreed price and payment terms.
+
+Sender::
+The party sending an electronicqualification document back to the sending party of the business document.
+
+Receiver::
+The party, an electronic qualification document response was addressed to, and who is supposed to process the qualification document.
+
+Economic operator::
+
+****

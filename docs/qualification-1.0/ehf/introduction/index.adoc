@@ -1,0 +1,6 @@
+= Introduction
+
+The purpose of this document is to describe the format DPS Qualification that can be used to send and receive qualification documents
+in a DPS (Dynamic Purchasing System) process. The Dynamic Purchasing System (DPS) is a procedure used, in this case, competitive procurement.
+
+
