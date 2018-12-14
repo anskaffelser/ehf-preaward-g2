@@ -14,19 +14,12 @@
     <Document>
         <Term>ubl:TendererQualification</Term>
 
-        <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
-                the elements that might be encountered in the current instance.</Description>
-            <Value type="FIXED">2.2</Value>
-        </Element>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
-                business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
-                extensions applied. The identification may include the version of the specification.</Description>
+                business rules to which the data contained in the instance document conforms. he identification may include the version of the specification.</Description>
         </Element>
 
         <Element>
@@ -35,11 +28,11 @@
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the
                 invoice in an appropriate way.</Description>
         </Element>
-        
+
         <Element>
             <Term>cbc:ID</Term>
             <Name>Qualification identifier</Name>
-            <Description>Identifier for the qualification document. An transaction instance must contain an identifier. 
+            <Description>Identifier for the qualification document. An transaction instance must contain an identifier.
                 The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
         </Element>
 
@@ -47,10 +40,10 @@
             <Term>cbc:ContractFolderID</Term>
             <Name>Reference number</Name>
             <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is
-                also known as procurement project identifier, procurement reference number or contract folder identifier. A reference to the procurement
-                process to which this Qualification document is delivered as a response.</Description>
+                also known as procurement project identifier, procurement reference number or contract folder identifier. <!-- A reference to the procurement
+                process to which this Qualification document is delivered as a response.--></Description>
         </Element>
-        
+
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Qualification issue date</Name>
@@ -60,7 +53,7 @@
         <Element>
             <Term>cbc:IssueTime</Term>
             <Name>Qualification issue time</Name>
-            <Description>The time on which the qualification document instance was issued. The time zone has to be informed following the BII Guideline on Data Formats</Description>
+            <Description>The time on which the qualification document instance was issued.</Description>
         </Element>
 
         <Element>
@@ -68,18 +61,18 @@
             <Name>Call for tender reference</Name>
             <Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.</Description>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>cbc:VersionID</Term>
             <Name>Qualification document version identifier</Name>
             <Description>Identifies the version of the document.</Description>
         </Element>
-        
+
         <Element>
             <Term>cac:Signature</Term>
             <Name>Tender signature</Name>
             <Description>The signature of the document. Used to add the signature for this tender document.</Description>
-            
+
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Tender identifier</Name>
@@ -102,23 +95,23 @@
                 </Element>
             </Element>
         </Element>
-        
-        
+
+
         <Element>
             <Term>cac:TendererPartyQualification</Term>
             <Name>Tenderer party qualification</Name>
-            
+
             <Element>
                 <Term>cac:MainQualifyingParty</Term>
                 <Name>Main qualifying party</Name>
-                
+
                 <Element cardinality="1..n">
                     <Term>cac:Party</Term>
                     <Name>Economic operator</Name>
                     <Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary
                         association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of
                         services on the market. Information about the party submitting the qualification.</Description>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cac:PartyIdentification</Term>
                         <Name>Party identification</Name>
@@ -144,7 +137,6 @@
                     <Element>
                         <Term>cac:PostalAddress</Term>
                         <Name>Postal address</Name>
-                        <Description>Address information.</Description>
 
                         <Element cardinality="0..1">
                             <Term>cbc:StreetName</Term>
@@ -196,7 +188,7 @@
                     <!-- <Element>
                         <Term>cac:PartyLegalEntity</Term>
                         <Name>Party legal entity</Name>
-                        
+
                         <Element>
                             <Term>cbc:CompanyLegalForm</Term>
                             <Name>Economic operator legal form</Name>
@@ -225,7 +217,7 @@
                         <Element cardinality="0..1">
                             <Term>cbc:Telefax</Term>
                             <Name>Contact Telefax number</Name>
-                            <Description>A fax number for the contact persons.</Description>
+                            <Description>A fax number for the contact person.</Description>
                             <Value type="EXAMPLE">22110122</Value>
                         </Element>
 
@@ -287,13 +279,14 @@
         </Element>
 
         <Element cardinality="0..n">
-            <Term>cac:AdditionalDocument</Term>
+            <Term>cac:AdditionalDocumentReference</Term>
             <Name>Provided document</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
-                <Description>Identifier of a document.</Description>
+                <Description>An identifier for the referenced document.</Description>
+                <Value type="EXAMPLE">doc-21</Value>
             </Element>
 
             <Element> <!-- MÅ fylle inn -->
@@ -302,20 +295,22 @@
                 <Description>A code specifying the type of the document. The mime type code.</Description>
             </Element>
 
-            <Element> <!-- MÅ fylle inn -->
+            <Element>
                 <Term>cbc:DocumentDescription</Term>
                 <Name>Document description</Name>
-                <Description>Textual description of the document.</Description>
+                <Description>A description of the referenced document, such as: timesheet, usage report etc.</Description>
+                <Value type="EXAMPLE">usage report</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>cac:Attachment</Term>
                 <Name>Attachment</Name>
-                
+
                 <Element cardinality="0..1">
                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
-                    <Description>Fyll inn</Description> <!-- MÅ fylle inn -->
+                    <Description>An attached document embedded as binary object (Base64) or sent together with the qualification.</Description>
+                    <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                 </Element>
             </Element>
         </Element>

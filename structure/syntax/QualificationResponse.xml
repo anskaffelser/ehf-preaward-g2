@@ -87,6 +87,7 @@
                 <Element tag="res" cardinality="0..1">
                     <Term>cbc:Description</Term>
                     <Name>Reason for rejection</Name>
+                    <Description>The contracting authority MUST give the supplier a reason for rejection.</Description>
                 </Element>
 
             </Element>
