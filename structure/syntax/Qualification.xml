@@ -18,42 +18,43 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
-                business rules to which the data contained in the instance document conforms. he identification may include the version of the specification.</Description>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <Value type="FIXED">...</Value>
         </Element>
 
         <Element>
             <Term>cbc:ProfileID</Term>
-            <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the
-                invoice in an appropriate way.</Description>
+            <Name>Profile identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.</Description>
+            <Value type="FIXED">...</Value>
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Qualification identifier</Name>
-            <Description>Identifier for the qualification document. An transaction instance must contain an identifier.
-                The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
+            <Description>A qualification document must contain an identifier. The identifier is a number that uniquely define the qualification document.</Description>
+            <Value type="EXAMPLE">1234</Value>
         </Element>
 
         <Element>
             <Term>cbc:ContractFolderID</Term>
-            <Name>Reference number</Name>
-            <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is
-                also known as procurement project identifier, procurement reference number or contract folder identifier. <!-- A reference to the procurement
-                process to which this Qualification document is delivered as a response.--></Description>
+            <Name>TED/Doffin reference</Name>
+            <Description>TED or Doffin reference number</Description>
+            <Value type="EXAMPLE">18/00012</Value>
         </Element>
 
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Qualification issue date</Name>
             <Description>The date on which the qualification document instance was issued.</Description>
+            <Value type="EXAMPLE">2018-05-05</Value>
         </Element>
 
         <Element>
             <Term>cbc:IssueTime</Term>
             <Name>Qualification issue time</Name>
             <Description>The time on which the qualification document instance was issued.</Description>
+            <Value type="EXAMPLE">12:00:00</Value>
         </Element>
 
         <Element>
@@ -66,9 +67,10 @@
             <Term>cbc:VersionID</Term>
             <Name>Qualification document version identifier</Name>
             <Description>Identifies the version of the document.</Description>
+            <Value type="EXAMPLE">2.0</Value>
         </Element>
 
-        <Element>
+        <Element> <!-- Dette skal ikke med?  Hør med Erlend -->
             <Term>cac:Signature</Term>
             <Name>Tender signature</Name>
             <Description>The signature of the document. Used to add the signature for this tender document.</Description>
@@ -107,10 +109,10 @@
 
                 <Element cardinality="1..n">
                     <Term>cac:Party</Term>
-                    <Name>Economic operator</Name>
-                    <Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary
+                    <Name>Party information</Name>
+                    <!--<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary
                         association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of
-                        services on the market. Information about the party submitting the qualification.</Description>
+                        services on the market. Information about the party submitting the qualification.</Description>-->
 
                     <Element cardinality="0..1">
                         <Term>cac:PartyIdentification</Term>
@@ -118,8 +120,9 @@
 
                         <Element>
                             <Term>cbc:ID</Term>
-                            <Name>Economic operator identifier</Name>
+                            <Name>Economic operator party identifier</Name>
                             <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+                            <Value type="EXAMPLE">12345685</Value>
                         </Element>
                     </Element>
 
@@ -131,6 +134,7 @@
                             <Term>cbc:Name</Term>
                             <Name>Economic operator name</Name>
                             <Description>The name of the economic operator.</Description>
+                            <Value type="EXAMPLE">x Company AS</Value>
                         </Element>
                     </Element>
 
@@ -229,7 +233,7 @@
                         </Element>
                     </Element>
 
-                    <Element>
+                    <Element> <!-- Skal dette med -->
                         <Term>cac:Peron</Term>
                         <Name>Economic operator person</Name>
 
@@ -247,12 +251,13 @@
         <Element>
             <Term>cac:ContractingParty</Term>
             <Name>Contracting body</Name>
-            <Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure
+            <Description>
+                The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure
                 as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
 
             <Element> <!-- MÅ fylle inn -->
                 <Term>cac:Party</Term>
-                <Name>Party</Name>
+                <Name>Party information</Name>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
@@ -260,8 +265,8 @@
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Contracting body identifier</Name>
-                        <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO).</Description>
+                        <Name>Contracting party identifier</Name>
+                        <Description>The identifier of the contacting party, as it is legally registered.</Description>
                     </Element>
                 </Element>
 

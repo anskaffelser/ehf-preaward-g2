@@ -16,7 +16,7 @@
     <Document>
         <Term>ubl:ApplicationResponse</Term>
 
-        <Element cardinality="0..1">
+        <Element cardinality="0..1"> <!-- Skal vi ha denne? Spør Erlend. -->
             <Term>cbc:UBLVersionID</Term>
             <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
                 the elements that might be encountered in the current instance.</Description>
@@ -26,18 +26,15 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and
-                business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any
-                extensions applied. The identification may include the version of the specification.</Description>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Value tag="ack" type="FIXED">urn:fdc:difi.no:2017:ehf:dps:qualification-reception-confirmation:1.0</Value>
             <Value tag="res" type="FIXED">urn:fdc:difi.no:2017:ehf:dps:qualification-response:1.0</Value>
         </Element>
 
         <Element>
             <Term>cbc:ProfileID</Term>
-            <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the
-                invoice in an appropriate way.</Description>
+            <Name>Profile identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.</Description>
             <Value type="FIXED">...</Value>
         </Element>
 
@@ -88,6 +85,7 @@
                     <Term>cbc:Description</Term>
                     <Name>Reason for rejection</Name>
                     <Description>The contracting authority MUST give the supplier a reason for rejection.</Description>
+                    <Value type="EXAMPLE">Do not qualify the mobilephone criterion.</Value>
                 </Element>
 
             </Element>
