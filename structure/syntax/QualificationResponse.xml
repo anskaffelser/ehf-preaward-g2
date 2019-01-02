@@ -16,13 +16,6 @@
     <Document>
         <Term>ubl:ApplicationResponse</Term>
 
-        <Element cardinality="0..1"> <!-- Skal vi ha denne? Spør Erlend. -->
-            <Term>cbc:UBLVersionID</Term>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
-                the elements that might be encountered in the current instance.</Description>
-            <Value type="FIXED">2.2</Value>
-        </Element>
-
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
@@ -87,7 +80,6 @@
                     <Description>The contracting authority MUST give the supplier a reason for rejection.</Description>
                     <Value type="EXAMPLE">Do not qualify the mobilephone criterion.</Value>
                 </Element>
-
             </Element>
 
             <Element>

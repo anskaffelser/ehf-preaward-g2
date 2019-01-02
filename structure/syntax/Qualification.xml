@@ -40,7 +40,14 @@
             <Term>cbc:ContractFolderID</Term>
             <Name>TED/Doffin reference</Name>
             <Description>TED or Doffin reference number</Description>
-            <Value type="EXAMPLE">18/00012</Value>
+
+           <Attribute>
+                <Term>schemeID</Term>
+                <Name>TED/Doffin scheme identifier</Name>
+               <Reference type="CODE_LIST">ContractFolderType</Reference>
+            </Attribute>
+
+            <Value type="EXAMPLE">18/0012</Value>
         </Element>
 
         <Element>
@@ -122,7 +129,7 @@
                             <Term>cbc:ID</Term>
                             <Name>Economic operator party identifier</Name>
                             <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
-                            <Value type="EXAMPLE">12345685</Value>
+                            <Value type="EXAMPLE">123456785</Value>
                         </Element>
                     </Element>
 
@@ -219,13 +226,6 @@
                         </Element>
 
                         <Element cardinality="0..1">
-                            <Term>cbc:Telefax</Term>
-                            <Name>Contact Telefax number</Name>
-                            <Description>A fax number for the contact person.</Description>
-                            <Value type="EXAMPLE">22110122</Value>
-                        </Element>
-
-                        <Element cardinality="0..1">
                             <Term>cbc:ElectronicMail</Term>
                             <Name>Contact email address</Name>
                             <Description>The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
@@ -233,7 +233,7 @@
                         </Element>
                     </Element>
 
-                    <Element> <!-- Skal dette med -->
+                    <Element> <!-- Skal dette med? Spør Erlend -->
                         <Term>cac:Peron</Term>
                         <Name>Economic operator person</Name>
 
@@ -250,10 +250,8 @@
 
         <Element>
             <Term>cac:ContractingParty</Term>
-            <Name>Contracting body</Name>
-            <Description>
-                The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure
-                as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
+            <Name>Contracting authority party</Name>
+            <Description>The contracting party is the party requesting the qualification(s) document(s) in a DPS-process.</Description>
 
             <Element> <!-- MÅ fylle inn -->
                 <Term>cac:Party</Term>
@@ -264,9 +262,26 @@
                     <Name>Party identification</Name>
 
                     <Element>
+                        <Term>cbc:EndpointID</Term>
+                        <Name>Electronic address identifier of contracting authority</Name>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Value type="EXAMPLE">0192</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">123456785</Value>
+                    </Element>
+
+                    <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Contracting party identifier</Name>
-                        <Description>The identifier of the contacting party, as it is legally registered.</Description>
+                        <Name>Contracting authority identifier</Name>
+                        <Description>The identifier of the contacting party.</Description>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Value type="EXAMPLE">0192</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">123456785</Value>
                     </Element>
                 </Element>
 

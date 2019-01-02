@@ -9,8 +9,7 @@ The Dynamic Purchasing System (DPS) is a procurement procedure for procurement o
 * Step 2: Individual contracts are awarded.
 
 
-In addition, DPS can streamline procurement for both suppliers and contracting authorities.
-
+In addition, DPS can streamline procurement for both suppliers and contracting authorities. The DPS is more flexible
 
 
 
