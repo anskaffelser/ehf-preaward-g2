@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TendererQualificationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2"
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID></cbc:CustomizationID>
-    <cbc:ProfileID></cbc:ProfileID>
-    <cbc:ID>1597</cbc:ID>
-    <cbc:ContractFolderID>456</cbc:ContractFolderID>
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:dps:qualification-reception-confirmation:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>...</cbc:ProfileID>
+    <cbc:ID>4564</cbc:ID>
     <cbc:IssueDate>2018-09-04</cbc:IssueDate>
     <cbc:IssueTime>15:00:00</cbc:IssueTime>
 
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="0192">123455645</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0192">123456457</cbc:ID>
+            <cbc:ID schemeID="0192">987654325</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>X-Company AS</cbc:Name>
+            <cbc:Name>Snekker AS</cbc:Name>
         </cac:PartyName>
     </cac:SenderParty>
 
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="0192">546413154</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0192">566642475</cbc:ID>
+            <cbc:ID schemeID="0192">123456785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Y-Company AS</cbc:Name>
+            <cbc:Name>Haraldsen Snekker AS</cbc:Name>
         </cac:PartyName>
     </cac:ReceiverParty>
 
-    <cac:ResolutionDocumentReference>
-        <cbc:ID>132164654</cbc:ID>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:DocumentHash></cbc:DocumentHash>
-                <cbc:HashAlgorithmMethod></cbc:HashAlgorithmMethod>
-            </cac:ExternalReference>
-        </cac:Attachment>
-    </cac:ResolutionDocumentReference>
-
-    <cac:QualificationResolution>
-        <cbc:AdmissionCode>1234</cbc:AdmissionCode>
-        <cbc:ResolutionDate>2018-09-10</cbc:ResolutionDate>
-        <cbc:ResolutionTime>18:00:00</cbc:ResolutionTime>
-    </cac:QualificationResolution>
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>12345</cbc:ID>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
 
 
-</TendererQualificationResponse>
+</ApplicationResponse>

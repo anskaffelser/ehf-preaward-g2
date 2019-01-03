@@ -2,15 +2,14 @@
 <TendererQualification xmlns="urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2"
           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
           xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID></cbc:CustomizationID>
-    <cbc:ProfileID></cbc:ProfileID>
+    <cbc:CustomizationID>...</cbc:CustomizationID>
+    <cbc:ProfileID>...</cbc:ProfileID>
     <cbc:ID>123456</cbc:ID>
-    <cbc:ContractFolderID>12</cbc:ContractFolderID>
+    <cbc:ContractFolderID schemeID="TED_CN">12</cbc:ContractFolderID>
     <cbc:IssueDate>2018-12-04</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
     <cbc:Note>Filling some information.</cbc:Note>
-    <cbc:VersionID>2</cbc:VersionID>
+    <cbc:VersionID>2.0</cbc:VersionID>
 
     <cac:Signature>
         <cbc:ID>124</cbc:ID>
@@ -40,13 +39,9 @@
                         <cbc:IdentificationCode>NO</cbc:IdentificationCode>
                     </cac:Country>
                 </cac:PostalAddress>
-                <cac:PartyLegalEntity>
-                    <cbc:CompanyLegalForm>Company legal form X</cbc:CompanyLegalForm>
-                </cac:PartyLegalEntity>
                 <cac:Contact>
                     <cbc:Name>Harald Haraldsen</cbc:Name>
                     <cbc:Telephone>22554411</cbc:Telephone>
-                    <cbc:Telefax>22554412</cbc:Telefax>
                     <cbc:ElectronicMail>harald.haraldsen@snekker.no</cbc:ElectronicMail>
                 </cac:Contact>
                 <cac:Person>
@@ -58,11 +53,12 @@
 
     <cac:ContactingParty>
         <cac:Party>
+            <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID>1155</cbc:ID>
+                <cbc:ID schemeID="0192">123456785</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Y</cbc:Name>
+                <cbc:Name>Snekker HRS AS</cbc:Name>
             </cac:PartyName>
         </cac:Party>
     </cac:ContactingParty>
@@ -72,7 +68,7 @@
         <cbc:DocumentTypeCode>11111</cbc:DocumentTypeCode>
         <cbc:DocumentDescription>Additional document about...</cbc:DocumentDescription>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject></cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocument>
 
