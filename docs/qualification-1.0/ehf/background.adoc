@@ -2,16 +2,19 @@
 
 //Skriv kort om DPS- prosessen for brukerne.
 
-The Dynamic Purchasing System (DPS) is a procurement procedure for procurement of goods and services. DPS is a two stage process:
+The Dynamic Purchasing System (DPS) is a procurement procedure for procurement of goods and services, and will run as an electronic process.
+
+Contracting authorities can for example develop/establish a DPS. This process should be developed/established to identity different
+types of requirement, which can be divided into categories as products or services.
+
+In general, DPS is a two stage process:
 
 * Step 1: Initial setup- all suppliers who meet the selection criteria will be admitted to the DPS, and
 
 * Step 2: Individual contracts are awarded.
 
-
-In addition, DPS can streamline procurement for both suppliers and contracting authorities. The DPS is more flexible
-
-
+//In addition, DPS can streamline procurement for both suppliers and contracting authorities. The DPS is more flexible
+//In this specification, we consider about one process, called qualification, in the DPS process.
 
 
 
