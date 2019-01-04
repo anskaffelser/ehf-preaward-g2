@@ -1,0 +1,9 @@
+include::docs/qualification-1.0/settings.adoc[]
+
+= Additional Document Reference
+
+.UBL example of additional document reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/qualification.xml[tags=AdditionalDocumentReference]
+----

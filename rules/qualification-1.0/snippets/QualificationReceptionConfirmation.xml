@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <!-- Snippet file for EHF Qualification Reception Confirmation -->
+
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:dps:qualification-reception-confirmation:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>...</cbc:ProfileID>
+    <cbc:ID>122</cbc:ID>
+    <cbc:IssueDate>2019-01-08</cbc:IssueDate>
+    <cbc:IssueTime>15:00:00</cbc:IssueTime>
+
+    <!-- tag::SenderParty-Rec-Con[] -->
+    <cac:SenderParty>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0192">987654325</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>AST Books AS</cbc:Name>
+        </cac:PartyName>
+    </cac:SenderParty>
+    <!-- end::SenderParty-Rec-Con[] -->
+
+    <!-- tag::ReceiverParty-Rec-Con[] -->
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0192">123456785</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Library AS</cbc:Name>
+        </cac:PartyName>
+    </cac:ReceiverParty>
+    <!-- end::ReceiverParty-Rec-Con[] -->
+
+    <!-- tag::DocumentResponse-Rec-Con[] -->
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>12345</cbc:ID>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
+    <!-- end::DocumentResponse-Rec-Con[] -->
+
+
+</ApplicationResponse>

@@ -331,6 +331,22 @@
                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>An attached document embedded as binary object (Base64) or sent together with the qualification.</Description>
+
+                    <Attribute>
+                        <Term>mimeCode</Term>
+                        <Name>Attached object mime code</Name>
+                        <Description>The mime code of the attached document.</Description>
+                        <Reference type="CODE_LIST">MimeCode</Reference>
+                        <Value type="EXAMPLE">application/pdf</Value>
+                    </Attribute>
+
+                    <Attribute>
+                        <Term>filename</Term>
+                        <Name>Attached document filename</Name>
+                        <Description>The file name of the attached document.</Description>
+                        <Value type="EXAMPLE">doc1233.pdf</Value>
+                    </Attribute>
+
                     <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                 </Element>
             </Element>

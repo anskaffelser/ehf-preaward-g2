@@ -70,16 +70,16 @@
     </cac:ContactingParty>
     <!-- end::ContractingParty[] -->
 
-    <!-- tag::AdditionalDocument[] -->
-    <cac:AdditionalDocument>
+    <!-- tag::AdditionalDocumentReference[] -->
+    <cac:AdditionalDocumentReference>
         <cbc:ID>1547</cbc:ID>
         <cbc:DocumentTypeCode>1122</cbc:DocumentTypeCode>
         <cbc:DocumentDescription>Specification of the english grammar book.</cbc:DocumentDescription>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject>QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="grammer-3grade.pdf">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
-    </cac:AdditionalDocument>
-    <!-- tag::AdditionalDocument[] -->
+    </cac:AdditionalDocumentReference>
+    <!-- tag::AdditionalDocumentReference[] -->
 
 
 </TendererQualification>

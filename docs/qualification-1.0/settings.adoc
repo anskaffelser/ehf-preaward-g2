@@ -8,11 +8,14 @@
 :date-mandatory: dd.mm.yyyy
 
 
+// Folders
 :rules-dir: /tmp/rules
-:snippet-dir: ../../../rules/qualification-1.0/snippets
+:snippet-dir: ../rules/qualification-1.0/snippets
 
 
 // Difi
+:link-github: https://github.com/difi/ehf-preaward-g2
+:link-issues: https://github.com/difi/ehf-preaward-g2/issues
 :link-portal: https://vefa.difi.no/
 
 :name-difi-en: Agency of Public Management and eGovernment

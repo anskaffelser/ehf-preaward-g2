@@ -1,9 +1,0 @@
-include::docs/qualification-1.0/settings.adoc[]
-
-= Additional Document
-
-.UBL example of additional document
-[source, xml, indent=0]
-----
-include::../{snippet-dir}/qualification.xml[tags=AdditionalDocument]
-----

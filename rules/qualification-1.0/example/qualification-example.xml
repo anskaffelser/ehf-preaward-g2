@@ -63,13 +63,13 @@
         </cac:Party>
     </cac:ContactingParty>
 
-    <cac:AdditionalDocument>
+    <cac:AdditionalDocumentReference>
         <cbc:ID>1234</cbc:ID>
         <cbc:DocumentTypeCode>11111</cbc:DocumentTypeCode>
-        <cbc:DocumentDescription>Additional document about...</cbc:DocumentDescription>
+        <cbc:DocumentDescription>Details about bathroom work at the store.</cbc:DocumentDescription>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="snekker123.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
-    </cac:AdditionalDocument>
+    </cac:AdditionalDocumentReference>
 
 </TendererQualification>
