@@ -1,0 +1,9 @@
+include::docs/qualification-1.0/settings.adoc[]
+
+= Contracting Party
+
+.UBL example of contracting party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/qualification.xml[tags=ContractingParty]
+----

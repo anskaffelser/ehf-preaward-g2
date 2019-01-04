@@ -1,0 +1,9 @@
+include::docs/qualification-1.0/settings.adoc[]
+
+= Tenderer Party Qualification
+
+.UBL example of tenderer party qualification
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/qualification.xml[tags=TendererPartyQualification]
+----

@@ -1,0 +1,9 @@
+include::docs/qualification-1.0/settings.adoc[]
+
+= Sender Party
+
+.UBL example of sender party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/qualificationResponse.xml[tags=SenderParty-Res]
+----

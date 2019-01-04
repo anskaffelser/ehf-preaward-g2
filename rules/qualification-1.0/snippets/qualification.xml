@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TendererQualification xmlns="urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2"
-          xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+                       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                       xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <!-- Snippet file for EHF Qualification  -->
+
     <cbc:CustomizationID>...</cbc:CustomizationID>
     <cbc:ProfileID>...</cbc:ProfileID>
     <cbc:ID>123456</cbc:ID>
     <cbc:ContractFolderID schemeID="TED_CN">12</cbc:ContractFolderID>
-    <cbc:IssueDate>2018-12-04</cbc:IssueDate>
+    <cbc:IssueDate>2019-01-05</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
-    <cbc:Note>Filling some information.</cbc:Note>
+    <cbc:Note>Buying school books for 2nd grade.</cbc:Note>
     <cbc:VersionID>2.0</cbc:VersionID>
 
     <cac:Signature> <!-- Må sjekkes. TODO: ERLEND -->
@@ -20,6 +23,7 @@
         </cac:SignatoryParty>
     </cac:Signature>
 
+    <!-- tag::TendererPartyQualification[] -->
     <cac:TendererPartyQualification>
         <cac:MainQualifyingParty>
             <cac:Party>
@@ -27,30 +31,32 @@
                     <cbc:ID>123456</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName>
-                    <cbc:Name>Snekker AS</cbc:Name>
+                    <cbc:Name>AST Books AS</cbc:Name>
                 </cac:PartyName>
                 <cac:PostalAddress>
-                    <cbc:StreetName>Heimdalsgata 32</cbc:StreetName>
-                    <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
+                    <cbc:StreetName>Vigelandsveien 32</cbc:StreetName>
+                    <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
                     <cbc:CityName>Oslo</cbc:CityName>
-                    <cbc:PostalZone>0151</cbc:PostalZone>
+                    <cbc:PostalZone>0252</cbc:PostalZone>
                     <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
                     <cac:Country>
                         <cbc:IdentificationCode>NO</cbc:IdentificationCode>
                     </cac:Country>
                 </cac:PostalAddress>
                 <cac:Contact>
-                    <cbc:Name>Harald Haraldsen</cbc:Name>
-                    <cbc:Telephone>22554411</cbc:Telephone>
-                    <cbc:ElectronicMail>harald.haraldsen@snekker.no</cbc:ElectronicMail>
+                    <cbc:Name>Heidi Hansen Johnsen-Magnussen</cbc:Name>
+                    <cbc:Telephone>222111554</cbc:Telephone>
+                    <cbc:ElectronicMail>heidi.magnussen@books.no</cbc:ElectronicMail>
                 </cac:Contact>
                 <cac:Person>
-                    <cbc:RoleCode>123</cbc:RoleCode>
+                    <cbc:RoleCode>154</cbc:RoleCode>
                 </cac:Person>
             </cac:Party>
         </cac:MainQualifyingParty>
     </cac:TendererPartyQualification>
+    <!-- end::TendererPartyQualification[] -->
 
+    <!-- tag::ContractingParty[] -->
     <cac:ContactingParty>
         <cac:Party>
             <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
@@ -58,18 +64,22 @@
                 <cbc:ID schemeID="0192">123456785</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Snekker HRS AS</cbc:Name>
+                <cbc:Name>Library AS</cbc:Name>
             </cac:PartyName>
         </cac:Party>
     </cac:ContactingParty>
+    <!-- end::ContractingParty[] -->
 
+    <!-- tag::AdditionalDocument[] -->
     <cac:AdditionalDocument>
-        <cbc:ID>1234</cbc:ID>
-        <cbc:DocumentTypeCode>11111</cbc:DocumentTypeCode>
-        <cbc:DocumentDescription>Additional document about...</cbc:DocumentDescription>
+        <cbc:ID>1547</cbc:ID>
+        <cbc:DocumentTypeCode>1122</cbc:DocumentTypeCode>
+        <cbc:DocumentDescription>Specification of the english grammar book.</cbc:DocumentDescription>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject>QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocument>
+    <!-- tag::AdditionalDocument[] -->
+
 
 </TendererQualification>

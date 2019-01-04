@@ -77,7 +77,7 @@
             <Value type="EXAMPLE">2.0</Value>
         </Element>
 
-        <Element> <!-- Dette skal ikke med?  Hør med Erlend -->
+        <Element> <!-- Dette skal ikke med?  TODO: Erlend -->
             <Term>cac:Signature</Term>
             <Name>Tender signature</Name>
             <Description>The signature of the document. Used to add the signature for this tender document.</Description>
@@ -228,12 +228,12 @@
                         <Element cardinality="0..1">
                             <Term>cbc:ElectronicMail</Term>
                             <Name>Contact email address</Name>
-                            <Description>The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
+                            <Description>The e-mail address for the contact person.</Description>
                             <Value type="EXAMPLE">hans.hansen@contact.no</Value>
                         </Element>
                     </Element>
 
-                    <Element> <!-- Skal dette med? Spør Erlend -->
+                    <Element> <!-- Skal dette med? TODO: Erlend -->
                         <Term>cac:Peron</Term>
                         <Name>Economic operator person</Name>
 

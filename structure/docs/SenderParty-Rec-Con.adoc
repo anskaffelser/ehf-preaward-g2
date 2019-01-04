@@ -1,0 +1,9 @@
+include::docs/qualification-1.0/settings.adoc[]
+
+= SenderParty
+
+.UBL example of sender party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/QualificationReceptionConfirmation.xml[tags=SenderParty-Rec-Con]
+----

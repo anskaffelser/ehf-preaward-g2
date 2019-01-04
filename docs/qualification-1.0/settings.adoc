@@ -1,9 +1,11 @@
 :lang: en
 
-//include::../settings.adoc[]
-
 :doctitle: EHF Qualification
 
+:revision: 1.0.0
 :date-review: dd. mm.yyyy
 :date-release: dd.mm.yyyy
 :date-mandatory: dd.mm.yyyy
+
+//:rules-dir: /tmp/rules
+:snippet-dir: ../rules/snippets
