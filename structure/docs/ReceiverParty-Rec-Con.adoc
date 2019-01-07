@@ -5,5 +5,5 @@ include::docs/qualification-1.0/settings.adoc[]
 .UBL example of receiver party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/QualificationReceptionConfirmation.xml[tags=ReceiverParty-Rec-Con]
+include::../{snippet-dir-q}/QualificationReceptionConfirmation.xml[tags=ReceiverParty-Rec-Con]
 ----

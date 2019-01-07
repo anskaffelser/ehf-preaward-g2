@@ -5,5 +5,5 @@ include::docs/qualification-1.0/settings.adoc[]
 .UBL example of additional document reference
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/qualification.xml[tags=AdditionalDocumentReference]
+include::../{snippet-dir-q}/qualification.xml[tags=AdditionalDocumentReference]
 ----

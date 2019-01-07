@@ -5,7 +5,7 @@
 
 // Folders
 :rules-dir: /tmp/rules
-:snippet-dir: ../rules/qualification-1.0/snippets
+:snippet-dir-q: ../rules/qualification-1.0/snippets
 
 
 // Difi

@@ -5,5 +5,5 @@ include::docs/qualification-1.0/settings.adoc[]
 .UBL example of document response
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/QualificationReceptionConfirmation.xml[tags=DocumentResponse-Rec-Con]
+include::../{snippet-dir-q}/QualificationReceptionConfirmation.xml[tags=DocumentResponse-Rec-Con]
 ----
