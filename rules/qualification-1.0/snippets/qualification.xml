@@ -79,7 +79,7 @@
             <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="grammer-3grade.pdf">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
-    <!-- tag::AdditionalDocumentReference[] -->
+    <!-- end::AdditionalDocumentReference[] -->
 
 
 </TendererQualification>
