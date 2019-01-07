@@ -1,6 +1,6 @@
 :lang: en
 
-include::../settings.adoc[]
+include::docs/qualification-1.0/settings.adoc[]
 
 :doctitle: EHF Qualification
 
