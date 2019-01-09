@@ -45,6 +45,7 @@
                 <Term>schemeID</Term>
                 <Name>TED/Doffin scheme identifier</Name>
                <Reference type="CODE_LIST">ContractFolderType</Reference>
+               <Value type="EXAMPLE">TED_CN</Value>
             </Attribute>
 
             <Value type="EXAMPLE">18/0012</Value>
@@ -117,9 +118,19 @@
                 <Element cardinality="1..n">
                     <Term>cac:Party</Term>
                     <Name>Party information</Name>
-                    <!--<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary
-                        association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of
-                        services on the market. Information about the party submitting the qualification.</Description>-->
+
+                    <Element>
+                        <Term>cbc:EndpointID</Term>
+                        <Name>Electronic address identifier of economic operator.</Name>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Reference type="CODE_LIST">EAS</Reference>
+                            <Value type="EXAMPLE">0192</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">123456785</Value>
+                    </Element>
 
                     <Element cardinality="0..1">
                         <Term>cac:PartyIdentification</Term>
@@ -129,6 +140,13 @@
                             <Term>cbc:ID</Term>
                             <Name>Economic operator party identifier</Name>
                             <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+
+                            <Attribute>
+                                <Term>schemeID</Term>
+                                <Name>Scheme identifier</Name>
+                                <Reference type="CODE_LIST">ICD</Reference>
+                                <Value type="EXAMPLE">0192</Value>
+                            </Attribute>
                             <Value type="EXAMPLE">123456785</Value>
                         </Element>
                     </Element>
@@ -141,7 +159,7 @@
                             <Term>cbc:Name</Term>
                             <Name>Economic operator name</Name>
                             <Description>The name of the economic operator.</Description>
-                            <Value type="EXAMPLE">x Company AS</Value>
+                            <Value type="EXAMPLE">Bratz-pencil AS</Value>
                         </Element>
                     </Element>
 
@@ -191,6 +209,7 @@
                                 <Name>Country code</Name>
                                 <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
                                     "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
+                                <Reference type="CODE_LIST">ISO3166</Reference>
                                 <Value type="EXAMPLE">NO</Value>
                             </Element>
                         </Element>
@@ -253,7 +272,7 @@
             <Name>Contracting authority party</Name>
             <Description>The contracting party is the party requesting the qualification(s) document(s) in a DPS-process.</Description>
 
-            <Element> <!-- MÅ fylle inn -->
+            <Element>
                 <Term>cac:Party</Term>
                 <Name>Party information</Name>
 
@@ -263,6 +282,8 @@
 
                     <Attribute>
                         <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Reference type="CODE_LIST">EAS</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
@@ -272,7 +293,6 @@
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
 
-
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Contracting authority identifier</Name>
@@ -280,6 +300,8 @@
 
                         <Attribute>
                             <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
                         <Value type="EXAMPLE">123456785</Value>
@@ -294,6 +316,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Contracting body name</Name>
                         <Description>The name of the contracting body as it is registered.</Description>
+                        <Value type="EXAMPLE">Pencil company AS</Value>
                     </Element>
                 </Element>
             </Element>
@@ -310,7 +333,7 @@
                 <Value type="EXAMPLE">doc-21</Value>
             </Element>
 
-            <Element> <!-- MÅ fylle inn -->
+            <Element> <!-- MÅ fylles inn. TODO: Erlend -->
                 <Term>cbc:DocumentTypeCode</Term>
                 <Name>Document type code</Name>
                 <Description>A code specifying the type of the document. The mime type code.</Description>
@@ -320,7 +343,7 @@
                 <Term>cbc:DocumentDescription</Term>
                 <Name>Document description</Name>
                 <Description>A description of the referenced document, such as: timesheet, usage report etc.</Description>
-                <Value type="EXAMPLE">usage report</Value>
+                <Value type="EXAMPLE">Time list</Value>
             </Element>
 
             <Element cardinality="0..1">

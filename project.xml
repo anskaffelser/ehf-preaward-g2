@@ -221,13 +221,12 @@
         <Path>structure/codelist/ContractFolderType.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
-    <!--
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
--->
+
     <!-- Tags -->
     <Tag>
         <Identifier>get-evidence-1.0</Identifier>
