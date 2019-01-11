@@ -14,7 +14,6 @@
     <Document>
         <Term>ubl:TendererQualification</Term>
 
-
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
@@ -39,7 +38,7 @@
         <Element>
             <Term>cbc:ContractFolderID</Term>
             <Name>TED/Doffin reference</Name>
-            <Description>TED or Doffin reference number</Description>
+            <Description>TED or Doffin reference number.</Description>
 
            <Attribute>
                 <Term>schemeID</Term>
@@ -110,6 +109,7 @@
         <Element>
             <Term>cac:TendererPartyQualification</Term>
             <Name>Tenderer party qualification</Name>
+            <Property key="doc">structure/docs/TendererPartyQualification.adoc</Property>
 
             <Element>
                 <Term>cac:MainQualifyingParty</Term>
@@ -121,7 +121,7 @@
 
                     <Element>
                         <Term>cbc:EndpointID</Term>
-                        <Name>Electronic address identifier of economic operator.</Name>
+                        <Name>Electronic address identifier of economic operator</Name>
 
                         <Attribute>
                             <Term>schemeID</Term>
@@ -271,6 +271,7 @@
             <Term>cac:ContractingParty</Term>
             <Name>Contracting authority party</Name>
             <Description>The contracting party is the party requesting the qualification(s) document(s) in a DPS-process.</Description>
+            <Property key="doc">structure/docs/ContractingParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
@@ -325,6 +326,7 @@
         <Element cardinality="0..n">
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Provided document</Name>
+            <Property key="doc">structure/docs/AdditionalDocumentReference.adoc</Property>
 
             <Element>
                 <Term>cbc:ID</Term>
