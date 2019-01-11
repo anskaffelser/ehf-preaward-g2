@@ -53,11 +53,15 @@
         </Element>
 
         <Include select="sender val-ca endpoint identification name">part-dps/party.xml</Include>
+        <Property key="doc">structure/docs/SenderParty-Res.adoc</Property>
         <Include select="receiver val-eo endpoint identification name">part-dps/party.xml</Include>
+        <Property key="doc">structure/docs/ReceiverParty-Res.adoc</Property>
 
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
             <Name>Document response</Name>
+            <Property tag="ack" key="doc">structure/docs/DocumentResponse-Rec-Con.adoc</Property>
+            <Property tag="res" key="doc">structure/docs/DocumentResponse-Res.adoc</Property>
 
             <Element>
                 <Term>cac:Response</Term>
