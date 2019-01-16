@@ -12,4 +12,4 @@
 :snippet-dir-q: ../../../rules/qualification-1.0/snippets
 
 
-include::spec/shared/links.adoc[]
+include::qualification-1.0/ehf/shared/links.adoc[]
