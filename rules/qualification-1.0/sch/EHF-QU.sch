@@ -6,6 +6,6 @@
                 test="cbc:Description"
                 flag="fatal">All rejections MUST be explained.</assert>
     </rule>
-    
+
 
 </pattern>

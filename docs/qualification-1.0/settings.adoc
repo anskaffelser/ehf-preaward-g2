@@ -1,11 +1,15 @@
+:lang: en
 
-//
-//:revision: 1.0.0
-//:release:
+
+:doctitle: DPS Qualification
+
+:revision: 1.0.0
+:shared-dir: shared
+
 
 // Folders
 :rules-dir: /tmp/rules
 :snippet-dir-q: ../../../rules/qualification-1.0/snippets
 
 
-
+include::spec/shared/links.adoc[]

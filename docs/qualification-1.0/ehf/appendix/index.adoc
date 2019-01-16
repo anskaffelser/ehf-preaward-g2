@@ -1,0 +1,13 @@
+
+
+include::profiles/index.adoc[]
+
+
+// UBL 2.2
+include::../{shared-dir}/appendix/ubl.adoc[]
+
+* link:{ubl-qualification}[Qualification 1.0]
+* link:{ubl-qualification-response}[Qualification Response 1.0]
+* link:{ubl-qualification-reception-confirmation}[Qualification Reception Confirmation 1.0]
+
+

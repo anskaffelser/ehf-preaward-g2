@@ -4,7 +4,7 @@
 
 The Dynamic Purchasing System (DPS) is a procurement procedure for procurement of goods and services, and will run as an electronic process.
 
-Contracting authorities can for example develop/establish a DPS. This process should be developed/established to identity different
+Contracting authorities can for example establish a DPS. This process should be established to identify different
 types of requirement, which can be divided into categories as products or services.
 
 In general, DPS is a two stage process:

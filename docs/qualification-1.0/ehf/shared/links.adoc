@@ -1,0 +1,12 @@
+
+//UBL
+:ubl: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2]
+:link-oasis-ubl-22-resources: http://docs.oasis-open.org/ubl/os-UBL-2.2/
+
+
+//UBL Qualification
+:ubl-qualification: https://test-vefa.difi.no/ehf-pre/g2/syntax/qualification/tree/[UBL Qualification]
+:ubl-qualification-response: https://test-vefa.difi.no/ehf-pre/g2/syntax/qual-response/tree/[UBL Qualification-response]
+:ubl-qualification: https://test-vefa.difi.no/ehf-pre/g2/syntax/qual-res-ack/tree/[UBL Qualification-reception-confirmation]
+
+
