@@ -29,6 +29,9 @@ Example value sets:
             <Name tag="val-eo">Economic operator party</Name>
             <Name tag="val-ca">Contracting authority party</Name>
 
+            <Property tag="sender val-ca endpoint identification name" key="doc">structure/docs/SenderParty-Res.adoc</Property>
+            <Property tag="receiver val-eo endpoint identification name" key="doc">structure/docs/ReceiverParty-Res.adoc</Property>
+
             <Include>#party</Include>
         </Element>
     </Partial>
@@ -132,5 +135,7 @@ Example value sets:
             </Element>
         </Element>
     </Partial>
+
+
 
 </Partial>

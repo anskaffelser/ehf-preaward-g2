@@ -1,0 +1,7 @@
+<Config xmlns="urn:fdc:schunit.com:2018:v1">
+    <Schematron>
+        <Path>sch/common.sch</Path>
+
+        <Test>unit-EHF</Test>
+    </Schematron>
+</Config>

@@ -77,33 +77,6 @@
             <Value type="EXAMPLE">2.0</Value>
         </Element>
 
-        <Element> <!-- Dette skal ikke med?  TODO: Erlend -->
-            <Term>cac:Signature</Term>
-            <Name>Tender signature</Name>
-            <Description>The signature of the document. Used to add the signature for this tender document.</Description>
-
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Tender identifier</Name>
-                <Description>Identifier of the tender document.</Description>
-            </Element>
-
-            <Element>
-                <Term>cac:SignatoryParty</Term>
-                <Name>Signing party</Name>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Language</Term>
-                    <Name>Tender language</Name>
-
-                    <Element>
-                        <Term>cbc:Name</Term>
-                        <Name>Tender language name</Name>
-                        <Description>The language used to write the tender.</Description>
-                    </Element>
-                </Element>
-            </Element>
-        </Element>
 
 
         <Element>

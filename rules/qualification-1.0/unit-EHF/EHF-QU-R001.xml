@@ -1,0 +1,44 @@
+<Tests xmlns="urn:fdc:schunit.com:2018:v1">
+    <Scope/>
+
+    <Test>
+        <Success/>
+
+        <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:DocumentResponse>
+                <cac:Response>
+                    <cbc:ResponseCode>REJECTED</cbc:ResponseCode>
+                    <cbc:Description/>
+                </cac:Response>
+            </cac:DocumentResponse>
+        </ApplicationResponse>
+    </Test>
+    <Test>
+        <Trigger/>
+
+        <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:DocumentResponse>
+                <cac:Response>
+                    <cbc:ResponseCode>REJECTED</cbc:ResponseCode>
+                    <!-- <cbc:Description/> -->
+                </cac:Response>
+            </cac:DocumentResponse>
+        </ApplicationResponse>
+    </Test>
+    <Test>
+        <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:DocumentResponse>
+                <cac:Response>
+                    <cbc:ResponseCode>ACCEPTED</cbc:ResponseCode>
+                    <!-- <cbc:Description/> -->
+                </cac:Response>
+            </cac:DocumentResponse>
+        </ApplicationResponse>
+    </Test>
+</Tests>
