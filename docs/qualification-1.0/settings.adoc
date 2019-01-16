@@ -1,6 +1,5 @@
 :lang: en
 
-
 include::ehf/shared/links.adoc[]
 
 
