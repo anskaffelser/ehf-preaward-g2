@@ -1,5 +1,4 @@
 
-[[prof-03]]
 = Customization and Profile identifiers
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
@@ -12,16 +11,16 @@ In the table below you will find the values to be used as the specification iden
 
 
 | EHF Qualification
-| ...
-| ...
+| fyll inn
+| fyll inn
 
 | EHF Qualification Response
 | urn:fdc:difi.no:2017:ehf:dps:qualification-response:1.0
-| ...
+| fyll inn
 
 | EHF Qualification Reception Confirmation
 | urn:fdc:difi.no:2017:ehf:dps:qualification-reception-confirmation:1.0
-| ...
+| fyll inn
 
 
 |===

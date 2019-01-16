@@ -1,6 +1,9 @@
 :lang: en
 
 
+include::ehf/shared/links.adoc[]
+
+
 :doctitle: DPS Qualification
 
 :revision: 1.0.0
@@ -12,4 +15,3 @@
 :snippet-dir-q: ../../../rules/qualification-1.0/snippets
 
 
-include::qualification-1.0/ehf/shared/links.adoc[]
