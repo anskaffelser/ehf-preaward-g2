@@ -19,7 +19,7 @@
     <Namespace prefix="ubl" tag="pos">urn:oasis:names:specification:ubl:schema:xsd:AwardedNotification-2</Namespace>
     <Namespace prefix="ubl" tag="res">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="ubl" tag="neg">urn:oasis:names:specification:ubl:schema:xsd:UnawardedNotification-2</Namespace>
-    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
     <Document>
@@ -27,8 +27,9 @@
         <Term tag="res">ubl:ApplicationResponse</Term>
         <Term tag="neg">ubl:UnawardedNotification</Term>
 
-        <Include tag="pos neg" select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
+        <Include tag="pos" select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
         <Include tag="res" select="uuid issue-time">part-dps/basics.xml</Include>
+        <Include tag="neg" select="contract-folder uuid issue-time">part-dps/basics.xml</Include>
 
         <Include tag="pos neg" select="sender val-ca endpoint identification name">part-dps/party.xml</Include>
         <Include tag="pos neg" select="receiver val-eo endpoint identification name">part-dps/party.xml</Include>

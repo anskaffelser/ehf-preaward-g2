@@ -17,7 +17,7 @@
 
     <Namespace prefix="ubl" tag="req">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureRequest-2</Namespace>
     <Namespace prefix="ubl" tag="res">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureResponse-2</Namespace>
-    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
     <Document>
