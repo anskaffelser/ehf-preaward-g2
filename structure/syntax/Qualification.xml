@@ -36,6 +36,13 @@
         </Element>
 
         <Element>
+            <Term>cbc:UUID</Term>
+            <Name>Unique identifier</Name>
+            <Description>Universally unique identifier for the qualification document.</Description>
+            <Value type="EXAMPLE">8a6e9c28-628d-8p15-4g5d-367c8973ff2a</Value>
+        </Element>
+
+        <Element>
             <Term>cbc:ContractFolderID</Term>
             <Name>TED/Doffin reference</Name>
             <Description>TED or Doffin reference number.</Description>
@@ -64,11 +71,6 @@
             <Value type="EXAMPLE">12:00:00</Value>
         </Element>
 
-        <Element>
-            <Term>cbc:Note</Term>
-            <Name>Call for tender reference</Name>
-            <Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.</Description>
-        </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:VersionID</Term>
@@ -76,7 +78,6 @@
             <Description>Identifies the version of the document.</Description>
             <Value type="EXAMPLE">2.0</Value>
         </Element>
-
 
 
         <Element>

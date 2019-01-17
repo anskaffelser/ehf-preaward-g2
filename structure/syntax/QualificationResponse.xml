@@ -39,6 +39,13 @@
         </Element>
 
         <Element>
+            <Term>cbc:UUID</Term>
+            <Name>Unique identifier</Name>
+            <Description>Universally unique identifier for the qualification document.</Description>
+            <Value type="EXAMPLE">8a6e9c28-628d-4e64-4g5d-367c8973ff2a</Value>
+        </Element>
+
+        <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Response issue date</Name>
             <Description>The date on which the transaction instance was issued.</Description>
