@@ -1,7 +1,6 @@
 :lang: en
 
-include::ehf/shared/links.adoc[]
-
+include::../shared/links.adoc[]
 
 :doctitle: DPS Qualification
 
@@ -13,4 +12,17 @@ include::ehf/shared/links.adoc[]
 :rules-dir: /tmp/rules
 :snippet-dir-q: ../../../rules/qualification-1.0/snippets
 
+//UBL Qualification
+:ubl-qualification: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-ApplicationResponse-2.2.xsd[UBL ApplicationResponse 2.2 - Qualification Response and Reception confirmation schema]
+:ubl-qualification-response-rc: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-TendererQualification-2.2.xsd[UBL TendererQualification 2.2 - Qualification schema]
 
+
+//Internal = Code list
+:eaid: https://test-vefa.difi.no/ehf-pre/g2/codelist/EAS/[Code list for electronic address]
+:codelist-ICD: https://test-vefa.difi.no/ehf-pre/g2/codelist/ICD/[ICD list]
+:link-codelist: https://test-vefa.difi.no/ehf-pre/g2/codelist/[Code list section]
+
+
+//ISO:
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]

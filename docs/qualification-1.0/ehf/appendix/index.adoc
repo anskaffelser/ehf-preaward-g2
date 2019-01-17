@@ -4,8 +4,7 @@ include::profiles/index.adoc[]
 
 
 // UBL 2.2
-//include::../{shared-dir}/appendix/ubl.adoc[]
-include::../{shared-dir}/appendix/ubl.adoc[]
+include::../../../shared/appendix/ubl.adoc[]
 
 
 * link:{ubl-qualification}
