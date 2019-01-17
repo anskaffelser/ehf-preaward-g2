@@ -195,6 +195,7 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
         <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
