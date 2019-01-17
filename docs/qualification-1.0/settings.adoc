@@ -1,11 +1,10 @@
-:lang: en
 
 include::../shared/links.adoc[]
 
 :doctitle: DPS Qualification
 
 :revision: 1.0.0
-:shared-dir: shared
+//:shared-dir: shared
 
 
 // Folders
