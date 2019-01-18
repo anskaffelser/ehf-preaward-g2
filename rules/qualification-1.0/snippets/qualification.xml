@@ -9,6 +9,7 @@
     <cbc:CustomizationID>...</cbc:CustomizationID>
     <cbc:ProfileID>...</cbc:ProfileID>
     <cbc:ID>123456</cbc:ID>
+    <cbc:UUID>8a6e9d15-5e1d-4ea1-4g5d-123c4725ff2e</cbc:UUID>
     <cbc:ContractFolderID schemeID="TED_CN">12</cbc:ContractFolderID>
     <cbc:IssueDate>2019-01-05</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
