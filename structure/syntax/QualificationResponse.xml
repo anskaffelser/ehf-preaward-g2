@@ -38,7 +38,7 @@
             <Value type="EXAMPLE">123554</Value>
         </Element>
 
-        <Element>
+        <Element cardinality="0..1">
             <Term>cbc:UUID</Term>
             <Name>Unique identifier</Name>
             <Description>Universally unique identifier for the qualification document.</Description>
