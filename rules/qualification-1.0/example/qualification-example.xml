@@ -14,15 +14,6 @@
     <cbc:Note>Filling some information.</cbc:Note>
     <cbc:VersionID>2.0</cbc:VersionID>
 
-    <cac:Signature> <!-- Må sjekkes. TODO: ERLEND -->
-        <cbc:ID>124</cbc:ID>
-        <cac:SignatoryParty>
-            <cac:Language>
-                <cbc:Name>Norwegian</cbc:Name>
-            </cac:Language>
-        </cac:SignatoryParty>
-    </cac:Signature>
-
     <cac:TendererPartyQualification>
         <cac:MainQualifyingParty>
             <cac:Party>

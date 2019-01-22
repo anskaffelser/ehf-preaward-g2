@@ -16,15 +16,6 @@
     <cbc:Note>Buying school books for 2nd grade.</cbc:Note>
     <cbc:VersionID>2.0</cbc:VersionID>
 
-    <cac:Signature> <!-- Må sjekkes. Hør med Erlend.-->
-        <cbc:ID>124</cbc:ID>
-        <cac:SignatoryParty>
-            <cac:Language>
-                <cbc:Name>Norwegian</cbc:Name>
-            </cac:Language>
-        </cac:SignatoryParty>
-    </cac:Signature>
-
     <!-- tag::TendererPartyQualification[] -->
     <cac:TendererPartyQualification>
         <cac:MainQualifyingParty>
