@@ -9,7 +9,7 @@ All party identifiers (`cac:PartyIdentification/cbc:ID`) and party legal registr
 [source,xml, indent="0"]
 ----
 <cac:PartyIdentification>
-	<cbc:ID schemeID="0088">5790000435968</cbc:ID> <1>
+	<cbc:ID schemeID="0192">123456785</cbc:ID> <1>
 </cac:PartyIdentification>
 ----
 <1> schemeID attribute is optional, but when used, the codes must be from {codelist-ICD}
