@@ -60,10 +60,10 @@
         </Element>
 
         <Include select="sender val-ca endpoint identification name">part-dps/party.xml</Include>
-        <Property tag="ack" key="doc">structure/docs/SenderParty-Res.adoc</Property>
+        <Property tag="sender val-ca endpoint identification name" key="doc">structure/docs/SenderParty-Res.adoc</Property>
 
         <Include select="receiver val-eo endpoint identification name">part-dps/party.xml</Include>
-        <Property tag="ack" key="doc">structure/docs/ReceiverParty-Res.adoc</Property>
+        <Property tag="receiver val-eo endpoint identification name" key="doc">structure/docs/ReceiverParty-Res.adoc</Property>
 
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
