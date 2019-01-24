@@ -12,9 +12,7 @@ In general, DPS is a two stage process:
 
 //In addition, DPS can streamline procurement for both suppliers and contracting authorities. The DPS is more flexible
 //In this specification, we consider about one process, called qualification, in the DPS process.
-
-
-For example, Contracting authorities can establish a DPS. This process should be established to identify different types of requirement, which can be divided into categories as products, works or services.
+//For example, Contracting authorities can establish a DPS. This process should be established to identify different types of requirement, which can be divided into categories as products, works or services.
 
 To get deeply understanding of this process read use case 2 (section 4.2.2) - describes an example of DPS process.
 

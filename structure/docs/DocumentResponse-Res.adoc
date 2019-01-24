@@ -7,3 +7,4 @@ include::docs/qualification-1.0/settings.adoc[]
 ----
 include::../{snippet-dir-q}/QualificationResponse.xml[tags=DocumentResponse-Res]
 ----
+
