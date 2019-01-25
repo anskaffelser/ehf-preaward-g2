@@ -42,9 +42,6 @@
                     <cbc:Telephone>222111554</cbc:Telephone>
                     <cbc:ElectronicMail>heidi.magnussen@books.no</cbc:ElectronicMail>
                 </cac:Contact>
-                <cac:Person>
-                    <cbc:RoleCode>154</cbc:RoleCode>
-                </cac:Person>
             </cac:Party>
         </cac:MainQualifyingParty>
     </cac:TendererPartyQualification>

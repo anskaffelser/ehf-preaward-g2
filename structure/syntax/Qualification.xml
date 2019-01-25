@@ -226,16 +226,6 @@
                         </Element>
                     </Element>
 
-                    <Element> <!-- Skal dette med? TODO: Erlend -->
-                        <Term>cac:Peron</Term>
-                        <Name>Economic operator person</Name>
-
-                        <Element cardinality="0..1">
-                            <Term>cbc:RoleCode</Term>
-                            <Name>Economic operator role code</Name>
-                            <Description>The role of the economic operator when bidding from a consortium.</Description>
-                        </Element>
-                    </Element>
 
                 </Element>
             </Element>

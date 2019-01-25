@@ -38,9 +38,6 @@
                     <cbc:Telephone>22554411</cbc:Telephone>
                     <cbc:ElectronicMail>harald.haraldsen@snekker.no</cbc:ElectronicMail>
                 </cac:Contact>
-                <cac:Person>
-                    <cbc:RoleCode>123</cbc:RoleCode>
-                </cac:Person>
             </cac:Party>
         </cac:MainQualifyingParty>
     </cac:TendererPartyQualification>
