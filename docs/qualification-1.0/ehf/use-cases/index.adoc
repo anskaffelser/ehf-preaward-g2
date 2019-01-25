@@ -7,6 +7,30 @@ The following diagram illustrates DPS Qualification:
 
 image::images/dps-processdiagram.png[align="center"]
 
+
+{empty} +
+
+Shortly: ::
+
+. Economic operator sends a Qualification document by using "EHF Qualification".
+
+. Contracting Authority receives this document and prepare for Qualification confirmation.
+
+. Contracting Authority sends a confirmation by using "EHF Qualification Reception Confirmation," and Economic operator receives this message.
+
+. Contracting Authority check the evidence. There are two possibilities:
+
+.. If the evidence fulfill the requirements, then the Contracting Authority sends a positive "EHF Qualification Response" by using response code "ACCEPTED"
+(from codelist Positive or negative response code), or
+
+.. If the evidence do not fulfill the requirements, then the Contracting Authority sends a negative "EHF Qualification Response" by using response code "REJECTED"
+(from codelist Positive or negative response code).
+
+. In both cases, Economic operator receives the "EHF Qualification Response" message. The only difference is that: if economic operator receives a negative response, they need to
+update the evidence in the database and prepare a new evidence.
+
+{empty} +
+
 == Use Cases
 
 === Use Case 1- Restricted Procedure
