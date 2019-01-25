@@ -34,7 +34,7 @@
             <cbc:Name>Library AS</cbc:Name>
         </cac:PartyName>
     </cac:ReceiverParty>
-    <!-- end::ReceiverParty-Res[]-->
+    <!-- end::ReceiverParty-Res[] -->
 
     <!-- tag::DocumentResponse-Res[] -->
     <cac:DocumentResponse>
