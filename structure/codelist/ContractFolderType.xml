@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Contract folder identifier</Title>
-    <Identifier>ContractFolderType</Identifier>
-    <Version>1.0</Version>
-    <Agency>Difi</Agency>
-    <Subset>EHF</Subset>
+<Title>Contract folder identifier</Title>
+<Identifier>ContractFolderType</Identifier>
+<Version>1.0</Version>
+<Agency>Difi</Agency>
+<Subset>EHF</Subset>
 
-    <Code>
-        <Id>TED_CN</Id>
-        <Name>TED</Name>
-    </Code>
-    <Code>
-        <Id>NGOJ</Id>
-        <Name>Doffin</Name>
-    </Code>
+<Code>
+    <Id>TED_CN</Id>
+    <Name>TED</Name>
+</Code>
+<Code>
+    <Id>NGOJ</Id>
+    <Name>Doffin</Name>
+</Code>
 </CodeList>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <TendererQualification
         xmlns="urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -11,19 +12,19 @@
     <cbc:ContractFolderID schemeID="TED_CN">12</cbc:ContractFolderID>
     <cbc:IssueDate>2018-12-04</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
-    <cbc:Note>Filling some information.</cbc:Note>
     <cbc:VersionID>2.0</cbc:VersionID>
 
     <cac:TendererPartyQualification>
         <cac:MainQualifyingParty>
             <cac:Party>
+                <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
                 <cac:PartyIdentification>
                     <cbc:ID>123456</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName>
                     <cbc:Name>Snekker AS</cbc:Name>
                 </cac:PartyName>
-                <cac:PostalAddress>
+                <cac:PostalAddress>a
                     <cbc:StreetName>Heimdalsgata 32</cbc:StreetName>
                     <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
                     <cbc:CityName>Oslo</cbc:CityName>
