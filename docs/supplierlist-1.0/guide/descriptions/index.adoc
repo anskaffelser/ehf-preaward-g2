@@ -1,0 +1,11 @@
+
+= Detailed Descriptions
+
+This chapter describes selected parts of the information contents of the EHF Supplier list.
+
+:leveloffset: +1
+
+include::partiesandroles.adoc[]
+
+
+:leveloffset: -1

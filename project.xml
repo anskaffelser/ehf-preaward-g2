@@ -18,6 +18,13 @@
         <Tag>dps-qualification</Tag>
     </Resource>
 
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>supplierlist-1.0/guide/</Path>
+        <Title>Implementation Guideline</Title>
+        <Tag>supplierlist-1.0</Tag>
+    </Resource>
+
     <!-- Syntax -->
     <Resource>
         <Type>Syntax-1</Type>
@@ -252,6 +259,10 @@
         <Identifier>dps-unawarded</Identifier>
         <Title>DPS Unawarded Notification</Title>
         <Description>Process to notify loosing parties in a DPS procurement.</Description>
+    </Tag>
+    <Tag>
+        <Identifier>supplierlist-1.0</Identifier>
+        <Title>EHF Supplier list 1.0</Title>
     </Tag>
 
 </Project>
