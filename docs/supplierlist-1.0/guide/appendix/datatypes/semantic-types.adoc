@@ -1,4 +1,4 @@
-[appendix]
+
 = Semantic data types
 
 The different semantic data types are described in the tables below, where various features such as attributes, format, and decimals as well as the basic type are defined for each semantic data type. They are based on

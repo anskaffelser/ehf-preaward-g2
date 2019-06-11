@@ -1,11 +1,7 @@
 [appendix]
 
-:leveloffset: +1
+include::datatypes/index.adoc[]
 
 include::profiles/index.adoc[]
 
 include::ubl-2.2.adoc[]
-
-include::datatypes/index.adoc[]
-
-:leveloffset: -1

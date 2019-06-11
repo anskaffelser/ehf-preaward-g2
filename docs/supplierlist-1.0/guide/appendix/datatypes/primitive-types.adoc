@@ -1,4 +1,4 @@
-[appendix]
+
 = Primitive types
 
 Semantic data type content may be of the following primitive types. These primitive types were taken from

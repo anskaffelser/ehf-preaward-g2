@@ -10,7 +10,6 @@ Supplier::
 The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
 
 
-
 ****
 
 The following diagram illustrates the parties and roles involved in supplier list.
