@@ -4,4 +4,4 @@ include::datatypes/index.adoc[]
 
 include::profiles/index.adoc[]
 
-include::ubl-2.2.adoc[]
+//include::ubl-2.2.adoc[]

@@ -5,7 +5,7 @@ include::../settings.adoc[]
 
 = {doctitle}
 v{revision}
-:description: This document describes the new version of EHF Supplier list (called "EHF Leverandørliste"). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
+:description: This document describes EHF Supplier list (called "EHF Leverandørliste" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :toc: left
@@ -24,10 +24,12 @@ v{revision}
 
 :leveloffset: +1
 
+include::introduction.adoc[]
+
 include::usecase/index.adoc[]
 
 include::descriptions/index.adoc[]
 
-//include::appendix/index.aodc[]
+include::appendix/index.adoc[]
 
 :leveloffset: -1
