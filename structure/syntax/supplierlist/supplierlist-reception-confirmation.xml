@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Term>supplierlist-reception-confirmation</Term>
+    <Name>Supplier list Reception Confirmation</Name>
+
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+    <Document>
+        <Term>ubl:ApplicationResponse</Term>
+
+        <Element> <!-- New -->
+            <Term>cbc:CustomizationID</Term>
+            <Name>Document Identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <Value type="FIXED">...</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Process identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.</Description>
+            <Value type="FIXED">...</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Document Identifier</Name>
+            <Description>Document identifier for referencing the document instance.</Description>
+            <Value type="EXAMPLE">1234</Value>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:UUID</Term>
+            <Name>Unique Identifier</Name>
+            <Description>Universal unique identifier (UUID) for the supplier list document.</Description>
+            <Value type="EXAMPLE">894eaa63-1aad-4ed7-8e5b-6a781f74754b</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Issue date</Name>
+            <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
+            <Value type="EXAMPLE">2019-02-02</Value>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:IssueTime</Term>
+            <Name>Issue Time</Name>
+            <Description>The time on which the transaction instance was issued.</Description>
+            <Value type="EXAMPLE">12:00:00</Value>
+        </Element>
+
+        <Element>
+            <Term>cac:SenderParty</Term>
+            <Name>Sender Party</Name>
+            <Description>Contracting Authority connected to Central Purchasing body</Description>
+
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Electronic address identifier</Name>
+                <Description>The electronic address identifier of the Contracting Authority.</Description>
+
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+                <Value type="EXAMPLE">987654325</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PartyName</Term>
+                <Name>Party Name</Name>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting Authority Name</Name>
+                    <Description>The name of the Contracting Authority that sends the reception/confirmation message.</Description>
+                    <Value type="EXAMPLE">XYZ AS</Value>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:Contact</Term>
+                <Name>Contact Information</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Contact Name</Name>
+                    <Description>The name of the contact person.</Description>
+                    <Value type="EXAMPLE">Ola Nordmann</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Telephone</Term>
+                    <Name>Contact Telephone Number</Name>
+                    <Description>The contact person's phone number.</Description>
+                    <Value type="EXAMPLE">99999988</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>ElectronicMail</Name>
+                    <Description>The contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">ola.nordmann@xyz.no</Value>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element>
+            <Term>cac:ReceiverParty</Term>
+            <Name>Central Purchasing Body</Name>
+
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Electronic Address Identifier</Name>
+                <Description>The electronic address identifier of the Central Purchasing Body.</Description>
+
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+                <Value type="EXAMPLE">123456785</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PartyName</Term>
+                <Name>Party Name</Name>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Central Purchasing body Name</Name>
+                    <Description>The name of the central purchasing body that receives the reception/confirmation message.</Description>
+                    <Value type="EXAMPLE">X Innkjøpssentral</Value>
+                </Element>
+            </Element>
+        </Element>
+
+
+        <Element cardinality="1..n">
+            <Term>cac:DocumentResponse</Term>
+            <Name>Document Response</Name>
+
+            <Element>
+                <Term>cac:Response</Term>
+                <Name>Response</Name>
+
+                <Element>
+                    <Term>cbc:ResponseCode</Term>
+                    <Name>Response code</Name>
+                    <Description>A code that indicates the reception of the Supplier list.</Description>
+                    <Value type="FIXED">RECEIVED</Value>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:DocumentReference</Term>
+                <Name>Supplier list Reference</Name>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Supplier list reference identifier</Name>
+                    <Description>An identifier for the referenced Supplier list.</Description>
+                    <Value type="EXAMPLE">854</Value>
+                </Element>
+            </Element>
+        </Element>
+
+    </Document>
+</Syntax>
