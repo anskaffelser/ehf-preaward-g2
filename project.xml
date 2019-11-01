@@ -104,13 +104,13 @@
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
-        <Type>Structure-1</Type>
+        <Type>Syntax-1</Type>
         <Path>structure/syntax/supplierlist/supplierlist.xml</Path>
         <Title>EHF Supplier list</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
     <Resource>
-        <Type>Structure-1</Type>
+        <Type>Syntax-1</Type>
         <Path>structure/syntax/supplierlist/supplierlist-reception-confirmation.xml</Path>
         <Title>EHF Supplier list Reception Confirmation</Title>
         <Tag>supplierlist-1.0</Tag>
