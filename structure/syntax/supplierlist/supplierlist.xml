@@ -17,9 +17,9 @@
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Scheme identifier</Name>
-                <Value>...</Value>
+                <Value>123</Value>  <!-- Need to change -->
             </Attribute>
-            <Value type="FIXED">...</Value>
+            <!--<Value type="FIXED">...</Value>-->
         </Element>
         
         <Element cardinality="0..1">
@@ -30,9 +30,9 @@
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Scheme identifier</Name>
-                <Value>...</Value>
+                <Value>123</Value><!-- Need to change -->
             </Attribute>
-            <Value type="FIXED">...</Value>
+           <!-- <Value type="FIXED">...</Value> -->
 
         </Element>
         
@@ -86,7 +86,7 @@
                 <Term>par-list:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Central Purchasing Body.</Description>
-                <Value type="EXAMPLE">ABC AS</Value>
+                <Value type="EXAMPLE">ABC Innkjøpssentral</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -97,18 +97,21 @@
                     <Term>par-list:Name</Term>
                     <Name>Name</Name>
                     <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">Janne Jensen</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>par-list:Telephone</Term>
                     <Name>Telephone</Name>
                     <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">99999977</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>par-list:ElectronicMail</Term>
                     <Name>Electronic mail</Name>
                     <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">janne.jensen@abc.no</Value>
                 </Element>
             </Element>
         </Element>
@@ -127,12 +130,14 @@
                     <Name>Scheme identifier</Name>
                     <Value type="FIXED">0192</Value>
                 </Attribute>
+                <Value type="EXAMPLE">987654325</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>par-list:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Contracting Authority.</Description>
+                <Value type="EXAMPLE">QYZ AS</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -141,20 +146,23 @@
 
                 <Element cardinality="0..1">
                     <Term>par-list:Name</Term>
-                    <Name>Name</Name>
+                    <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">Even Evensen</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>par-list:Telephone</Term>
-                    <Name>Telephone</Name>
+                    <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">99551133</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>par-list:ElectronicMail</Term>
-                    <Name>Electronic mail</Name>
+                    <Name>Contact Email Address</Name>
                     <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">even.evensen@qyz.no</Value>
                 </Element>
             </Element>
         </Element>
@@ -171,7 +179,7 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
-                    <Value>...</Value>
+                    <Value>123</Value>  <!-- Need to change -->
                 </Attribute>
             </Element>
 
@@ -192,7 +200,7 @@
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
-                    <Value>0192</Value>
+                    <Value>123</Value> <!-- Need to change -->
                 </Attribute>
             </Element>
 
@@ -215,12 +223,20 @@
                     <Term>par-list:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>Electronic Address Identifier of the Participating Party in DPS.</Description>
+
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Value type="FIXED">0192</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">123456785</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>par-list:Name</Term>
                     <Name>Name</Name>
                     <Description>The name of the Participating party in DPS.</Description>
+                    <Value type="EXAMPLE">X Supplier</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -229,20 +245,23 @@
 
                     <Element cardinality="0..1">
                         <Term>par-list:Name</Term>
-                        <Name>Name</Name>
+                        <Name>Contact Name</Name>
                         <Description>Contact person's name.</Description>
+                        <Value type="EXAMPLE">Ola Nordmann</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>par-list:Telephone</Term>
-                        <Name>Telephone</Name>
+                        <Name>Contact Telephone number</Name>
                         <Description>Contact person's telephone number.</Description>
+                        <Value type="EXAMPLE">99663366</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>par-list:ElectronicMail</Term>
-                        <Name>Electronic mail</Name>
+                        <Name>Contact Email Address</Name>
                         <Description>Contact person's e-mail address.</Description>
+                        <Value type="EXAMPLE">ola.nordmann@x-supplier.com</Value>
                     </Element>
                 </Element>
             </Element>
@@ -258,7 +277,7 @@
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Value>...</Value>
+                        <Value>123</Value>  <!-- Need to change -->
                     </Attribute>
                 </Element>
 
@@ -279,7 +298,7 @@
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Value>...</Value>
+                        <Value>123</Value> <!-- Need to change -->
                     </Attribute>
                 </Element>
 
