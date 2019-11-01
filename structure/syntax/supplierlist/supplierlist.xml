@@ -5,13 +5,12 @@
     <Name>Supplier list</Name>
 
     <Namespace prefix="par-list">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
-    <Namespace prefix="xs">http://www.w3.org/2001/XMLSchema</Namespace>
-    
+
     <Document>
         <Term>par-list:ParticipantList</Term>
         
         <Element cardinality="0..1">
-            <Term>CustomizationID</Term>
+            <Term>par-list:CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
 
@@ -24,7 +23,7 @@
         </Element>
         
         <Element cardinality="0..1">
-            <Term>ProfileID</Term>
+            <Term>par-list:ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
 
@@ -38,40 +37,40 @@
         </Element>
         
         <Element>
-            <Term>ID</Term>
+            <Term>par-list:ID</Term>
             <Name>Document Identifier</Name>
             <Description>Document identifier for referencing the document instance.</Description>
             <Value type="EXAMPLE">951753</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>UUID</Term>
+            <Term>par-list:UUID</Term>
             <Name>Unique Identifier</Name>
             <Description>Universal unique identifier (UUID) for the supplier list document.</Description>
             <Value type="EXAMPLE">7c15a808-decc-4382-a0d1-d5ff2c605f1e</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>IssueDate</Term>
+            <Term>par-list:IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2019-11-12</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>IssueTime</Term>
+            <Term>par-list:IssueTime</Term>
             <Name>Issue Time</Name>
             <Description>The time on which the transaction instance was issued.</Description>
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>SenderParty</Term>
+            <Term>par-list:SenderParty</Term>
             <Name>Central Purchasing Body</Name>
 
 
             <Element cardinality="0..1">
-                <Term>EndpointID</Term>
+                <Term>par-list:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the Central Purchasing Body.</Description>
 
@@ -84,30 +83,30 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Name</Term>
+                <Term>par-list:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Central Purchasing Body.</Description>
                 <Value type="EXAMPLE">ABC AS</Value>
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Contact</Term>
+                <Term>par-list:Contact</Term>
                 <Name>Contact Information</Name>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>par-list:Name</Term>
                     <Name>Name</Name>
                     <Description>Contact person's name.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Telephone</Term>
+                    <Term>par-list:Telephone</Term>
                     <Name>Telephone</Name>
                     <Description>Contact person's telephone number.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>ElectronicMail</Term>
+                    <Term>par-list:ElectronicMail</Term>
                     <Name>Electronic mail</Name>
                     <Description>Contact person's e-mail address.</Description>
                 </Element>
@@ -115,11 +114,11 @@
         </Element>
 
         <Element cardinality="0..1">
-            <Term>ReceiverParty</Term>
+            <Term>par-list:ReceiverParty</Term>
             <Name>Contracting Authority Connected to Central Purchasing Body</Name>
 
             <Element cardinality="0..1">
-                <Term>EndpointID</Term>
+                <Term>par-list:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the Contracting Authority.</Description>
 
@@ -131,29 +130,29 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Name</Term>
+                <Term>par-list:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Contracting Authority.</Description>
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Contact</Term>
+                <Term>par-list:Contact</Term>
                 <Name>Contact Information</Name>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>par-list:Name</Term>
                     <Name>Name</Name>
                     <Description>Contact person's name.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Telephone</Term>
+                    <Term>par-list:Telephone</Term>
                     <Name>Telephone</Name>
                     <Description>Contact person's telephone number.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>ElectronicMail</Term>
+                    <Term>par-list:ElectronicMail</Term>
                     <Name>Electronic mail</Name>
                     <Description>Contact person's e-mail address.</Description>
                 </Element>
@@ -161,11 +160,11 @@
         </Element>
 
         <Element cardinality="0..n">
-            <Term>FolderReference</Term>
+            <Term>par-list:FolderReference</Term>
             <Name>Folder Reference</Name>
 
             <Element>
-                <Term>ID</Term>
+                <Term>par-list:ID</Term>
                 <Name>Identifier</Name>
                 <Description>Doffin or Ted Reference number.</Description> <!-- er dette riktig? -->
 
@@ -177,17 +176,17 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Type</Term>
+                <Term>par-list:Type</Term>
                 <Name>Type</Name>
             </Element>
         </Element>
 
         <Element cardinality="0..n">
-            <Term>AdditionReference</Term>
+            <Term>par-list:AdditionReference</Term>
             <Name>Addition reference</Name>
 
             <Element>
-                <Term>ID</Term>
+                <Term>par-list:ID</Term>
                 <Name>Identifier</Name>
 
                 <Attribute>
@@ -198,50 +197,50 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Type</Term>
+                <Term>par-list:Type</Term>
                 <Name>Type</Name>
             </Element>
         </Element>
 
 
         <Element>
-            <Term>ParticipatingParty</Term>
+            <Term>par-list:ParticipatingParty</Term>
             <Name>Participating Party in DPS</Name>
 
             <Element>
-                <Term>Party</Term>
+                <Term>par-list:Party</Term>
                 <Name>Party</Name>
 
                 <Element cardinality="0..1">
-                    <Term>EndpointID</Term>
+                    <Term>par-list:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>Electronic Address Identifier of the Participating Party in DPS.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>par-list:Name</Term>
                     <Name>Name</Name>
                     <Description>The name of the Participating party in DPS.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Contact</Term>
+                    <Term>par-list:Contact</Term>
                     <Name>Contact Information of the Participating Party in DPS</Name>
 
                     <Element cardinality="0..1">
-                        <Term>Name</Term>
+                        <Term>par-list:Name</Term>
                         <Name>Name</Name>
                         <Description>Contact person's name.</Description>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>Telephone</Term>
+                        <Term>par-list:Telephone</Term>
                         <Name>Telephone</Name>
                         <Description>Contact person's telephone number.</Description>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>ElectronicMail</Term>
+                        <Term>par-list:ElectronicMail</Term>
                         <Name>Electronic mail</Name>
                         <Description>Contact person's e-mail address.</Description>
                     </Element>
@@ -249,11 +248,11 @@
             </Element>
 
             <Element cardinality="0..n">
-                <Term>FolderReference</Term>
+                <Term>par-list:FolderReference</Term>
                 <Name>Folder Reference</Name>
 
                 <Element>
-                    <Term>ID</Term>
+                    <Term>par-list:ID</Term>
                     <Name>Identifier</Name>
 
                     <Attribute>
@@ -264,17 +263,17 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Type</Term>
+                    <Term>par-list:Type</Term>
                     <Name>Type</Name>
                 </Element>
             </Element>
 
             <Element cardinality="0..n">
-                <Term>AdditionReference</Term>
+                <Term>par-list:AdditionReference</Term>
                 <Name>Addition Reference</Name>
 
                 <Element>
-                    <Term>ID</Term>
+                    <Term>par-list:ID</Term>
                     <Name>Identifier</Name>
 
                     <Attribute>
@@ -285,7 +284,7 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Type</Term>
+                    <Term>par-list:Type</Term>
                     <Name>Type</Name>
                 </Element>
             </Element>
