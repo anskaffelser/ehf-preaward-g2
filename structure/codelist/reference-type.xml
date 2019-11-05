@@ -8,17 +8,17 @@
 
 
     <Code>
-        <ID>TED</ID>
+        <Id>TED</Id>
         <Name>TED Reference number</Name>
     </Code>
 
     <Code>
-        <ID>DOFFIN</ID>
+        <Id>DOFFIN</Id>
         <Name>Doffin Reference number</Name>
     </Code>
 
     <Code>
-        <ID>LOT</ID>
+        <Id>LOT</Id>
         <Name>Lot Reference</Name>
     </Code>
 
