@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+//= Additional Item Property
+
+.UBL example of Sender Party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist.xml[tags=SenderParty]
+----

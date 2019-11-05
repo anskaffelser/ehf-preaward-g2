@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApplicationResponse
+        xmnls="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <cbc:CustomizationID>...</cbc:CustomizationID>
+    <cbc:ProfileID>...</cbc:ProfileID>
+    <cbc:ID>1</cbc:ID>
+    <cbc:UUID>894eaa63-1aad-4ed7-8e5b-6a781f74754b</cbc:UUID>
+    <cbc:IssueDate>2019-11-01</cbc:IssueDate>
+    <cbc:IssueTime>12:30:00</cbc:IssueTime>
+
+    <cac:SenderParty>
+        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cac:PartyName>
+            <cbc:Name>ER AS</cbc:Name>
+        </cac:PartyName>
+        <cac:Contact>
+            <cbc:Name>Heidi Henriksen</cbc:Name>
+            <cbc:Telephone>98989898</cbc:Telephone>
+            <cbc:ElectronicMail>heidi.henriksen@er.com</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:SenderParty>
+
+    <cac:ReceiverParty>
+        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cac:PartyName>
+            <cbc:Name>X Innkjøpssentral</cbc:Name>
+        </cac:PartyName>
+        <cac:Contact>
+            <cbc:Name>Benji Benjaminsen</cbc:Name>
+            <cbc:Telephone>99669966</cbc:Telephone>
+            <cbc:ElectronicMail>benji.benjaminsen@x.com</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:ReceiverParty>
+
+    <!-- tag::DocumentResponse[] -->
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>154</cbc:ID>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
+    <!-- end::DocumentResponse[] -->
+
+
+</ApplicationResponse>

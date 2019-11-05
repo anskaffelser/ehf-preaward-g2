@@ -1,0 +1,14 @@
+= Participating Party
+
+Information about the suppliers need to be provided in element `cac:ParticipatingParty`. Note that, the supplier need to
+provide three references TED, DOFFIN and LOT in element `cac:FolderReference`.
+
+.Example of Suppliers information
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist.xml[tags=ParticipatingParty]
+----
+<1> Electronic address identifier, where `scheme=0192`
+<2> Legal name
+<3> Contact information
+<4> TED, DOFFIN, and LOT References

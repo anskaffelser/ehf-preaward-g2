@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Reference Type</Title>
+    <Identifier>reference</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+
+
+    <Code>
+        <ID>TED</ID>
+        <Name>TED Reference number</Name>
+    </Code>
+
+    <Code>
+        <ID>DOFFIN</ID>
+        <Name>Doffin Reference number</Name>
+    </Code>
+
+    <Code>
+        <ID>LOT</ID>
+        <Name>Lot Reference</Name>
+    </Code>
+
+</CodeList>

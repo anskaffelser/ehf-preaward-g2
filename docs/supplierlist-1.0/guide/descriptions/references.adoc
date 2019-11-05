@@ -1,0 +1,36 @@
+= References
+
+//From the DPS knowledge, we have that Central Purchasing body qualifies suppliers to DPS, and
+//create a supplier list in the DPS. The Central Purchasing body sends an EHF Supplier list to their customers, i.e.
+//contracting authorities.
+
+In the Supplier list Centrail Purchasing body MUST provide TED, DOFFIN and LOT references, on head-level, in order to
+ensure that suppliers areconnected to correct supplier list and DPS. Use element `cac:FolderReference` to provide
+the references on head-level.
+
+Each qualified supplier need to provide TED, DOFFIN and LOT references in element `cac:ParticipatingParty/cac:FolderReference`.
+See sub-chapter _3.3 Participating Party_ for further information.
+
+.Example of TED as reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist.xml[tags=Reference-TED]
+----
+<1> TED reference number
+<2> Type of reference, here TED.
+
+.Example of DOFFIN as reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist.xml[tags=Reference-DOFFIN]
+----
+<1> DOFFIN reference number
+<2> Type of reference, here DOFFIN.
+
+.Example of LOT as reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist.xml[tags=Reference-LOT]
+----
+<1> LOT reference number
+<2> Type of reference, here LOT.

@@ -115,6 +115,12 @@
         <Title>EHF Supplier list Reception Confirmation</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/supplierlist/xhe-reception-confirmation.xml</Path>
+        <Title>EHF Supplier list Reception Confirmation (XHE)</Title>
+        <Tag>supplierlist-1.0</Tag>
+    </Resource>
 
     <!-- Rules -->
     <Resource>

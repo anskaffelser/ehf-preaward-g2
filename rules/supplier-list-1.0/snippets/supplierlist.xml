@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ParticipantList xmnls="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+
+    <CustomizationID>...</CustomizationID>
+    <ProfileID>...</ProfileID>
+
+    <ID>1</ID>
+    <UUID>7c15a808-decc-4382-a0d1-d5ff2c605f1</UUID>
+    <IssueDate>2019-09-09</IssueDate>
+    <IssueTime>15:00:00</IssueTime>
+    <!-- tag::SenderParty[] -->
+    <SenderParty>
+        <EndPointID scheme="0192">123456785</EndPointID>
+        <Name>ABC Innkjøpssentral</Name>
+        <Contact>
+            <Name>Henrik Henriksen</Name>
+            <Telephone>999998877</Telephone>
+            <ElectronicMail>henrik.henriksen@abc.no</ElectronicMail>
+        </Contact>
+    </SenderParty>
+    <!-- end::SenderParty[] -->
+    <!-- tag::ReceiverParty[] -->
+    <ReceiverParty>
+        <EndpointID schemeID="0192">987654325</EndpointID>
+        <Name>FC AS</Name>
+        <Contact>
+            <Name>Kleiv Beringtsen</Name>
+            <Telephone>99988877</Telephone>
+            <ElectronicMail>kleiv.beringtsen@fc.no</ElectronicMail>
+        </Contact>
+    </ReceiverParty>
+    <!-- end::ReceiverParty[] -->
+    <!-- tag::Reference-TED[] -->
+    <FolderReference>
+        <ID>1458</ID> <!--1-->
+        <Type>TED</Type> <!--2-->
+    </FolderReference>
+    <!-- end::Reference-TED[] -->
+    <!-- tag::Reference-DOFFIN[] -->
+    <FolderReference>
+        <ID>518</ID> <!--1-->
+        <Type>DOFFIN</Type> <!--2-->
+    </FolderReference>
+    <!-- end::Reference-DOFFIN[] -->
+    <!-- tag::Reference-LOT[] -->
+    <FolderReference>
+        <ID>lot-01</ID> <!--1-->
+        <Type>LOT</Type> <!--2-->
+    </FolderReference>
+    <!-- end::Reference-LOT[] -->
+    <!-- tag::ParticipatingParty[] -->
+    <ParticipatingParty>
+        <Party>
+            <EndPointID scheme="0192">123456785</EndPointID> <!--1-->
+            <Name>Delta AS</Name> <!--2-->
+            <Contact> <!--3-->
+                <Name>Helge Eriksson</Name>
+                <Telephone>98765432</Telephone>
+                <ElectronicMail>helge.eriksson@delta.no</ElectronicMail>
+            </Contact>
+            <FolderReference> <!--4-->
+                <ID>lot-01</ID>
+                <Type>LOT</Type>
+            </FolderReference>
+        </Party>
+    </ParticipatingParty>
+    <!-- end::ParticipatingParty[] -->
+
+
+</ParticipantList>

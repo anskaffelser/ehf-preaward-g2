@@ -18,7 +18,7 @@ v{revision}
 :title-logo-image: images/logo.jpg
 
 //Variables
-
+:snippet-dir: ../../../rules/supplier-list-1.0/snippets
 
 {description}
 

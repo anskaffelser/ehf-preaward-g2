@@ -7,5 +7,8 @@ This chapter describes selected parts of the information contents of the EHF Sup
 
 include::partiesandroles.adoc[]
 
+include::references.adoc[]
+
+include::participating-party.adoc[]
 
 :leveloffset: -1

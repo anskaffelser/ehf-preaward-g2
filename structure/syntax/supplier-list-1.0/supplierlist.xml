@@ -15,8 +15,8 @@
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
 
             <Attribute>
-                <Term>schemeID</Term>
-                <Name>Scheme identifier</Name>
+                <Term>scheme</Term>
+                <Name>Scheme</Name>
                 <Value>123</Value>  <!-- Need to change -->
             </Attribute>
             <!--<Value type="FIXED">...</Value>-->
@@ -28,8 +28,8 @@
             <Description>Identifies the business process context in which the transaction appears.</Description>
 
             <Attribute>
-                <Term>schemeID</Term>
-                <Name>Scheme identifier</Name>
+                <Term>scheme</Term>
+                <Name>Scheme</Name>
                 <Value>123</Value><!-- Need to change -->
             </Attribute>
            <!-- <Value type="FIXED">...</Value> -->
@@ -75,8 +75,8 @@
                 <Description>The electronic address identifier of the Central Purchasing Body.</Description>
 
                 <Attribute>
-                    <Term>schemeID</Term>
-                    <Name>Scheme identifier</Name>
+                    <Term>scheme</Term>
+                    <Name>Scheme</Name>
                     <Value type="FIXED">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">123456785</Value>
@@ -126,8 +126,8 @@
                 <Description>The electronic address identifier of the Contracting Authority.</Description>
 
                 <Attribute>
-                    <Term>schemeID</Term>
-                    <Name>Scheme identifier</Name>
+                    <Term>scheme</Term>
+                    <Name>Scheme</Name>
                     <Value type="FIXED">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
@@ -173,40 +173,26 @@
 
             <Element>
                 <Term>ID</Term>
-                <Name>Identifier</Name>
-                <Description>Doffin or Ted Reference number.</Description> <!-- er dette riktig? -->
+                <Name>Ted/Doffin/Lot Reference</Name>
+                <Description>The Dynamic purchase system's Ted/Doffin/Lot Reference number.</Description>
 
+                <!--
                 <Attribute>
-                    <Term>schemeID</Term>
+                    <Term>scheme</Term>
                     <Name>Scheme identifier</Name>
-                    <Value>123</Value>  <!-- Need to change -->
+                    <Value>123</Value>
                 </Attribute>
+            -->
+                <Value type="EXAMPLE">15987</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>Type</Term>
-                <Name>Type</Name>
-            </Element>
-        </Element>
-
-        <Element cardinality="0..n">
-            <Term>AdditionReference</Term>
-            <Name>Addition reference</Name>
-
-            <Element>
-                <Term>ID</Term>
-                <Name>Identifier</Name>
-
-                <Attribute>
-                    <Term>schemeID</Term>
-                    <Name>Scheme identifier</Name>
-                    <Value>123</Value> <!-- Need to change -->
-                </Attribute>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>Type</Term>
-                <Name>Type</Name>
+                <Name>Reference Type</Name>
+                <Description>The type of the reference. Use code list "Reference Type". Remark that the supplier list MUST contain
+                    all three references from the code list.</Description>
+                <Reference type="CODE_LIST">reference</Reference>
+                <Value type="EXAMPLE">TED</Value>
             </Element>
         </Element>
 
@@ -225,8 +211,8 @@
                     <Description>Electronic Address Identifier of the Participating Party in DPS.</Description>
 
                     <Attribute>
-                        <Term>schemeID</Term>
-                        <Name>Scheme identifier</Name>
+                        <Term>scheme</Term>
+                        <Name>Scheme</Name>
                         <Value type="FIXED">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
@@ -272,41 +258,21 @@
 
                 <Element>
                     <Term>ID</Term>
-                    <Name>Identifier</Name>
-
-                    <Attribute>
-                        <Term>schemeID</Term>
-                        <Name>Scheme identifier</Name>
-                        <Value>123</Value>  <!-- Need to change -->
-                    </Attribute>
+                    <Name>Ted/Doffin/Lot Reference</Name>
+                    <Description>Participating party's Ted/Doffin/Lot Reference number.</Description>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>Type</Term>
-                    <Name>Type</Name>
+                    <Name>Reference Type</Name>
+                    <Description>The type of the reference. Use code list "Reference Type". Remark that all three references, from the code list,
+                        need to be included.</Description>
+                    <Reference type="CODE_LIST">reference</Reference>
+                    <Value type="EXAMPLE">DOFFIN</Value>
                 </Element>
             </Element>
 
-            <Element cardinality="0..n">
-                <Term>AdditionReference</Term>
-                <Name>Addition Reference</Name>
 
-                <Element>
-                    <Term>ID</Term>
-                    <Name>Identifier</Name>
-
-                    <Attribute>
-                        <Term>schemeID</Term>
-                        <Name>Scheme identifier</Name>
-                        <Value>123</Value> <!-- Need to change -->
-                    </Attribute>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>Type</Term>
-                    <Name>Type</Name>
-                </Element>
-            </Element>
         </Element>
 
 
