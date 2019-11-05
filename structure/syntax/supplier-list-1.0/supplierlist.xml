@@ -19,7 +19,7 @@
                 <Name>Scheme</Name>
                 <Value>123</Value>  <!-- Need to change -->
             </Attribute>
-            <!--<Value type="FIXED">...</Value>-->
+            <Value type="FIXED">...</Value>
         </Element>
         
         <Element cardinality="0..1">
@@ -32,7 +32,7 @@
                 <Name>Scheme</Name>
                 <Value>123</Value><!-- Need to change -->
             </Attribute>
-           <!-- <Value type="FIXED">...</Value> -->
+           <Value type="FIXED">...</Value>
 
         </Element>
         
@@ -260,6 +260,14 @@
                     <Term>ID</Term>
                     <Name>Ted/Doffin/Lot Reference</Name>
                     <Description>Participating party's Ted/Doffin/Lot Reference number.</Description>
+
+                     <!--
+                     <Attribute>
+                         <Term>scheme</Term>
+                         <Name>Scheme identifier</Name>
+                         <Value>123</Value>
+                     </Attribute>
+                     -->
                 </Element>
 
                 <Element cardinality="0..1">
