@@ -105,19 +105,19 @@
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/supplierlist/supplierlist.xml</Path>
+        <Path>structure/syntax/supplier-list-1.0/supplierlist.xml</Path>
         <Title>EHF Supplier list</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/supplierlist/supplierlist-reception-confirmation.xml</Path>
+        <Path>structure/syntax/supplier-list-1.0/supplierlist-reception-confirmation.xml</Path>
         <Title>EHF Supplier list Reception Confirmation</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/supplierlist/xhe-reception-confirmation.xml</Path>
+        <Path>structure/syntax/supplier-list-1.0/xhe-reception-confirmation.xml</Path>
         <Title>EHF Supplier list Reception Confirmation (XHE)</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
@@ -251,6 +251,11 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
         <Tag>dps-qualification</Tag>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/reference-type.xml</Path>
+        <Tag>supplierlist-1.0</Tag>
     </Resource>
 
     <!-- Tags -->
