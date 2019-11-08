@@ -40,18 +40,23 @@
                 <Term>xhb:ID</Term>
                 <Name>Identifier</Name>
                 <Description>Identification of the header.</Description>
+                <Value type="EXAMPLE">1542</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>xhb:UUID</Term>
                 <Name>Unique identifier</Name>
                 <Description>Unique identifier of the envelope.</Description>
+                <Value type="EXAMPLE">a8966484-f555-4fc0-92f4-333a93a88aa2</Value>
             </Element>
             
             <Element>
                 <Term>xhb:CreationDateTime</Term>
                 <Name>Creation Date Time</Name>
-                <Description>The date and time when the envelope was created, use format ``</Description>
+                <Description>The date and time when the envelope was created. Use format YYYY-MM-DDThh:mm:ssZ, where T
+                    indicate a divider and Z indicates UTC.</Description>
+                <Value type="EXAMPLE">2019-10-09T15:00:00Z</Value>
+
             </Element>
 
             <Element cardinality="0..1">
@@ -73,6 +78,7 @@
                         <Term>xhb:BusinessScopeCriterionValue</Term>
                         <Name>Business scope criterion value</Name>
                         <Description>The value of the given property.</Description>
+                        <Value type="EXAMPLE">Developing DPS.</Value>
                     </Element>
                 </Element>
 
@@ -98,6 +104,7 @@
                             <Name>Scheme identifier</Name>
                             <Value type="FIXED">0192</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">123456785</Value>
                     </Element>
                 </Element>
             </Element>
@@ -122,6 +129,7 @@
                             <Name>Scheme identifier</Name>
                             <Value type="FIXED">0192</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">987654325</Value>
                     </Element>
                 </Element>
             </Element>
@@ -141,71 +149,38 @@
                     <Term>xhb:ID</Term>
                     <Name>Identifier</Name>
                     <Description>Identification of the payload instance.</Description>
+                    <Value type="EXAMPLE">12345</Value>
                 </Element>
 
                 <Element cardinality="0..n">
                     <Term>xhb:Description</Term>
                     <Name>Description</Name>
                     <Description>Textual description of the payload instance.</Description>
+                    <Value type="EXAMPLE">Supplier list, part of DPS process.</Value>
                 </Element>
 
-                <Element cardinality="0..1">
-                    <Term>xhb:DocumentTypeCode</Term>
-                    <Name>Document type code</Name>
-                    <Description></Description>
-                </Element>
 
                 <Element cardinality="0..1">
                     <Term>xhb:CustomizationID</Term>
                     <Name>Customization Identifier</Name>
+                    <Description>The payload instance's customization identifier.</Description>
+                    <Value type="EXAMPLE">...</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>xhb:ProfileID</Term>
                     <Name>Profile Identifier</Name>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:ProfileExecutionID</Term>
-                    <Name>Profile Execution Identifier</Name>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:HandlingServiceID</Term>
-                    <Name>Handling Service Identifier</Name>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:ValidationTypeCode</Term>
-                    <Name>Validation Type Code</Name>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:ValidationVersionID</Term>
-                    <Name>Validation Version Identifier</Name>
+                    <Description>The payload instance's profile identifier.</Description>
+                    <Value type="EXAMPLE">...</Value>
                 </Element>
 
                 <Element>
                     <Term>xhb:InstanceEncryptionIndicator</Term>
                     <Name>Instance Encryption Indicator</Name>
+                    <Description>An indicator that states whether the payload instance is encrypted or not.</Description>
+                    <Value type="FIXED">False</Value>
                 </Element>
 
-                <Element cardinality="0..1">
-                    <Term>xhb:InstanceEncryptionMethod</Term>
-                    <Name>Instance Encryption Method</Name>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:InstanceHashValue</Term>
-                    <Name>Instance Hash Value</Name>
-                </Element>
-                
-                <!--
-
-                <Element cardinality="0..1">
-                    <Term>xha:PayloadContent</Term>
-                    <Name>Payload content</Name>
-                </Element> -->
             </Element>
         </Element>
 

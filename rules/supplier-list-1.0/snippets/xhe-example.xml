@@ -9,27 +9,26 @@
     <xhb:XHEVersionID>1.0</xhb:XHEVersionID>
     <xhb:CustomizationID>...</xhb:CustomizationID>
     <xhb:ProfileID>...</xhb:ProfileID>
-    <xhb:ProfileExecutionID>?</xhb:ProfileExecutionID>
     <xha:Header>
         <xhb:ID>158</xhb:ID>
         <xhb:UUID>356a67cf-1fac-4c30-94b0-a29fee1a015b</xhb:UUID>
         <xhb:CreationDateTime>2019-10-09T10:00:00Z</xhb:CreationDateTime>
         <xha:BusinessScope>
             <xha:BusinessScopeCriterion>
-                <xhb:BusinessScopeCriterionTypeCode>DPS</xhb:BusinessScopeCriterionTypeCode>
-                <xhb:BusinessScopeCriterionValue>111</xhb:BusinessScopeCriterionValue>
+                <xhb:BusinessScopeCriterionTypeCode>...</xhb:BusinessScopeCriterionTypeCode>
+                <xhb:BusinessScopeCriterionValue>Developing DPS.</xhb:BusinessScopeCriterionValue>
             </xha:BusinessScopeCriterion>
         </xha:BusinessScope>
 
         <xha:FromParty>
             <xha:PartyIdentification>
-                <xhb:ID>987654325</xhb:ID>
+                <xhb:ID schemeID="0192">987654325</xhb:ID>
             </xha:PartyIdentification>
         </xha:FromParty>
 
         <xha:ToParty>
             <xha:PartyIdentification>
-                <xhb:ID>123456785</xhb:ID>
+                <xhb:ID schemeID="0192">123456785</xhb:ID>
             </xha:PartyIdentification>
         </xha:ToParty>
     </xha:Header>
@@ -37,18 +36,10 @@
     <xha:Payloads>
         <xha:Payload>
             <xhb:ID>123</xhb:ID>
-            <xhb:Description>Supplier list</xhb:Description>
-            <xhb:DocumentTypeCode>1</xhb:DocumentTypeCode>
-            <xhb:ContentTypeCode>supplierlist.xml</xhb:ContentTypeCode>
+            <xhb:Description>DPS supplier list.</xhb:Description>
             <xhb:CustomizationID>...</xhb:CustomizationID>
             <xhb:ProfileID>...</xhb:ProfileID>
-            <xhb:ProfileExecutionID>23</xhb:ProfileExecutionID>
-            <xhb:HandlingServiceID>36</xhb:HandlingServiceID>
-            <xhb:ValidationTypeCode>...</xhb:ValidationTypeCode> <!-- ? -->
-            <xhb:ValidationVersionID>...</xhb:ValidationVersionID><!-- ? -->
-            <xhb:InstanceEncryptionIndicator>...</xhb:InstanceEncryptionIndicator> <!-- ? -->
-            <xhb:InstanceEncryptionMethodCode>...</xhb:InstanceEncryptionMethodCode> <!-- ? -->
-            <xhb:EncryptionHashValue>...</xhb:EncryptionHashValue> <!-- ? -->
+            <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
         </xha:Payload>
     </xha:Payloads>
 </XHE>

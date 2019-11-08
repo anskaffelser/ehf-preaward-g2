@@ -121,6 +121,12 @@
         <Title>EHF Supplier list Reception Confirmation (XHE)</Title>
         <Tag>supplierlist-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/supplier-list-1.0/xhe-folder.xml</Path>
+        <Title>EHF Supplier list XHE Folder</Title>
+        <Tag>supplierlist-1.0</Tag>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
