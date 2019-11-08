@@ -59,11 +59,11 @@
                 <Telephone>98765432</Telephone>
                 <ElectronicMail>helge.eriksson@delta.no</ElectronicMail>
             </Contact>
-            <FolderReference> <!--4-->
-                <ID>lot-01</ID>
-                <Type>LOT</Type>
-            </FolderReference>
         </Party>
+        <FolderReference> <!--4-->
+            <ID>lot-01</ID>
+            <Type>LOT</Type>
+        </FolderReference>
     </ParticipatingParty>
     <!-- end::ParticipatingParty[] -->
 

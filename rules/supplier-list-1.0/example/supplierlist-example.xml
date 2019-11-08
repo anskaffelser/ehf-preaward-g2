@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ParticipantList xmnls="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+
+    <CustomizationID scheme="123">...</CustomizationID>
+    <ProfileID scheme="123">...</ProfileID>
+
+    <ID>987</ID>
+    <UUID>f5e247f4-e63e-4013-91f0-6d1e3f3db819</UUID>
+    <IssueDate>2019-05-05</IssueDate>
+    <IssueTime>09:00:00</IssueTime>
+
+    <SenderParty>
+        <EndPointID scheme="0192">123456785</EndPointID>
+        <Name>X Innkjøpssentral</Name>
+        <Contact>
+            <Name>Mari Nordmann</Name>
+            <Telephone>999998877</Telephone>
+            <ElectronicMail>mari.nordmann@x.no</ElectronicMail>
+        </Contact>
+    </SenderParty>
+
+    <ReceiverParty>
+        <EndpointID schemeID="0192">987654325</EndpointID>
+        <Name>Green AS</Name>
+        <Contact>
+            <Name>Berit Berntsen</Name>
+            <Telephone>99988877</Telephone>
+            <ElectronicMail>berit.berntsen@green.no</ElectronicMail>
+        </Contact>
+    </ReceiverParty>
+
+    <FolderReference>
+        <ID>847</ID>
+        <Type>DOFFIN</Type>
+    </FolderReference>
+
+    <ParticipatingParty>
+        <Party>
+            <EndPointID scheme="0192">123456785</EndPointID>
+            <Name>Green girls AS</Name>
+            <Contact>
+                <Name>Trude Trondsen</Name>
+                <Telephone>98765432</Telephone>
+                <ElectronicMail>trude.trondsen@greengirls.com</ElectronicMail>
+            </Contact>
+        </Party>
+        <FolderReference>
+            <ID>lot-01</ID>
+            <Type>LOT</Type>
+        </FolderReference>
+    </ParticipatingParty>
+
+
+
+</ParticipantList>

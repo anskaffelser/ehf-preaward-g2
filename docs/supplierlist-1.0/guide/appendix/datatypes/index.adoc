@@ -1,4 +1,4 @@
-
+[appendix]
 = Semantic datatypes
 
 Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements and the technical implementation.

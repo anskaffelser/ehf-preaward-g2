@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Term>supplierlist-xhe-folder</Term>
+    <Name>Supplier list XHE Folder</Name>
+
+    <Namespace prefix="xhe">oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope</Namespace>
+    <Namespace prefix="xhb">oasis-cefact-xhe-1.0-BasicComponents</Namespace>
+    <Namespace prefix="xha">oasis-cefact-xhe-1.0-AggregateComponents</Namespace>
+    <Namespace prefix="ext">oasis-cefact-xhe-1.0-ExtensionComponents</Namespace>
+
+    <Document>
+        <Term>xhe:XHE</Term>
+        
+        <Element>
+            <Term>xhb:XHEVersionID</Term>
+            <Name>XHE Version identifier</Name>
+            <Description>The version of the specific XHE.</Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>xhb:CustomizationID</Term>
+            <Name>Customization identifier</Name>
+            <Description>The identification of the customization or use of he envelope.</Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>xhb:ProfileID</Term>
+            <Name>Profile identifier</Name>
+            <Description>The identifier of the profile used together with customization.</Description>
+        </Element>
+
+
+        <Element>
+            <Term>xha:Header</Term>
+            <Name>Header</Name>
+            <Description>Relevant header or envelope information.</Description>
+            
+            <Element>
+                <Term>xhb:ID</Term>
+                <Name>Identifier</Name>
+                <Description>Identification of the header.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>xhb:UUID</Term>
+                <Name>Unique identifier</Name>
+                <Description>Unique identifier of the envelope.</Description>
+            </Element>
+            
+            <Element>
+                <Term>xhb:CreationDateTime</Term>
+                <Name>Creation Date Time</Name>
+                <Description>The date and time when the envelope was created, use format ``</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>xha:BusinessScope</Term>
+                <Name>Business Scope</Name>
+
+                <Element cardinality="0..n">
+                    <Term>xha:BusinessScopeCriterion</Term>
+                    <Name>Business scope criterion</Name>
+                    <Description>Criterion of the business scope.</Description>
+
+                    <Element>
+                        <Term>xhb:BusinessScopeCriterionTypeCode</Term>
+                        <Name>Business scope criterion type code</Name>
+                        <Description>Identifies the property of the scope.</Description>
+                    </Element>
+
+                    <Element>
+                        <Term>xhb:BusinessScopeCriterionValue</Term>
+                        <Name>Business scope criterion value</Name>
+                        <Description>The value of the given property.</Description>
+                    </Element>
+                </Element>
+
+            </Element>
+
+
+            <Element cardinality="0..1">
+                <Term>xha:FromParty</Term>
+                <Name>From party</Name>
+                <Description>Information about the party that originated the envelope.</Description>
+
+                <Element cardinality="1..n">
+                    <Term>xha:PartyIdentification</Term>
+                    <Name>Party Identification</Name>
+
+                    <Element>
+                        <Term>xhb:ID</Term>
+                        <Name>Identifier</Name>
+                        <Description>The identification of the party that originated the envelope</Description>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Value type="FIXED">0192</Value>
+                        </Attribute>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="1..n">
+                <Term>xha:ToParty</Term>
+                <Name>To party</Name>
+                <Description>Information about the party that receives the envelope. </Description>
+
+                <Element cardinality="1..n">
+                    <Term>xha:PartyIdentification</Term>
+                    <Name>Party Identification</Name>
+
+
+                    <Element>
+                        <Term>xhb:ID</Term>
+                        <Name>Identifier</Name>
+                        <Description>The identification of the party that receives the envelope.</Description>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Value type="FIXED">0192</Value>
+                        </Attribute>
+                    </Element>
+                </Element>
+            </Element>
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>xha:Payloads</Term>
+            <Name>Payloads</Name>
+            
+            <Element cardinality="0..n">
+                <Term>xha:Payload</Term>
+                <Name>Payload</Name>
+                <Description>Information about the single payload.</Description>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:ID</Term>
+                    <Name>Identifier</Name>
+                    <Description>Identification of the payload instance.</Description>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>xhb:Description</Term>
+                    <Name>Description</Name>
+                    <Description>Textual description of the payload instance.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:DocumentTypeCode</Term>
+                    <Name>Document type code</Name>
+                    <Description></Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:CustomizationID</Term>
+                    <Name>Customization Identifier</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:ProfileID</Term>
+                    <Name>Profile Identifier</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:ProfileExecutionID</Term>
+                    <Name>Profile Execution Identifier</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:HandlingServiceID</Term>
+                    <Name>Handling Service Identifier</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:ValidationTypeCode</Term>
+                    <Name>Validation Type Code</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:ValidationVersionID</Term>
+                    <Name>Validation Version Identifier</Name>
+                </Element>
+
+                <Element>
+                    <Term>xhb:InstanceEncryptionIndicator</Term>
+                    <Name>Instance Encryption Indicator</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:InstanceEncryptionMethod</Term>
+                    <Name>Instance Encryption Method</Name>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>xhb:InstanceHashValue</Term>
+                    <Name>Instance Hash Value</Name>
+                </Element>
+                
+                <!--
+
+                <Element cardinality="0..1">
+                    <Term>xha:PayloadContent</Term>
+                    <Name>Payload content</Name>
+                </Element> -->
+            </Element>
+        </Element>
+
+    </Document>
+</Syntax>

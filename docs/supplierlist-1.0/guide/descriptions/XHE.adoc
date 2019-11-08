@@ -1,0 +1,17 @@
+[appendix]
+
+= Exchange Header Envelope (XHE)
+
+Exchange header envelope (XHE) describes either a header, as a integrated part of a business document, or an envelope,
+business documents for transport, of payloads of one or more business documents. The main idea with XHE is to describe the
+main information about the payloads to the sender and receiver.
+
+Read more about Exchange Header Envelope
+link:https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/xhe-v1.0-cs02-oasis.html#S-HEADER-AND-ENVELOPE-INFORMATION[here].
+
+
+.Example of how to implement XHE.
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/xhe-example.xml[tags=XHE]
+----

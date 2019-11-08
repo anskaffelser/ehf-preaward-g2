@@ -1,4 +1,4 @@
-
+[appendix]
 = UBL 2.2
 
 This implementation guide builds on UBL 2.2 Schemas, available from OASIS.

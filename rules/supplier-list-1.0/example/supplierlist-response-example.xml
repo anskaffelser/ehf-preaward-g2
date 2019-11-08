@@ -7,20 +7,20 @@
 
     <cbc:CustomizationID>...</cbc:CustomizationID>
     <cbc:ProfileID>...</cbc:ProfileID>
-    <cbc:ID>1</cbc:ID>
-    <cbc:UUID>5f3970f0-2697-472c-a326-9576e6a71c0f</cbc:UUID>
+    <cbc:ID>52</cbc:ID>
+    <cbc:UUID>894eaa63-1aad-4ed7-8e5b-6a781f74754b</cbc:UUID>
     <cbc:IssueDate>2019-11-01</cbc:IssueDate>
     <cbc:IssueTime>12:30:00</cbc:IssueTime>
 
     <cac:SenderParty>
-        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cbc:EndpointID scheme="0192">987654325</cbc:EndpointID>
         <cac:PartyName>
-            <cbc:Name>ER AS</cbc:Name>
+            <cbc:Name>Green AS</cbc:Name>
         </cac:PartyName>
         <cac:Contact>
-            <cbc:Name>Heidi Henriksen</cbc:Name>
-            <cbc:Telephone>98989898</cbc:Telephone>
-            <cbc:ElectronicMail>heidi.henriksen@er.com</cbc:ElectronicMail>
+            <cbc:Name>Berit Berntsen</cbc:Name>
+            <cbc:Telephone>99988877</cbc:Telephone>
+            <cbc:ElectronicMail>berit.berntsen@green.no</cbc:ElectronicMail>
         </cac:Contact>
     </cac:SenderParty>
 
@@ -30,22 +30,22 @@
             <cbc:Name>X Innkjøpssentral</cbc:Name>
         </cac:PartyName>
         <cac:Contact>
-            <cbc:Name>Benji Benjaminsen</cbc:Name>
-            <cbc:Telephone>99669966</cbc:Telephone>
-            <cbc:ElectronicMail>benji.benjaminsen@x.com</cbc:ElectronicMail>
+            <cbc:Name>Mari Nordmann</cbc:Name>
+            <cbc:Telephone>999998877</cbc:Telephone>
+            <cbc:ElectronicMail>mari.nordmann@x.no</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ReceiverParty>
 
-    <!-- tag::DocumentResponse[] -->
+
     <cac:DocumentResponse>
         <cac:Response>
             <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
         </cac:Response>
         <cac:DocumentReference>
-            <cbc:ID>154</cbc:ID>
+            <cbc:ID>987</cbc:ID>
         </cac:DocumentReference>
     </cac:DocumentResponse>
-    <!-- end::DocumentResponse[] -->
+
 
 
 </ApplicationResponse>

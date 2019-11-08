@@ -16,8 +16,8 @@
 
             <Attribute>
                 <Term>scheme</Term>
-                <Name>Scheme</Name>
-                <Value>123</Value>  <!-- Need to change -->
+                <Name>Scheme identifier</Name>
+                <Value type="EXAMPLE">123</Value>  <!-- Need to change -->
             </Attribute>
             <Value type="FIXED">...</Value>
         </Element>
@@ -28,9 +28,9 @@
             <Description>Identifies the business process context in which the transaction appears.</Description>
 
             <Attribute>
-                <Term>scheme</Term>
-                <Name>Scheme</Name>
-                <Value>123</Value><!-- Need to change -->
+                <Term>schemeID</Term>
+                <Name>Scheme identifier</Name>
+                <Value type="EXAMPLE">123</Value><!-- Need to change -->
             </Attribute>
            <Value type="FIXED">...</Value>
 
@@ -75,8 +75,8 @@
                 <Description>The electronic address identifier of the Central Purchasing Body.</Description>
 
                 <Attribute>
-                    <Term>scheme</Term>
-                    <Name>Scheme</Name>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
                     <Value type="FIXED">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">123456785</Value>
@@ -126,8 +126,8 @@
                 <Description>The electronic address identifier of the Contracting Authority.</Description>
 
                 <Attribute>
-                    <Term>scheme</Term>
-                    <Name>Scheme</Name>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
                     <Value type="FIXED">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
@@ -176,13 +176,13 @@
                 <Name>Ted/Doffin/Lot Reference</Name>
                 <Description>The Dynamic purchase system's Ted/Doffin/Lot Reference number.</Description>
 
-                <!--
+
                 <Attribute>
-                    <Term>scheme</Term>
-                    <Name>Scheme identifier</Name>
-                    <Value>123</Value>
+                    <Term>schemeID</Term>
+                    <Name>TED/Doffin scheme identifier</Name>
+                    <Value type="EXAMPLE">TED</Value>
                 </Attribute>
-            -->
+
                 <Value type="EXAMPLE">15987</Value>
             </Element>
 
@@ -211,8 +211,8 @@
                     <Description>Electronic Address Identifier of the Participating Party in DPS.</Description>
 
                     <Attribute>
-                        <Term>scheme</Term>
-                        <Name>Scheme</Name>
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
                         <Value type="FIXED">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
@@ -261,13 +261,13 @@
                     <Name>Ted/Doffin/Lot Reference</Name>
                     <Description>Participating party's Ted/Doffin/Lot Reference number.</Description>
 
-                     <!--
+
                      <Attribute>
-                         <Term>scheme</Term>
-                         <Name>Scheme identifier</Name>
-                         <Value>123</Value>
+                         <Term>schemeID</Term>
+                         <Name>TED/Doffin scheme identifier</Name>
+                         <Value type="EXAMPLE">TED</Value>
                      </Attribute>
-                     -->
+
                 </Element>
 
                 <Element cardinality="0..1">
