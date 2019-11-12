@@ -16,8 +16,8 @@ See sub-chapter _3.3 Participating Party_ for further information.
 ----
 include::../{snippet-dir}/supplierlist.xml[tags=Reference-TED]
 ----
-<1> TED reference number
-<2> Type of reference, here TED.
+<1> TED reference number.
+<2> Type of reference.
 
 .Example of DOFFIN as reference
 [source, xml, indent=0]
@@ -25,7 +25,7 @@ include::../{snippet-dir}/supplierlist.xml[tags=Reference-TED]
 include::../{snippet-dir}/supplierlist.xml[tags=Reference-DOFFIN]
 ----
 <1> DOFFIN reference number
-<2> Type of reference, here DOFFIN.
+<2> Type of reference.
 
 .Example of LOT as reference
 [source, xml, indent=0]
@@ -33,4 +33,4 @@ include::../{snippet-dir}/supplierlist.xml[tags=Reference-DOFFIN]
 include::../{snippet-dir}/supplierlist.xml[tags=Reference-LOT]
 ----
 <1> LOT reference number
-<2> Type of reference, here LOT.
+<2> Type of reference.

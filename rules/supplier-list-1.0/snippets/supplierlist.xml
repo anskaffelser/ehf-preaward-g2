@@ -33,19 +33,19 @@
     <!-- end::ReceiverParty[] -->
     <!-- tag::Reference-TED[] -->
     <FolderReference>
-        <ID>1458</ID> <!--1-->
+        <ID scheme="TED">1458</ID> <!--1-->
         <Type>TED</Type> <!--2-->
     </FolderReference>
     <!-- end::Reference-TED[] -->
     <!-- tag::Reference-DOFFIN[] -->
     <FolderReference>
-        <ID>518</ID> <!--1-->
+        <ID scheme="DOFFIN">518</ID> <!--1-->
         <Type>DOFFIN</Type> <!--2-->
     </FolderReference>
     <!-- end::Reference-DOFFIN[] -->
     <!-- tag::Reference-LOT[] -->
     <FolderReference>
-        <ID>lot-01</ID> <!--1-->
+        <ID scheme="LOT">lot-01</ID> <!--1-->
         <Type>LOT</Type> <!--2-->
     </FolderReference>
     <!-- end::Reference-LOT[] -->

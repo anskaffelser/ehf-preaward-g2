@@ -144,6 +144,7 @@
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
             <Name>Document Response</Name>
+            <Property key="doc">structure/docs/supplier-list-1.0/document-response.adoc</Property>
 
             <Element>
                 <Term>cac:Response</Term>

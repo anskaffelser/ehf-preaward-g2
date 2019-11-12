@@ -1,0 +1,7 @@
+include::guide/settings.adoc[]
+
+.UBL example of Receiver Party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist-response.xml[tags=ReceiverParty-response]
+----

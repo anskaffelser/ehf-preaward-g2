@@ -12,6 +12,7 @@
     <cbc:IssueDate>2019-11-01</cbc:IssueDate>
     <cbc:IssueTime>12:30:00</cbc:IssueTime>
 
+    <!-- tag::SenderParty-response[] -->
     <cac:SenderParty>
         <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
@@ -23,7 +24,9 @@
             <cbc:ElectronicMail>heidi.henriksen@er.com</cbc:ElectronicMail>
         </cac:Contact>
     </cac:SenderParty>
+    <!-- end::SenderParty-response[] -->
 
+    <!-- tag::ReceiverParty-response[] -->
     <cac:ReceiverParty>
         <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
@@ -35,6 +38,8 @@
             <cbc:ElectronicMail>benji.benjaminsen@x.com</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ReceiverParty>
+    <!-- end::ReceiverParty-response[] -->
+
 
     <!-- tag::DocumentResponse[] -->
     <cac:DocumentResponse>

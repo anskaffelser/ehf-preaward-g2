@@ -67,7 +67,7 @@
         <Element cardinality="0..1">
             <Term>SenderParty</Term>
             <Name>Central Purchasing Body</Name>
-
+            <Property key="doc">structure/docs/supplier-list-1.0/sender-party.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>EndpointID</Term>
@@ -119,6 +119,7 @@
         <Element cardinality="0..1">
             <Term>ReceiverParty</Term>
             <Name>Contracting Authority Connected to Central Purchasing Body</Name>
+            <Property key="doc">structure/docs/supplier-list-1.0/receiver-party.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>EndpointID</Term>
@@ -170,6 +171,7 @@
         <Element cardinality="0..n">
             <Term>FolderReference</Term>
             <Name>Folder Reference</Name>
+            <Property key="doc">structure/docs/supplier-list-1.0/reference.adoc</Property>
 
             <Element>
                 <Term>ID</Term>
@@ -199,6 +201,7 @@
         <Element>
             <Term>ParticipatingParty</Term>
             <Name>Participating Party in DPS</Name>
+            <Property key="doc">structure/docs/supplier-list-1.0/participating-party.adoc</Property>
 
             <Element>
                 <Term>Party</Term>

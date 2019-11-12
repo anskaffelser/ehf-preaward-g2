@@ -1,7 +1,5 @@
 include::guide/settings.adoc[]
 
-//= Additional Item Property
-
 .UBL example of Receiver Party
 [source, xml, indent=0]
 ----
