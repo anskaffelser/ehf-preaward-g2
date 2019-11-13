@@ -52,17 +52,10 @@
     <xha:Payloads>
         <xha:Payload> <!--1-->
             <xhb:ID>123</xhb:ID> <!--2-->
-            <xhb:Description>EHF pre-award catalogue request.</xhb:Description> <!--3-->
-            <xhb:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</xhb:CustomizationID> <!--4-->
-            <xhb:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</xhb:ProfileID> <!--5-->
+            <xhb:Description>Tender document</xhb:Description> <!--3-->
+            <xhb:CustomizationID>...</xhb:CustomizationID> <!--4-->
+            <xhb:ProfileID>...</xhb:ProfileID> <!--5-->
             <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--6-->
-        </xha:Payload>
-        <xha:Payload>
-            <xhb:ID>123</xhb:ID>
-            <xhb:Description>Tender documents</xhb:Description>
-            <xhb:CustomizationID>...</xhb:CustomizationID>
-            <xhb:ProfileID>...</xhb:ProfileID>
-            <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
         </xha:Payload>
     </xha:Payloads>
     <!-- end::payloads[] -->

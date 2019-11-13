@@ -5,7 +5,7 @@
 The following diagram illustrates the EHF Supplier list process.
 
 .EHF Supplier list process.
-image::images/processdiagram.png[align="center"]
+image::images/processdiagram1.png[align="center"]
 
 
 
