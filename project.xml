@@ -20,9 +20,16 @@
 
     <Resource>
         <Type>Doc-1</Type>
-        <Path>supplierlist-1.0/guide/</Path>
+        <Path>supplier-list-1.0/guide/</Path>
         <Title>Implementation Guideline</Title>
-        <Tag>supplierlist-1.0</Tag>
+        <Tag>supplier-list-1.0</Tag>
+    </Resource>
+
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>document-folder-1.0/guide/</Path>
+        <Title>Implementation Guideline</Title>
+        <Tag>document-folder-1.0</Tag>
     </Resource>
 
     <!-- Syntax -->
@@ -107,25 +114,25 @@
         <Type>Syntax-1</Type>
         <Path>structure/syntax/supplier-list-1.0/supplierlist.xml</Path>
         <Title>EHF Supplier list</Title>
-        <Tag>supplierlist-1.0</Tag>
+        <Tag>supplier-list-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
         <Path>structure/syntax/supplier-list-1.0/supplierlist-reception-confirmation.xml</Path>
         <Title>EHF Supplier list Reception Confirmation</Title>
-        <Tag>supplierlist-1.0</Tag>
+        <Tag>supplier-list-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/supplier-list-1.0/xhe-reception-confirmation.xml</Path>
-        <Title>EHF Supplier list Reception Confirmation (XHE)</Title>
-        <Tag>supplierlist-1.0</Tag>
+        <Path>structure/syntax/document-folder-1.0/xhe-reception-confirmation.xml</Path>
+        <Title>EHF Document Folder Reception Confirmation</Title>
+        <Tag>document-folder-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/supplier-list-1.0/xhe-folder.xml</Path>
-        <Title>EHF Supplier list XHE Folder</Title>
-        <Tag>supplierlist-1.0</Tag>
+        <Path>structure/syntax/document-folder-1.0/xhe-folder.xml</Path>
+        <Title>EHF Document Folder</Title>
+        <Tag>document-folder-1.0</Tag>
     </Resource>
 
     <!-- Rules -->
@@ -290,8 +297,12 @@
         <Description>Process to notify loosing parties in a DPS procurement.</Description>
     </Tag>
     <Tag>
-        <Identifier>supplierlist-1.0</Identifier>
+        <Identifier>supplier-list-1.0</Identifier>
         <Title>EHF Supplier list 1.0</Title>
+    </Tag>
+    <Tag>
+        <Identifier>document-folder-1.0</Identifier>
+        <Title>EHF Document folder 1.0</Title>
     </Tag>
 
 </Project>

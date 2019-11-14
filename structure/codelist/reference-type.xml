@@ -17,9 +17,4 @@
         <Name>Doffin Reference number</Name>
     </Code>
 
-    <Code>
-        <Id>LOT</Id>
-        <Name>Lot Reference</Name>
-    </Code>
-
 </CodeList>

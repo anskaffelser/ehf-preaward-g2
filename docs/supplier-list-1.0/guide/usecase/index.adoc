@@ -1,0 +1,17 @@
+= Process and Typical Use Cases
+
+== Process Diagram
+
+The following diagram illustrates the EHF Supplier list process.
+
+.EHF Supplier list process.
+image::images/processdiagram.png[align="center"]
+
+
+
+== Use Cases
+
+
+include::usecase1.adoc[]
+
+

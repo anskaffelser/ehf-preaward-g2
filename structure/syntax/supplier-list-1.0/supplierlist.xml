@@ -175,8 +175,8 @@
 
             <Element>
                 <Term>ID</Term>
-                <Name>Ted/Doffin/Lot Reference</Name>
-                <Description>The Dynamic purchase system's Ted/Doffin/Lot Reference number. Remark that the supplier list MUST contain
+                <Name>Ted/Doffin Reference</Name>
+                <Description>The Dynamic purchase system's Ted/Doffin Reference number. Remark that the supplier list MUST contain
                     all three references from the code list.</Description>
 
 
@@ -267,9 +267,8 @@
 
                     <Attribute>
                         <Term>scheme</Term>
-                        <Name>TED/Doffin/Lot scheme identifier</Name>
-                        <Reference type="CODE_LIST">reference</Reference>
-                        <Value type="EXAMPLE">TED</Value>
+                        <Name>Lot scheme identifier</Name>
+                        <Value type="FIXED">LOT</Value>
                     </Attribute>
 
                     <Value type="EXAMPLE">15987</Value>
