@@ -1,8 +1,8 @@
-include::docs/supplier-list-1.0/guide/main.adoc[]
+include::docs/supplier-list-1.0/settings.adoc[]
 
 
 .UBL example of Sender Party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/supplierlist-response.xml[tags=DocumentResponse]
+include::../{snippet-dir-syntax}/supplierlist-response.xml[tags=DocumentResponse]
 ----

@@ -1,7 +1,7 @@
-include::docs/supplier-list-1.0/guide/main.adoc[]
+include::docs/supplier-list-1.0/settings.adoc[]
 
 .UBL example of Reference
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/supplierlist.xml[tags=Reference]
+include::../{snippet-dir-syntax}/supplierlist.xml[tags=Reference]
 ----

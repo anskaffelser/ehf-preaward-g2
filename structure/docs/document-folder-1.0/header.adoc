@@ -1,7 +1,7 @@
-include::docs/document-folder-1.0/guide/main.adoc[]
+include::docs/document-folder-1.0/settings.adoc[]
 
 .UBL example of Header
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/document-folder.xml[tags=header]
+include::../{snippet-dir-syntax}/document-folder.xml[tags=header]
 ----

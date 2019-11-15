@@ -8,3 +8,4 @@
 :date-release: dd.mm.yyyy
 :date-mandatory: dd.mm.yyyy
 
+:snippet-dir-syntax: ../../rules/supplier-list-1.0/snippets

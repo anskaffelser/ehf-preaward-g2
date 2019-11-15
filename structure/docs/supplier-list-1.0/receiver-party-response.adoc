@@ -1,7 +1,7 @@
-include::docs/supplier-list-1.0/guide/main.adoc[]
+include::docs/supplier-list-1.0/settings.adoc[]
 
 .UBL example of Receiver Party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/supplierlist-response.xml[tags=ReceiverParty-response]
+include::../{snippet-dir-syntax}/supplierlist-response.xml[tags=ReceiverParty-response]
 ----

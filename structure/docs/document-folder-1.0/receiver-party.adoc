@@ -1,7 +1,7 @@
-include::docs/document-folder-1.0/guide/main.adoc[]
+include::docs/document-folder-1.0/settings.adoc[]
 
 .UBL example of Receiver Party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/document-folder-reception-confirmation.xml[tags=ReceiverParty]
+include::../{snippet-dir-syntax}/document-folder-reception-confirmation.xml[tags=ReceiverParty]
 ----

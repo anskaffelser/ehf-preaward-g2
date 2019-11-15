@@ -8,3 +8,6 @@
 :date-release: dd.mm.yyyy
 :date-mandatory: dd.mm.yyyy
 
+
+
+:snippet-dir-syntax: ../../rules/document-folder-1.0/snippets
