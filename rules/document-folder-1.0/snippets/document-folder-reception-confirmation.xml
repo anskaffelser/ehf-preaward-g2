@@ -12,6 +12,7 @@
     <cbc:IssueDate>2019-10-05</cbc:IssueDate>
     <cbc:IssueTime>15:30:00</cbc:IssueTime>
 
+    <!-- tag::SenderParty[] -->
     <cac:SenderParty>
         <cbc:EndpointID scheme="0192">987654325</cbc:EndpointID>
         <cac:PartyName>
@@ -23,7 +24,9 @@
             <cbc:ElectronicMail>john.johnsen@x.no</cbc:ElectronicMail>
         </cac:Contact>
     </cac:SenderParty>
+    <!-- end::SenderParty[] -->
 
+    <!-- tag::ReceiverParty[] -->
     <cac:ReceiverParty>
         <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
@@ -35,8 +38,9 @@
             <cbc:ElectronicMail>ola.nordmann@x.no</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ReceiverParty>
+    <!-- end::ReceiverParty[] -->
 
-
+    <!-- tag::DocumentResponse[] -->
     <cac:DocumentResponse>
         <cac:Response>
             <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
@@ -45,7 +49,7 @@
             <cbc:ID>845</cbc:ID>
         </cac:DocumentReference>
     </cac:DocumentResponse>
-
+    <!-- end::DocumentResponse[] -->
 
 
 </ApplicationResponse>
