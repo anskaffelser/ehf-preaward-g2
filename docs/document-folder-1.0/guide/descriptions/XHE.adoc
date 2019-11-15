@@ -3,8 +3,6 @@
 Central purchasing body can send structured or non-structured tender documents by using EHF Document
 Folder which is based on OASIS Exchange Header Envelope 1.0 CS02.
 
-== Exchange Header Envelope (XHE)
-
 The Exchange header envelope (XHE) describes either a header to or an envelope of a set of payloads
 that contains information about the content. In EHF Document Folder, the main idea with using XHE is to
 pack all structured and non-structured tender documents in payloads. For example, the central purchasing
@@ -16,8 +14,7 @@ link:https://docs.oasis-open.org/bdxr/xhe/v1.0/cs02/xhe-v1.0-cs02-oasis.html#S-H
 //The metadata information about the Exchange Header Envelope (`XHE`) need to be provided. The metadata is  XHE version
 //identifier, Specification identifier, Business process type identifier, Header information and Payload information.
 
-To send a EHF Document Folder following metadata information about the Exchange Header Envelope (`XHE`)
-need to be provided (see Figure (3)):
+To send EHF Document Folder following metadata information need to be provided (illustrated in Figure (3)):
 
 . XHE version identifier,
 . Specification identifier (`CustomizationID`),
@@ -53,12 +50,12 @@ include::../{snippet-dir}/document-folder.xml[tags=general-information]
 <5> Payloads - information about each relevant payload
 
 
-=== Header Information
+== Header Information
 
 Information relevant to the header envelope need to be provided in element `xha:Header`, and will be used
 to handle the envelope. The header envelope contains information about the business scope, where contracting
 authority can specify the criterion of the scope of business. There is also important to state the senders and
-receivers organi
+receivers organization numbers.
 
 .Example of how to implement the header-information in XHE.
 [source, xml, indent=0]
@@ -71,15 +68,16 @@ include::../{snippet-dir}/document-folder.xml[tags=header]
 <4> Business scope
 <5> The property of the business scope
 <6> The value of the property
-<7> Senders organization number
-<8> Receivers organization number
+<7> Senders organization number, where `schemeID=0192`
+<8> Receivers organization number, where `schemeID=0192`
 
 
-=== Payload Information
+== Payload Information
 
 Information about the set of payloads within the envelope need to be provided in element `xha:Payloads`, and
 information about the specific payload need to be provided in element `xha:Payload`.
-For example, the payload instance can be catalogue template, or other tender documents.
+For example, the payload instance can be catalogue template, or other structured or non-structured
+tender documents.
 
 .Example of how to implement the payloads in XHE.
 [source, xml, indent=0]
