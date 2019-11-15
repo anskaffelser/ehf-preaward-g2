@@ -271,6 +271,11 @@
         <Path>structure/codelist/reference-type.xml</Path>
         <Tag>supplier-list-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001.xml</Path>
+        <Tag>document-folder-1.0</Tag>
+    </Resource>
 
     <!-- Tags -->
     <Tag>

@@ -7,7 +7,7 @@
     <Namespace>urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
 
     <Document>
-        <Term>pl:ParticipantList</Term>
+        <Term>ParticipantList</Term>
         <Name>EHF Supplier list document</Name>
         
         <Element cardinality="0..1">

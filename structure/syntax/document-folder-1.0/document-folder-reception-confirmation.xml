@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>xhe-supplierlist-reception-confirmation</Term>
-    <Name>Supplier list Reception Confirmation (XHE)</Name>
+    <Term>document-folder-reception-confirmation</Term>
+    <Name>Document Folder Reception Confirmation</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>

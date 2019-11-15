@@ -9,7 +9,10 @@
 
 	<ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
 	<ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
-	<ns uri="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1"/>
+	<ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"/>
+	<ns prefix="xhe" uri="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope"/>
+	<ns prefix="xhb" uri="oasis-cefact-xhe-1.0-BasicComponents"/>
+	<ns prefix="xha" uri="oasis-cefact-xhe-1.0-AggregateComponents"/>
 	<ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 	<ns prefix="u" uri="utils"/>
 

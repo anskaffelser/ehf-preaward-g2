@@ -1,0 +1,15 @@
+= Response
+
+In EHF Document Folder Reception Confirmation the Contracting Authority need to send a response
+message to the Central Purchasing Body, by using element `cac:DocumentResponse`. The response message
+confirms that the receiver of EHF Document Folder has received the Document folder and referer to the specific
+EHF Document Folder.
+
+
+.Example of how to send a response in EHF Document Folder Reception Confirmation
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/document-folder-reception-confirmation.xml[tags=DocumentResponse]
+----
+<1> Response code- always `RECEIVED`
+<2> Identifier referenced to EHF Document Folder
