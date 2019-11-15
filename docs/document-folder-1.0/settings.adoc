@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: EHF Supplier list
+:doctitle: EHF Document Folder 1.0
 
 :revision: 1.0.0
 

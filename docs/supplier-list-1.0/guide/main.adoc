@@ -1,7 +1,4 @@
-include::../settings.adoc[]
 
-:lang: en
-:doctitle: EHF Supplier list 1.0
 
 = {doctitle}
 v{revision}

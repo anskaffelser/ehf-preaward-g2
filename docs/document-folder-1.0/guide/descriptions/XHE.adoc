@@ -26,7 +26,7 @@ To send EHF Document Folder following metadata information need to be provided (
 //is developed to be either a header as an integral part of a business document, or an envelope as a wrapper that contains the business documents. Specifically,
 
 .Illustration of Exchange Header Envelope.
-image::images/xhe1.png[align="center"]
+image::images/xhe1.png[align="center",500,400]
 
 //Benefit of using XHE:
 
@@ -87,7 +87,7 @@ include::../{snippet-dir}/document-folder.xml[tags=payloads]
 <1> Information about the specific payload instance
 <2> Identification of the specific payload instance
 <3> Description of the specific payload instance
-<4> Type of document expressed as a code from code list
+<4> Type of document expressed as a code from links:https://test-vefa.difi.no/ehf-pre/g2/codelist/UNCL1001/[code list]
 <5> The Payload instance's file format with `filename`
 <6> Payload instance is not encrypted- always use `False`
 <7> The URI that identifies where the document is located

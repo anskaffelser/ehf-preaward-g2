@@ -4,7 +4,7 @@
     <Term>Supplierlist</Term>
     <Name>EHF Supplier list</Name>
 
-    <Namespace prefix="pl">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
+    <Namespace>urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
 
     <Document>
         <Term>pl:ParticipantList</Term>
