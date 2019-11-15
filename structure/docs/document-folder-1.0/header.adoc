@@ -1,4 +1,4 @@
-include::guide/settings.adoc[]
+include::docs/document-folder-1.0/guide/main.adoc[]
 
 .UBL example of Header
 [source, xml, indent=0]

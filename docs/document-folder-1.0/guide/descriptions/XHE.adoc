@@ -89,7 +89,7 @@ include::../{snippet-dir}/document-folder.xml[tags=payloads]
 <1> Information about the specific payload instance
 <2> Identification of the specific payload instance
 <3> Description of the specific payload instance
-<4> Type of document expressed as a code from links:https://test-vefa.difi.no/ehf-pre/g2/codelist/UNCL1001/[code list]
+<4> Type of document expressed as a code from link:https://test-vefa.difi.no/ehf-pre/g2/codelist/UNCL1001/[code list]
 <5> The Payload instance's file format with `filename`
 <6> Payload instance is not encrypted- always use `False`
 <7> The URI that identifies where the document is located

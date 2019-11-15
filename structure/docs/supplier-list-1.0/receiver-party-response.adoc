@@ -1,4 +1,4 @@
-include::guide/settings.adoc[]
+include::docs/supplier-list-1.0/guide/main.adoc[]
 
 .UBL example of Receiver Party
 [source, xml, indent=0]
