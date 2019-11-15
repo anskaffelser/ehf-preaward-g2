@@ -11,7 +11,7 @@
     <Document>
         <Term>ubl:ApplicationResponse</Term>
 
-        <Element> <!-- New -->
+        <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
@@ -57,6 +57,7 @@
             <Term>cac:SenderParty</Term>
             <Name>Sender Party</Name>
             <Description>Contracting Authority connected to Central Purchasing body</Description>
+            <Property key="doc">structure/docs/document-folder-1.0/sender-party.adoc</Property>
 
             <Element>
                 <Term>cbc:EndpointID</Term>
@@ -113,6 +114,8 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Central Purchasing Body</Name>
+            <Property key="doc">structure/docs/document-folder-1.0/receiver-party.adoc</Property>
+
 
             <Element>
                 <Term>cbc:EndpointID</Term>
@@ -144,7 +147,7 @@
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
             <Name>Document Response</Name>
-            <Property key="doc">structure/docs/supplier-list-1.0/document-response.adoc</Property>
+            <Property key="doc">structure/docs/document-folder-1.0/document-response.adoc</Property>
 
             <Element>
                 <Term>cac:Response</Term>

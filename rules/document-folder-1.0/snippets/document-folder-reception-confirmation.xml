@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApplicationResponse
+        xmnls="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <cbc:CustomizationID>...</cbc:CustomizationID>
+    <cbc:ProfileID>...</cbc:ProfileID>
+    <cbc:ID>954</cbc:ID>
+    <cbc:UUID>f22ededc-1a32-4f4d-a90e-53c299fee9b8</cbc:UUID>
+    <cbc:IssueDate>2019-10-05</cbc:IssueDate>
+    <cbc:IssueTime>15:30:00</cbc:IssueTime>
+
+    <cac:SenderParty>
+        <cbc:EndpointID scheme="0192">987654325</cbc:EndpointID>
+        <cac:PartyName>
+            <cbc:Name>X AS</cbc:Name>
+        </cac:PartyName>
+        <cac:Contact>
+            <cbc:Name>John Johnsen</cbc:Name>
+            <cbc:Telephone>98788987</cbc:Telephone>
+            <cbc:ElectronicMail>john.johnsen@x.no</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:SenderParty>
+
+    <cac:ReceiverParty>
+        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cac:PartyName>
+            <cbc:Name>X Innkjøpssentral</cbc:Name>
+        </cac:PartyName>
+        <cac:Contact>
+            <cbc:Name>Ola Nordmann</cbc:Name>
+            <cbc:Telephone>98798798</cbc:Telephone>
+            <cbc:ElectronicMail>ola.nordmann@x.no</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:ReceiverParty>
+
+
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>845</cbc:ID>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
+
+
+
+</ApplicationResponse>

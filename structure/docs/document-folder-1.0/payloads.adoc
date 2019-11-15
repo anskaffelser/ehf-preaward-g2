@@ -1,0 +1,7 @@
+include::guide/settings.adoc[]
+
+.UBL example of Payloads
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/document-folder.xml[tags=payloads]
+----

@@ -3,5 +3,5 @@ include::guide/settings.adoc[]
 .UBL example of Reference
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/supplierlist.xml[tags=Reference-TED]
+include::../{snippet-dir}/supplierlist.xml[tags=Reference]
 ----

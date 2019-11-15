@@ -38,9 +38,14 @@
         <xha:Payload>
             <xhb:ID>123</xhb:ID>
             <xhb:Description>Catalogue template</xhb:Description>
-            <xhb:CustomizationID>...</xhb:CustomizationID>
-            <xhb:ProfileID>...</xhb:ProfileID>
+            <xhb:DocumentTypeCode>758</xhb:DocumentTypeCode>
+            <xhb:ContenTypeCode filename="catalogue-templates.pdf">application/pdf</xhb:ContenTypeCode>
             <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
+            <xha:RelevantExternalReference>
+                <xha:ExternalReference>
+                    <xhb:ID>http://www.xx.com/catalogue-templates.pdf</xhb:ID>
+                </xha:ExternalReference>
+            </xha:RelevantExternalReference>
         </xha:Payload>
     </xha:Payloads>
 

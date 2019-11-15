@@ -53,9 +53,14 @@
         <xha:Payload> <!--1-->
             <xhb:ID>123</xhb:ID> <!--2-->
             <xhb:Description>Tender document</xhb:Description> <!--3-->
-            <xhb:CustomizationID>...</xhb:CustomizationID> <!--4-->
-            <xhb:ProfileID>...</xhb:ProfileID> <!--5-->
+            <xhb:DocumentTypeCode>758</xhb:DocumentTypeCode> <!--4-->
+            <xhb:ContenTypeCode filename="tender-document.pdf">application/pdf</xhb:ContenTypeCode><!--5-->
             <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--6-->
+            <xha:RelevantExternalReference>
+                <xha:ExternalReference>
+                    <xhb:ID>http://www.xyz.com/tender-document.pdf</xhb:ID> <!--7-->
+                </xha:ExternalReference>
+            </xha:RelevantExternalReference>
         </xha:Payload>
     </xha:Payloads>
     <!-- end::payloads[] -->

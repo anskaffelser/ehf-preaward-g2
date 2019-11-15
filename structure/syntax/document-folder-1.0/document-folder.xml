@@ -32,11 +32,11 @@
             <Value type="FIXED">...</Value>
         </Element>
 
-
         <Element>
             <Term>xha:Header</Term>
             <Name>Header</Name>
             <Description>Relevant header or envelope information.</Description>
+            <Property key="doc">structure/docs/document-folder-1.0/header.adoc</Property>
             
             <Element>
                 <Term>xhb:ID</Term>
@@ -55,7 +55,7 @@
             <Element>
                 <Term>xhb:CreationDateTime</Term>
                 <Name>Creation Date Time</Name>
-                <Description>The date and time when the envelope was created. Use format YYYY-MM-DDThh:mm:ssZ, where T
+                <Description>The date and time when the envelope was created. Use format 'YYY-MM-DDThh:mm:ssZ', where T
                     indicate a divider and Z indicates UTC.</Description>
                 <Value type="EXAMPLE">2019-10-09T15:00:00Z</Value>
 
@@ -142,6 +142,7 @@
         <Element cardinality="0..1">
             <Term>xha:Payloads</Term>
             <Name>Payloads</Name>
+            <Property key="doc">structure/docs/document-folder-1.0/payloads.adoc</Property>
             
             <Element cardinality="0..n">
                 <Term>xha:Payload</Term>
@@ -159,16 +160,20 @@
                     <Term>xhb:Description</Term>
                     <Name>Description</Name>
                     <Description>Textual description of the payload instance.</Description>
-                    <Value type="EXAMPLE">Supplier list, part of DPS process.</Value>
+                    <Value type="EXAMPLE">Catalogue templates</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>xhb:DocumentTypeCode</Term>
-                    <Description>Use code "X" to indicate DPS tender document.</Description>
+                    <Name>Document Type Code</Name>
+                    <Description>Express the type of document by using a code from code list 'UNCL1001'.</Description>
+                    <Reference type="CODE_LIST">UNCL1001</Reference>
+                    <Value type="EXAMPLE">758</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>xhb:ContentTypeCode</Term>
+                    <Name>Document file format</Name>
                     <Description>File format of the payload instance.</Description>
 
                     <!--<Attribute>
@@ -209,7 +214,7 @@
                 <Element>
                     <Term>xhb:InstanceEncryptionIndicator</Term>
                     <Name>Instance Encryption Indicator</Name>
-                    <Description>An indicator that states whether the payload instance is encrypted or not.</Description>
+                    <Description>An indicator that states whether the payload instance is encrypted or not. Always use 'False'.</Description>
                     <Value type="FIXED">False</Value>
                 </Element>
 
@@ -225,7 +230,8 @@
                         <Element>
                             <Term>xhb:ID</Term>
                             <Name>External Document location</Name>
-                            <Description>Identifies the referenced document by using URI.</Description>
+                            <Description>The URI that identifies where the external reference document is located.</Description>
+                            <Value type="EXAMPLE">http://www.xx-catalogue-template.com/index.html</Value>
                         </Element>
                     </Element>
                 </Element>

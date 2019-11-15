@@ -39,7 +39,7 @@ image::images/xhe1.png[align="center"]
 .Example of how to implement the general (head) information in XHE.
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/xhe-example.xml[tags=general-information]
+include::../{snippet-dir}/document-folder.xml[tags=general-information]
 ----
 <1> XHE version number
 <2> XHE specification identifier (`CustomizationID`)
@@ -57,7 +57,7 @@ authority can specify the criterion of the scope of business.
 .Example of how to implement the header-information in XHE.
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/xhe-example.xml[tags=header]
+include::../{snippet-dir}/document-folder.xml[tags=header]
 ----
 <1> Identifier
 <2> Unique universal identifier (UUID), recommend version 4.
@@ -76,14 +76,15 @@ For example, the payload instance can be catalogue template, or other tender doc
 .Example of how to implement the payloads in XHE.
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/xhe-example.xml[tags=payloads]
+include::../{snippet-dir}/document-folder.xml[tags=payloads]
 ----
 <1> Information about the specific payload instance
 <2> Identification of the specific payload instance
 <3> Description of the specific payload instance
-<4> Payload instance's customization identifier
-<5> Payload instance's profile identifier
+<4> Type of document expressed as a code from code list
+<5> The Payload instance's file format with `filename`
 <6> Payload instance is not encrypted- always use `False`
+<7> The URI that identifies where the document is located
 
 
 

@@ -124,16 +124,17 @@
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/document-folder-1.0/xhe-reception-confirmation.xml</Path>
-        <Title>EHF Document Folder Reception Confirmation</Title>
-        <Tag>document-folder-1.0</Tag>
-    </Resource>
-    <Resource>
-        <Type>Syntax-1</Type>
         <Path>structure/syntax/document-folder-1.0/xhe-folder.xml</Path>
         <Title>EHF Document Folder</Title>
         <Tag>document-folder-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>structure/syntax/document-folder-1.0/xhe-reception-confirmation.xml</Path>
+        <Title>EHF Document Folder Reception Confirmation</Title>
+        <Tag>document-folder-1.0</Tag>
+    </Resource>
+
 
     <!-- Rules -->
     <Resource>
@@ -268,7 +269,7 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/reference-type.xml</Path>
-        <Tag>supplierlist-1.0</Tag>
+        <Tag>supplier-list-1.0</Tag>
     </Resource>
 
     <!-- Tags -->

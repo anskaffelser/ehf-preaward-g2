@@ -31,6 +31,8 @@
         </Contact>
     </ReceiverParty>
     <!-- end::ReceiverParty[] -->
+
+    <!-- tag::Reference[] -->
     <!-- tag::Reference-TED[] -->
     <FolderReference>
         <ID scheme="TED">1458</ID> <!--1-->
@@ -43,12 +45,9 @@
         <Type>DOFFIN</Type> <!--2-->
     </FolderReference>
     <!-- end::Reference-DOFFIN[] -->
-    <!-- tag::Reference-LOT[] -->
-    <FolderReference>
-        <ID scheme="LOT">lot-01</ID> <!--1-->
-        <Type>LOT</Type> <!--2-->
-    </FolderReference>
-    <!-- end::Reference-LOT[] -->
+    <!-- end::Reference[] -->
+
+
     <!-- tag::ParticipatingParty[] -->
     <ParticipatingParty>
         <Party>

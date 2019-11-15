@@ -2,7 +2,7 @@
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
     <Term>supplierlist-reception-confirmation</Term>
-    <Name>Supplier list Reception Confirmation</Name>
+    <Name>EHF Supplier list Reception Confirmation</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -10,6 +10,7 @@
 
     <Document>
         <Term>ubl:ApplicationResponse</Term>
+        <Name>EHF Supplier list Reception Confirmation Document</Name>
 
         <Element> <!-- New -->
             <Term>cbc:CustomizationID</Term>
@@ -57,6 +58,7 @@
             <Term>cac:SenderParty</Term>
             <Name>Sender Party</Name>
             <Description>Contracting Authority connected to Central Purchasing body</Description>
+            <Property key="doc">structure/docs/supplier-list-1.0/sender-party-response.adoc</Property>
 
             <Element>
                 <Term>cbc:EndpointID</Term>
@@ -113,6 +115,7 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Central Purchasing Body</Name>
+            <Property key="doc">structure/docs/supplier-list-1.0/receiver-party-response.adoc</Property>
 
             <Element>
                 <Term>cbc:EndpointID</Term>
@@ -144,7 +147,7 @@
         <Element cardinality="1..n">
             <Term>cac:DocumentResponse</Term>
             <Name>Document Response</Name>
-
+            <Property key="doc">structure/docs/supplier-list-1.0/document-response.adoc</Property>
 
             <Element>
                 <Term>cac:Response</Term>
