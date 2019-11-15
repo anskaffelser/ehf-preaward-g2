@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>document-folder-reception-confirmation</Term>
-    <Name>EHF Document Folder Reception Confirmation</Name>
+    <Term>xhe-supplierlist-reception-confirmation</Term>
+    <Name>Supplier list Reception Confirmation (XHE)</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -10,7 +10,6 @@
 
     <Document>
         <Term>ubl:ApplicationResponse</Term>
-        <Name>EHF Document Folder Reception Confirmation documents</Name>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
@@ -164,12 +163,12 @@
 
             <Element>
                 <Term>cac:DocumentReference</Term>
-                <Name>Document Folder Reference</Name>
+                <Name>Supplier list Reference</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Document Folder reference identifier</Name>
-                    <Description>An identifier for the referenced Document Folder.</Description>
+                    <Name>Supplier list reference identifier</Name>
+                    <Description>An identifier for the referenced Supplier list.</Description>
                     <Value type="EXAMPLE">854</Value>
                 </Element>
             </Element>
