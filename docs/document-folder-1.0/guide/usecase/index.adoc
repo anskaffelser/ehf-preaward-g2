@@ -2,9 +2,10 @@
 
 == Process Diagram
 
-The following diagram illustrates the EHF Supplier list process.
+The following diagram illustrates the EHF Document Folder and EHF Document Folder Reception Confirmation
+processes.
 
-.EHF Supplier list process.
+.EHF Document Folder and EHF Document Folder Reception Confirmation process.
 image::images/processdiagram.png[align="center"]
 
 

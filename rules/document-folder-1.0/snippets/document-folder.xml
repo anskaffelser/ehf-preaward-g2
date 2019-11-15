@@ -34,15 +34,15 @@
             </xha:BusinessScopeCriterion>
         </xha:BusinessScope>
 
-        <xha:FromParty> <!--5-->
+        <xha:FromParty>
             <xha:PartyIdentification>
-                <xhb:ID schemeID="0192">987654325</xhb:ID>
+                <xhb:ID schemeID="0192">987654325</xhb:ID> <!--7-->
             </xha:PartyIdentification>
         </xha:FromParty>
 
-        <xha:ToParty> <!--6-->
+        <xha:ToParty>
             <xha:PartyIdentification>
-                <xhb:ID schemeID="0192">123456785</xhb:ID>
+                <xhb:ID schemeID="0192">123456785</xhb:ID> <!--8-->
             </xha:PartyIdentification>
         </xha:ToParty>
     </xha:Header>

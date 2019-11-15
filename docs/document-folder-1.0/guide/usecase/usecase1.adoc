@@ -4,8 +4,8 @@
 ****
 
 Description::
-This use case illustrates the use of supplier list, where the Central Purchasing system create a supplier list of
-qualified suppliers in the DPS.
+This use case illustrates the use of document folders in DPS between Central Purchasing Body and the
+Contracting Authrities connected to Central Purcahsing Body.
 
 
 Parties involved::
@@ -13,21 +13,23 @@ Contracting Authority +
 Central Purchasing body
 
 Assumptions::
-. The supplier parties X, Y, Z are qualified suppliers in the DPS.
+. Central Purchasing Boy has created an DPS for hotel services.
 
 Flow::
-. Central Purchasing system sends a supplier list, based on qualified suppliers, to the Contracting Authorities.
-. The Contracting Authorities receives a supplier list, and updates the list in the Tender system.
-. The Tender system sends a confirmation to the Central Purchasing system.
+. Central Purchasing system sends a document folder with catalogue template to the Contracting Authorities.
+. The Contracting Authorities receives a Document Folder with catalogue template, and saves the tender
+document in the tender system.
+. The Contracting Authorities Tender system sends a confirmation to the Central Purchasing system.
 . The Central Purchasing system receives the message and store the information.
-. The Central Purchasing system sends the supplier list to the Contracting Authorities.
+
 
 Result::
-. The Contracting Authorities receives a supplier list from the Central Purchasing system.
-. The supplier list can be updated when:
-.. a new supplier qualifies to DPS,
-.. a supplier need to update their information (e.g. contact information),
-.. a supplier withdraws from the competition.
+. The Contracting Authorities receives a document folder with catalogue template from the Central
+Purchasing system.
+. The Central Purchasing body sends EHF Document Folder to Contracting Authorities when:
+.. creating DPS,
+.. updating tender documents inside the EHF Document Folder.
+. The Central Purchasing Body can also send EHF Document Folder to new suppliers that qualifies to DPS.
 
 
 

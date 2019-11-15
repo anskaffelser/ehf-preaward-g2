@@ -22,7 +22,6 @@ Flow::
 . The Contracting Authorities receives a supplier list, and updates the list in the Tender system.
 . The Tender system sends a confirmation to the Central Purchasing system.
 . The Central Purchasing system receives the message and store the information.
-. The Central Purchasing system sends the supplier list to the Contracting Authorities.
 
 Result::
 . The Contracting Authorities receives a supplier list from the Central Purchasing system.

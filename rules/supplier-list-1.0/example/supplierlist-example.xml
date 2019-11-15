@@ -31,8 +31,8 @@
     </ReceiverParty>
 
     <FolderReference>
-        <ID>847</ID>
-        <Type>DOFFIN</Type>
+        <ID scheme="DOFFIN">847</ID>
+        <Type>Hotel services</Type>
     </FolderReference>
 
     <ParticipatingParty>
@@ -47,7 +47,7 @@
         </Party>
         <FolderReference>
             <ID>lot-01</ID>
-            <Type>LOT</Type>
+            <Type>Washing services</Type>
         </FolderReference>
     </ParticipatingParty>
 

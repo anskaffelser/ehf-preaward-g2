@@ -7,12 +7,6 @@
                 flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed</assert>
     </rule>
 
-    <rule context="ParticipatingParty/FolderReference/ID[@scheme = 'LOT']">
-        <assert id="EHF-SL-R002"
-                test=""
-                flag="fatal"></assert>
-    </rule>
-
     <rule context="ParticipatingParty/FolderReference">
         <assert id="EHF-SL-R002"
                 test="ID[@scheme = 'LOT']"
