@@ -124,13 +124,13 @@
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/document-folder-1.0/xhe-folder.xml</Path>
+        <Path>structure/syntax/document-folder-1.0/document-folder.xml</Path>
         <Title>EHF Document Folder</Title>
         <Tag>document-folder-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>structure/syntax/document-folder-1.0/xhe-reception-confirmation.xml</Path>
+        <Path>structure/syntax/document-folder-1.0/document-folder-reception-confirmation.xml</Path>
         <Title>EHF Document Folder Reception Confirmation</Title>
         <Tag>document-folder-1.0</Tag>
     </Resource>
