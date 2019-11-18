@@ -4,19 +4,26 @@
     <rule context="cbc:EndpointID[@schemeID = '0192']">
         <assert id="EHF-SL-R001"
                 test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
-                flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed</assert>
+                flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed.</assert>
     </rule>
 
     <rule context="ParticipatingParty/FolderReference">
         <assert id="EHF-SL-R002"
                 test="ID[@scheme = 'LOT']"
-                flag="fatal">Participating Party MUST contain LOT reference.</assert>
+                flag="fatal">Participating Party MUST contain LOT reference number.</assert>
     </rule>
 
-    <rule context="FolderReference">
+    <rule context="ParticipantList">
         <assert id="EHF-SL-R003"
-                test="(ID[@scheme = 'DOFFIN']) or (ID[@scheme = 'TED'])"
-                flag="fatal">Supplier list MUST contain Doffin and Ted reference.</assert>
+                test="(FolderReference/ID[@scheme = 'DOFFIN']) and (FolderReference/ID[@scheme = 'TED'])"
+                flag="fatal">Supplier list MUST contain Doffin and Ted reference number.</assert>
     </rule>
+
+     <rule context="cbc:EndpointID[@scheme = '0192']">
+            <assert id="EHF-SL-R004"
+                    test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
+                    flag="fatal">MUST be a valid Norwegian organization number. Only numerical value allowed.</assert>
+        </rule>
+
 
 </pattern>
