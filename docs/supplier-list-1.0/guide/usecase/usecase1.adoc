@@ -24,11 +24,8 @@ Flow::
 . The Central Purchasing system receives the message and store the information.
 
 Result::
-. The Contracting Authorities receives a supplier list from the Central Purchasing system.
-. The supplier list can be updated when:
-.. a new supplier qualifies to DPS,
-.. a supplier need to update their information (e.g. contact information),
-.. a supplier withdraws from the competition.
+. The Contracting Authorities receives a updated supplier list from the Central Purchasing system, with all qualified
+suppliers in the DPS.
 
 
 

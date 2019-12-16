@@ -5,7 +5,7 @@ include::../settings.adoc[]
 
 = {doctitle}
 v{revision}
-:description: This document describes EHF Supplier list (called "EHF Leverandørliste" in Norwegian) EHF Supplier list Reception Confirmation (called "EHF Leverandørliste Kvitteringsmelding" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
+:description: This document describes EHF Supplier list ("EHF Leverandørliste" in Norwegian) EHF Supplier list Reception Confirmation ("EHF Leverandørliste Kvitteringsmelding" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :toc: left
@@ -25,6 +25,8 @@ v{revision}
 :leveloffset: +1
 
 include::introduction.adoc[]
+
+include::background.adoc[]
 
 include::usecase/index.adoc[]
 

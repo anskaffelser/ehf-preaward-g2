@@ -16,15 +16,15 @@ Assumptions::
 . Central Purchasing Boy has created an DPS for hotel services.
 
 Flow::
-. Central Purchasing system sends a document folder with catalogue template to the Contracting Authorities.
-. The Contracting Authorities receives a Document Folder with catalogue template, and saves the tender
+. Central Purchasing system sends a document folder with a catalogue template to the Contracting Authorities.
+. The Contracting Authorities receives a Document Folder with a catalogue template, and saves the tender
 document in the tender system.
 . The Contracting Authorities Tender system sends a confirmation to the Central Purchasing system.
 . The Central Purchasing system receives the message and store the information.
 
 
 Result::
-. The Contracting Authorities receives a document folder with catalogue template from the Central
+. The Contracting Authorities receives a document folder with a catalogue template from the Central
 Purchasing system.
 . The Central Purchasing body sends EHF Document Folder to Contracting Authorities when:
 .. creating DPS,

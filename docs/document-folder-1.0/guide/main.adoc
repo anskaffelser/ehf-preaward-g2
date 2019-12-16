@@ -5,7 +5,7 @@ include::../settings.adoc[]
 
 = {doctitle}
 v{revision}
-:description: This document describes EHF Document Folder (called "EHF Dokumentmappe" in Norwegian) and EHF Document Folder Reception Confirmation (called "EHF Dokumentmappe Kvitteringsmelding" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
+:description: This document describes EHF Document Folder ("EHF Dokumentmappe" in Norwegian) and EHF Document Folder Reception Confirmation ("EHF Dokumentmappe Kvitteringsmelding" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :toc: left
@@ -25,6 +25,8 @@ v{revision}
 :leveloffset: +1
 
 include::introduction.adoc[]
+
+include::background.adoc[]
 
 include::usecase/index.adoc[]
 

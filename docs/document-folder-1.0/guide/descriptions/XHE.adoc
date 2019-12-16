@@ -58,7 +58,7 @@ include::../{snippet-dir}/document-folder.xml[tags=general-information]
 Information relevant to the header envelope need to be provided in element `xha:Header`, and will be used
 to handle the envelope. The header envelope contains information about the business scope, where contracting
 authority can specify the criterion of the scope of business. There is also important to state the senders and
-receivers organi
+receivers organization number.
 
 .Example of how to implement the header-information in XHE.
 [source, xml, indent=0]
