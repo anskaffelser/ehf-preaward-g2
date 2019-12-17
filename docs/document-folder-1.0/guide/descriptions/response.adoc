@@ -13,3 +13,5 @@ include::../{snippet-dir}/document-folder-reception-confirmation.xml[tags=Docume
 ----
 <1> Response code- always `RECEIVED`
 <2> Identifier referenced to EHF Document Folder
+
+

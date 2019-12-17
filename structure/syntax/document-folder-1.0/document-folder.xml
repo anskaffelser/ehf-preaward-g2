@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>supplierlist-xhe-folder</Term>
-    <Name>Supplier list XHE Folder</Name>
+    <Term>document-folder</Term>
+    <Name>Document Folder</Name>
 
     <Namespace prefix="xhe">oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope</Namespace>
     <Namespace prefix="xhb">oasis-cefact-xhe-1.0-BasicComponents</Namespace>
