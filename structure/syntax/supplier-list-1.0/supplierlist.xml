@@ -272,21 +272,7 @@
 
                     <Value type="EXAMPLE">15987</Value>
                 </Element>
-
-                <Element cardinality="0..1">
-                    <Term>Type</Term>
-                    <Name>Reference Type</Name>
-                    <Description>A short description of the lot-reference.</Description>
-                    <Value type="EXAMPLE">Table and chairs</Value>
-                </Element>
             </Element>
-
-
         </Element>
-
-
-
     </Document>
-
-
 </Syntax>

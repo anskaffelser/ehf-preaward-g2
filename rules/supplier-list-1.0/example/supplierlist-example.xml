@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ParticipantList xmnls="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
 
     <CustomizationID scheme="123">...</CustomizationID>
     <ProfileID scheme="123">...</ProfileID>
@@ -21,7 +21,7 @@
     </SenderParty>
 
     <ReceiverParty>
-        <EndpointID schemeID="0192">987654325</EndpointID>
+        <EndpointID scheme="0192">987654325</EndpointID>
         <Name>Green AS</Name>
         <Contact>
             <Name>Berit Berntsen</Name>
@@ -46,11 +46,7 @@
             </Contact>
         </Party>
         <FolderReference>
-            <ID>lot-01</ID>
-            <Type>Washing services</Type>
+            <ID scheme="LOT">lot-01</ID>
         </FolderReference>
     </ParticipatingParty>
-
-
-
 </ParticipantList>

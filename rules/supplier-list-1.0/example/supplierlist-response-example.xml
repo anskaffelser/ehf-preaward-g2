@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApplicationResponse
-        xmnls="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+        xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
@@ -13,7 +13,7 @@
     <cbc:IssueTime>12:30:00</cbc:IssueTime>
 
     <cac:SenderParty>
-        <cbc:EndpointID scheme="0192">987654325</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
         <cac:PartyName>
             <cbc:Name>Green AS</cbc:Name>
         </cac:PartyName>
@@ -25,7 +25,7 @@
     </cac:SenderParty>
 
     <cac:ReceiverParty>
-        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
             <cbc:Name>X Innkjøpssentral</cbc:Name>
         </cac:PartyName>

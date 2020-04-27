@@ -10,7 +10,7 @@
     <rule context="ParticipatingParty/FolderReference">
         <assert id="EHF-SL-R002"
                 test="ID[@scheme = 'LOT']"
-                flag="fatal">Participating Party MUST contain LOT reference number.</assert>
+                flag="fatal">If the Participating Party's Folder Reference is used, then the LOT reference MUST be provided.</assert>
     </rule>
 
     <rule context="ParticipantList">

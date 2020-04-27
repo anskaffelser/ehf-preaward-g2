@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApplicationResponse
-        xmnls="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+        xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
@@ -14,7 +14,7 @@
 
     <!-- tag::SenderParty-response[] -->
     <cac:SenderParty>
-        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
             <cbc:Name>ER AS</cbc:Name>
         </cac:PartyName>
@@ -28,7 +28,7 @@
 
     <!-- tag::ReceiverParty-response[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID scheme="0192">123456785</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyName>
             <cbc:Name>X Innkjøpssentral</cbc:Name>
         </cac:PartyName>
@@ -40,7 +40,6 @@
     </cac:ReceiverParty>
     <!-- end::ReceiverParty-response[] -->
 
-
     <!-- tag::DocumentResponse[] -->
     <cac:DocumentResponse>
         <cac:Response>
@@ -51,6 +50,5 @@
         </cac:DocumentReference>
     </cac:DocumentResponse>
     <!-- end::DocumentResponse[] -->
-
 
 </ApplicationResponse>
