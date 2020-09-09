@@ -20,8 +20,8 @@ include::../shared/links.adoc[]
 :link-issues: https://github.com/difi/vefa-ehf-getevidence/issues
 :link-portal: https://vefa.difi.no/
 
-:name-difi-en: Agency of Public Management and eGovernment
-:name-difi-no: Direktoratet for forvaltning og IKT
+:name-difi-en: Agency for Public and Financial Management
+:name-difi-no: Direktoratet for Forvaltning og Økonomistyring
 
 //ISO:
 :ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
