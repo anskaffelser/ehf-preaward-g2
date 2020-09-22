@@ -9,14 +9,6 @@ When used in an instance document, each data element will contain data. In the b
 
 :leveloffset: +1
 
-include::amount.adoc[]
-
-include::price.adoc[]
-
-include::percentage.adoc[]
-
-include::quantities.adoc[]
-
 include::codes.adoc[]
 
 include::identifier.adoc[]
