@@ -43,10 +43,10 @@
     <!-- tag::DocumentResponse[] -->
     <cac:DocumentResponse>
         <cac:Response>
-            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode>
+            <cbc:ResponseCode>RECEIVED</cbc:ResponseCode><!--1-->
         </cac:Response>
         <cac:DocumentReference>
-            <cbc:ID>154</cbc:ID>
+            <cbc:ID>154</cbc:ID><!--2-->
         </cac:DocumentReference>
     </cac:DocumentResponse>
     <!-- end::DocumentResponse[] -->

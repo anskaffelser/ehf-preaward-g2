@@ -11,4 +11,6 @@ include::references.adoc[]
 
 include::participating-party.adoc[]
 
+include::response.adoc[]
+
 :leveloffset: -1

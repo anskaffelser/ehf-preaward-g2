@@ -18,4 +18,3 @@ The following diagram illustrates the parties and roles involved in supplier lis
 
 .EHF Supplier list rolediagram.
 image::images/rolediagram.png[align="center"]
-
