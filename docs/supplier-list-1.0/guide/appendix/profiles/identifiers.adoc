@@ -12,8 +12,12 @@ In the table below you will find the values to be used as the specification iden
 
 
 | EHF Supplier list
-| fyll inn
-| fyll inn
+| ...
+| ...
+
+| EHF Supplier list Reception Confirmation
+| ...
+| ...
 
 
 |===

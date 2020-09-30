@@ -11,9 +11,13 @@ In the table below you will find the values to be used as the specification iden
 | Element `cbc:ProfileID`
 
 
-| EHF Supplier list
-| fyll inn
-| fyll inn
+| EHF Document Folder
+| ...
+| ...
+
+| EHF Document Folder Reception Confirmation
+| ...
+| ...
 
 
 |===
