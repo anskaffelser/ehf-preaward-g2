@@ -90,15 +90,6 @@ include::../{snippet-dir}/document-folder.xml[tags=payloads]
 <2> Identification of the specific payload instance
 <3> Description of the specific payload instance
 <4> Type of document expressed as a code from link:https://test-vefa.difi.no/ehf-pre/g2/codelist/UNCL1001/[code list]
-<5> The Payload instance's file format with `filename`
+<5> The Payload instance embedded as binary object with `filename` and link:https://anskaffelser.dev/preaward/g2/spec/draft/codelist/MimeCode/[`mimeCode`]
 <6> Payload instance is not encrypted- always use `False`
 <7> The URI that identifies where the document is located
-
-
-
-
-
-
-
-
-

@@ -39,7 +39,7 @@
             <xhb:ID>123</xhb:ID>
             <xhb:Description>Catalogue template</xhb:Description>
             <xhb:DocumentTypeCode>758</xhb:DocumentTypeCode>
-            <xhb:ContenTypeCode filename="catalogue-templates.pdf">application/pdf</xhb:ContenTypeCode>
+            <xhb:ContenTypeCode mimeCode= "application/pdf" filename="catalogue-templates.pdf">RFBTIGNhdGFsb2d1ZSB0ZW1wbGF0ZXMK</xhb:ContenTypeCode>
             <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
             <xha:RelevantExternalReference>
                 <xha:ExternalReference>
@@ -50,4 +50,3 @@
     </xha:Payloads>
 
 </XHE>
-

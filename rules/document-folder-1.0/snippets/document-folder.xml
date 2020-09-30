@@ -54,7 +54,7 @@
             <xhb:ID>123</xhb:ID> <!--2-->
             <xhb:Description>Tender document</xhb:Description> <!--3-->
             <xhb:DocumentTypeCode>758</xhb:DocumentTypeCode> <!--4-->
-            <xhb:ContenTypeCode filename="tender-document.pdf">application/pdf</xhb:ContenTypeCode><!--5-->
+            <xhb:ContenTypeCode mimeCode="application/pdf" filename="tender-document.pdf">dGVuZGVyIGRvY3VtZW50cyBpbiBEUFM=</xhb:ContenTypeCode><!--5-->
             <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--6-->
             <xha:RelevantExternalReference>
                 <xha:ExternalReference>
@@ -65,4 +65,3 @@
     </xha:Payloads>
     <!-- end::payloads[] -->
 </XHE>
-

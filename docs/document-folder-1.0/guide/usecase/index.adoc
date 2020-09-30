@@ -6,8 +6,7 @@ The following diagram illustrates the EHF Document Folder and EHF Document Folde
 processes.
 
 .EHF Document Folder and EHF Document Folder Reception Confirmation process.
-
-image::images/processDiagram.png[align="center"]
+image::images/processdiagram.png[align="center"]
 
 The main idea of document folder, the Central Purchasing Body sends a EHF Document folder with structured and non-structured documents
 to all qualified suppliers in the DPS. Contracting Authorities receives the Document folder with procurement documents,

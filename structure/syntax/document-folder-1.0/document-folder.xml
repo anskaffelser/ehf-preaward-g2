@@ -10,7 +10,7 @@
 
     <Document>
         <Term>xhe:XHE</Term>
-        
+
         <Element>
             <Term>xhb:XHEVersionID</Term>
             <Name>XHE Version identifier</Name>
@@ -37,7 +37,7 @@
             <Name>Header</Name>
             <Description>Relevant header or envelope information.</Description>
             <Property key="doc">structure/docs/document-folder-1.0/header.adoc</Property>
-            
+
             <Element>
                 <Term>xhb:ID</Term>
                 <Name>Identifier</Name>
@@ -51,7 +51,7 @@
                 <Description>Unique identifier of the envelope.</Description>
                 <Value type="EXAMPLE">a8966484-f555-4fc0-92f4-333a93a88aa2</Value>
             </Element>
-            
+
             <Element>
                 <Term>xhb:CreationDateTime</Term>
                 <Name>Creation Date Time</Name>
@@ -136,14 +136,14 @@
                     </Element>
                 </Element>
             </Element>
-            
+
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>xha:Payloads</Term>
             <Name>Payloads</Name>
             <Property key="doc">structure/docs/document-folder-1.0/payloads.adoc</Property>
-            
+
             <Element cardinality="0..n">
                 <Term>xha:Payload</Term>
                 <Name>Payload</Name>
@@ -174,15 +174,15 @@
                 <Element cardinality="0..1">
                     <Term>xhb:ContentTypeCode</Term>
                     <Name>Document file format</Name>
-                    <Description>File format of the payload instance.</Description>
+                    <Description>File format of the payload instance, embedded as binary object (Base64).</Description>
 
-                    <!--<Attribute>
+                    <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Attached document Mime code</Name>
                         <Description>The mime code of the attached document.</Description>
                         <Reference type="CODE_LIST">MimeCode</Reference>
-                        <Value type="EXAMPLE">text/csv</Value>
-                    </Attribute> -->
+                        <Value type="EXAMPLE">application/pdf</Value>
+                    </Attribute>
 
                     <Attribute>
                         <Term>filename</Term>
@@ -191,7 +191,7 @@
                         <Value type="EXAMPLE">templates.pdf</Value>
                     </Attribute>
                     <Reference type="CODE_LIST">MimeCode</Reference>
-                    <Value type="EXAMPLE">application/pdf</Value>
+                    <Value type="EXAMPLE">RFBTIE5vdGljZSBwYWNrYWdlcw==</Value>
                 </Element>
 
                 <!--
