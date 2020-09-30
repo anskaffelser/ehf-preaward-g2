@@ -5,7 +5,7 @@
 The following diagram illustrates the EHF Supplier list process.
 
 .EHF Supplier list process.
-image::images/processDiagram.png[align="center"]
+image::images/processdiagram.png[align="center"]
 
 The main idea of supplier list, the Central Purchasing Body sends a supplier list based on qualified suppliers (Contracting Authority).
 The supplier (Contracting Authority) receives the supplier list and sends a confirmation. The Central Purchasing Body
