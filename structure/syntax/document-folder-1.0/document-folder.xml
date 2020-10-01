@@ -172,17 +172,11 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>xhb:CustomizationID</Term>
-                    <Name>Payload Specification Identifier</Name>
-                    <Description>The specification identifier of the payload instance.</Description>
-                    <Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:order_agreement:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>xhb:ProfileID</Term>
-                    <Name>Payload Profile Identifier</Name>
-                    <Description>The business process identifier of the payload instance.</Description>
-                    <Value type="EXAMPLE">urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:03:1.0</Value>
+                    <Term>xhb:ContentTypeCode</Term>
+                    <Name>Document file format</Name>
+                    <Description>File format of the payload instance.</Description>
+                    <Reference type="CODE_LIST">MimeCode</Reference>
+                    <Value type="EXAMPLE">application/pdf</Value>
                 </Element>
 
                 <Element>
@@ -195,7 +189,15 @@
                 <Element cardinality="0..1">
                     <Term>xha:PayloadContent</Term>
                     <Name>Payload content item</Name>
-                    <Description>Payload content of structured documents as Catalogue, Incoice, Credit note,...</Description>
+                    <Description>Payload content of business documents embedded as binary object (Base64).</Description>
+
+                    <Attribute>
+                        <Term>filename</Term>
+                        <Name>Payload content filename</Name>
+                        <Description>The filename of the payload content.</Description>
+                        <Value type="EXAMPLE">templates.pdf</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">RFBTIE5vdGljZSBwYWNrYWdlcw==</Value>
                 </Element>
 
             </Element>

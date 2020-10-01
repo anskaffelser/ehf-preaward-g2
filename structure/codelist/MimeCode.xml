@@ -7,8 +7,6 @@
     <Agency>IANA</Agency>
     <Subset>OpenPEPPOL</Subset>
 
-
-
     <Code>
         <Id>application/pdf</Id>
         <Name>application/pdf</Name>
@@ -53,15 +51,14 @@
         <Id>drawing/dwg</Id>
         <Name>drawing/dwg</Name>
     </Code>
-    
+
     <Code>
         <Id>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Id>
         <Name>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Name>
     </Code>
-    
+
     <Code>
         <Id>application/vnd.oasis.opendocument.spreadsheet</Id>
         <Name>application/vnd.oasis.opendocument.spreadsheet</Name>
     </Code>
 </CodeList>
-

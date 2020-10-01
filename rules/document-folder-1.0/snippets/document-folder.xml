@@ -47,25 +47,16 @@
         </xha:ToParty>
     </xha:Header>
     <!-- end::header[] -->
-    
+
     <!-- tag::payloads[] -->
     <xha:Payloads>
       <xha:Payload><!--1-->
         <xhb:ID>1</xhb:ID> <!--2-->
-        <xhb:Description>Catalogue template</xhb:Description> <!--3-->
+        <xhb:Description>Catalogue templates</xhb:Description> <!--3-->
         <xhb:DocumentTypeCode>9</xhb:DocumentTypeCode> <!--4-->
-        <xhb:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</xhb:CustomizationID> <!--5-->
-        <xhb:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:01:1.0</xhb:ProfileID> <!--6-->
-        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--7-->
-        <xha:PayloadContent> <!--8-->
-        <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-          xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"> <!--9-->
-
-               <!--- ... -->
-
-        </Catalogue>
-      </xha:PayloadContent>
+        <xhb:ContentTypeCode>application/pdf</ContentTypeCode> <!--5-->
+        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--6-->
+        <xha:PayloadContent filename="catalogue-templates.pdf">Q2F0YWxvZ3VlIHRlbXBsYXRlcyBuZWVkIHRvIGJlIHVzZWQgaW4gRFBTIDEyMjM0IGNvbXBldGl0aW9u</xha:PayloadContent> <!--7-->
     </xha:Payload>
   </xha:Payloads>
   <!-- end::payloads[] -->
