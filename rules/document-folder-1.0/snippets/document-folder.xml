@@ -47,21 +47,26 @@
         </xha:ToParty>
     </xha:Header>
     <!-- end::header[] -->
-
+    
     <!-- tag::payloads[] -->
     <xha:Payloads>
-        <xha:Payload> <!--1-->
-            <xhb:ID>123</xhb:ID> <!--2-->
-            <xhb:Description>Tender document</xhb:Description> <!--3-->
-            <xhb:DocumentTypeCode>758</xhb:DocumentTypeCode> <!--4-->
-            <xhb:ContenTypeCode mimeCode="application/pdf" filename="tender-document.pdf">dGVuZGVyIGRvY3VtZW50cyBpbiBEUFM=</xhb:ContenTypeCode><!--5-->
-            <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--6-->
-            <xha:RelevantExternalReference>
-                <xha:ExternalReference>
-                    <xhb:ID>http://www.xyz.com/tender-document.pdf</xhb:ID> <!--7-->
-                </xha:ExternalReference>
-            </xha:RelevantExternalReference>
-        </xha:Payload>
-    </xha:Payloads>
-    <!-- end::payloads[] -->
+      <xha:Payload><!--1-->
+        <xhb:ID>1</xhb:ID> <!--2-->
+        <xhb:Description>Catalogue template</xhb:Description> <!--3-->
+        <xhb:DocumentTypeCode>9</xhb:DocumentTypeCode> <!--4-->
+        <xhb:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</xhb:CustomizationID> <!--5-->
+        <xhb:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:01:1.0</xhb:ProfileID> <!--6-->
+        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator> <!--7-->
+        <xha:PayloadContent> <!--8-->
+        <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+          xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"> <!--9-->
+
+               <!--- ... -->
+
+        </Catalogue>
+      </xha:PayloadContent>
+    </xha:Payload>
+  </xha:Payloads>
+  <!-- end::payloads[] -->
 </XHE>

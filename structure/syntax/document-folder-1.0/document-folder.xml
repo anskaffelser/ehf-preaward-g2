@@ -172,44 +172,18 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>xhb:ContentTypeCode</Term>
-                    <Name>Document file format</Name>
-                    <Description>File format of the payload instance, embedded as binary object (Base64).</Description>
-
-                    <Attribute>
-                        <Term>mimeCode</Term>
-                        <Name>Attached document Mime code</Name>
-                        <Description>The mime code of the attached document.</Description>
-                        <Reference type="CODE_LIST">MimeCode</Reference>
-                        <Value type="EXAMPLE">application/pdf</Value>
-                    </Attribute>
-
-                    <Attribute>
-                        <Term>filename</Term>
-                        <Name>Attached document Filename</Name>
-                        <Description>The file name of the attached document</Description>
-                        <Value type="EXAMPLE">templates.pdf</Value>
-                    </Attribute>
-                    <Reference type="CODE_LIST">MimeCode</Reference>
-                    <Value type="EXAMPLE">RFBTIE5vdGljZSBwYWNrYWdlcw==</Value>
-                </Element>
-
-                <!--
-                <Element cardinality="0..1">
                     <Term>xhb:CustomizationID</Term>
-                    <Name>Customization Identifier</Name>
-                    <Description>The payload instance's customization identifier.</Description>
-                    <Value type="EXAMPLE">...</Value>
+                    <Name>Payload Specification Identifier</Name>
+                    <Description>The specification identifier of the payload instance.</Description>
+                    <Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:order_agreement:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>xhb:ProfileID</Term>
-                    <Name>Profile Identifier</Name>
-                    <Description>The payload instance's profile identifier.</Description>
-                    <Value type="EXAMPLE">...</Value>
+                    <Name>Payload Profile Identifier</Name>
+                    <Description>The business process identifier of the payload instance.</Description>
+                    <Value type="EXAMPLE">urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:03:1.0</Value>
                 </Element>
-
-                -->
 
                 <Element>
                     <Term>xhb:InstanceEncryptionIndicator</Term>
@@ -218,22 +192,10 @@
                     <Value type="FIXED">False</Value>
                 </Element>
 
-                <Element cardinality="0..n">
-                    <Term>xha:RelevantExternalReference</Term>
-                    <Name>Relevant External Reference</Name>
-                    <Description>Reference to a business document relevant to the payload instance.</Description>
-
-                    <Element>
-                        <Term>xha:ExternalReference</Term>
-                        <Name>External Reference</Name>
-
-                        <Element>
-                            <Term>xhb:ID</Term>
-                            <Name>External Document location</Name>
-                            <Description>The URI that identifies where the external reference document is located.</Description>
-                            <Value type="EXAMPLE">http://www.xx-catalogue-template.com/index.html</Value>
-                        </Element>
-                    </Element>
+                <Element cardinality="0..1">
+                    <Term>xha:PayloadContent</Term>
+                    <Name>Payload content item</Name>
+                    <Description>Payload content of structured documents as Catalogue, Incoice, Credit note,...</Description>
                 </Element>
 
             </Element>

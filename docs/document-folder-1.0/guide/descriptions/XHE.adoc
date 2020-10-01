@@ -90,6 +90,18 @@ include::../{snippet-dir}/document-folder.xml[tags=payloads]
 <2> Identification of the specific payload instance
 <3> Description of the specific payload instance
 <4> Type of document expressed as a code from link:https://test-vefa.difi.no/ehf-pre/g2/codelist/UNCL1001/[code list]
-<5> The Payload instance embedded as binary object with `filename` and link:https://anskaffelser.dev/preaward/g2/spec/draft/codelist/MimeCode/[`mimeCode`]
-<6> Payload instance is not encrypted- always use `False`
-<7> The URI that identifies where the document is located
+<5> The specification identifier (`CustomizationID`) of the Payload instance
+<6> The business process identifier (`ProfileID`) of the Payload instance
+<7> Payload instance is not encrypted- always use `False`
+<8> The payload content of each structured document
+<9> Structured information of the specific business document (XML based), here EHF Catalogue 3.0
+
+
+.Example of how to implement multiple payloads in XHE.
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/document-folder-multiple.xml[tags=multiple-payloads]
+----
+<1> Payload number 1, here EHF Catalogue 3.0
+<2> Payload number 2, here PEPPOL BIS Billing 3.0
+<3> Payload number 2, here EHF Order 3.0

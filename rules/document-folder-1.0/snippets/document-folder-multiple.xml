@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- tag::general-information[] -->
+<XHE xmlns="oasis-cefact-xhe-1.0-ExchangeHeaderEnvelope"
+     xmlns:xhb="oasis-cefact-xhe-1.0-BasicComponents"
+     xmlns:xha="oasis-cefact-xhe-1.0-AggregateComponents"
+     xmlns:ext="oasis-cefact-xhe-1.0-ExtensionComponents">
+
+    <xhb:XHEVersionID>1.0</xhb:XHEVersionID> <!--1-->
+    <xhb:CustomizationID>...</xhb:CustomizationID> <!--2-->
+    <xhb:ProfileID>...</xhb:ProfileID> <!--3-->
+
+    <xha:Header> <!--4-->
+        <!-- Header Information -->
+    </xha:Header>
+
+    <xha:Payloads>  <!--5-->
+        <xha:Payload>
+            <!-- Payload Information -->
+        </xha:Payload>
+    </xha:Payloads>
+
+    <!-- end::general-information[] -->
+
+    <!-- tag::header[] -->
+    <xha:Header>
+        <xhb:ID>158</xhb:ID> <!--1-->
+        <xhb:UUID>356a67cf-1fac-4c30-94b0-a29fee1a015b</xhb:UUID> <!--2-->
+        <xhb:CreationDateTime>2019-10-09T10:00:00Z</xhb:CreationDateTime> <!--3-->
+        <xha:BusinessScope> <!--4-->
+            <xha:BusinessScopeCriterion>
+                <xhb:BusinessScopeCriterionTypeCode>DPS</xhb:BusinessScopeCriterionTypeCode><!--5-->
+                <xhb:BusinessScopeCriterionValue>Developing DPS pilot.</xhb:BusinessScopeCriterionValue> <!--6-->
+            </xha:BusinessScopeCriterion>
+        </xha:BusinessScope>
+
+        <xha:FromParty>
+            <xha:PartyIdentification>
+                <xhb:ID schemeID="0192">987654325</xhb:ID> <!--7-->
+            </xha:PartyIdentification>
+        </xha:FromParty>
+
+        <xha:ToParty>
+            <xha:PartyIdentification>
+                <xhb:ID schemeID="0192">123456785</xhb:ID> <!--8-->
+            </xha:PartyIdentification>
+        </xha:ToParty>
+    </xha:Header>
+    <!-- end::header[] -->
+
+    <!-- tag::multiple-payloads[] -->
+    <xha:Payloads>
+      <xha:Payload><!--1-->
+        <xhb:ID>1</xhb:ID>
+        <xhb:Description>Catalogue template</xhb:Description>
+        <xhb:DocumentTypeCode>9</xhb:DocumentTypeCode>
+        <xhb:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</xhb:CustomizationID>
+        <xhb:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:01:1.0</xhb:ProfileID>
+        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
+        <xha:PayloadContent>
+          <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+               <!--- ... -->
+
+          </Catalogue>
+        </xha:PayloadContent>
+      </xha:Payload>
+      <xha:Payload> <!--2-->
+        <xhb:ID>2</xhb:ID>
+        <xhb:Description>Invoice document</xhb:Description>
+        <xhb:DocumentTypeCode>388</xhb:DocumentTypeCode>
+        <xhb:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</xhb:CustomizationID>
+        <xhb:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</xhb:ProfileID>
+        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
+        <xha:PayloadContent>
+          <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+               <!--- ... -->
+
+          </Invoice>
+        </xha:PayloadContent>
+      </xha:Payload>
+      <xha:Payload> <!--3-->
+        <xhb:ID>3</xhb:ID>
+        <xhb:Description>Order document</xhb:Description>
+        <xhb:DocumentTypeCode>105</xhb:DocumentTypeCode>
+        <xhb:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</xhb:CustomizationID>
+        <xhb:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:02:1.0</xhb:ProfileID>
+        <xhb:InstanceEncryptionIndicator>False</xhb:InstanceEncryptionIndicator>
+        <xha:PayloadContent>
+          <Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+               <!--- ... -->
+
+          </Order>
+        </xha:PayloadContent>
+      </xha:Payload>
+    </xha:Payloads>
+    <!-- end::multiple-payloads[] -->
+</XHE>
