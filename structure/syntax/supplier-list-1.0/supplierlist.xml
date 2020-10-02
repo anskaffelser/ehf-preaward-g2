@@ -9,34 +9,21 @@
     <Document>
         <Term>ParticipantList</Term>
         <Name>EHF Supplier list document</Name>
-        
+
         <Element cardinality="0..1">
             <Term>CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
-
-            <Attribute>
-                <Term>scheme</Term>
-                <Name>Scheme identifier</Name>
-                <Value type="EXAMPLE">123</Value>  <!-- Need to change -->
-            </Attribute>
             <Value type="FIXED">...</Value>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
-
-            <Attribute>
-                <Term>scheme</Term>
-                <Name>Scheme identifier</Name>
-                <Value type="EXAMPLE">123</Value><!-- Need to change -->
-            </Attribute>
-           <Value type="FIXED">...</Value>
-
+            <Value type="FIXED">...</Value>
         </Element>
-        
+
         <Element>
             <Term>ID</Term>
             <Name>Document Identifier</Name>

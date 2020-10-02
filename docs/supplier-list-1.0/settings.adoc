@@ -1,8 +1,8 @@
 :lang: en
 
-:doctitle: EHF Supplier list 1.0
+:doctitle: EHF Supplier list 1.0 RC1
 
-:revision: 1.0.0
+:revision: 1.0.0 RC1
 
 :date-review: dd. mm.yyyy
 :date-release: dd.mm.yyyy
