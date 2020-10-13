@@ -1,4 +1,0 @@
-
-= Get Evidence Request and Response
-
-One request or response is for one Economic Operator, but for this one economic operator, several different evidences are supported. One request document will result in one response document, containing all the evidence requested. This means that if a request is sent asking for one evidence which is unrestricted and one that requires separate consent (restricted), no response message is sent before all evidences are ready. In such cases, you can chose to split the request into several request documents, to get the unrestricted evidences as soon as possible.
