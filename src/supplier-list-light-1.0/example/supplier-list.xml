@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
 
-    <CustomizationID scheme="123">...</CustomizationID>
-    <ProfileID scheme="123">...</ProfileID>
+    <CustomizationID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:supplier-list:1.0</CustomizationID>
+    <ProfileID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:process:light:1.0</ProfileID>
 
     <ID>987</ID>
     <UUID>f5e247f4-e63e-4013-91f0-6d1e3f3db819</UUID>

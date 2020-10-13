@@ -112,7 +112,7 @@
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>src/supplier-list-light-1.0/syntax/SupplierList.xml</Path>
+        <Path>src/supplier-list-light-1.0/syntax/supplier-list.xml</Path>
         <Title>EHF Supplier List</Title>
         <Tag>supplier-list-light-1.0</Tag>
     </Resource>
@@ -174,7 +174,7 @@
     <!-- Code lists-->
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/ICD.xml</Path>
+        <Path>src/_common/codelist/ICD.xml</Path>
         <Tag>dps-qualification</Tag>
         <Tag>dps-unsubscription</Tag>
         <Tag>dps-awarded</Tag>
@@ -182,62 +182,64 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/EAS.xml</Path>
+        <Path>src/_common/codelist/EAS.xml</Path>
         <Tag>dps-qualification</Tag>
         <Tag>dps-unsubscription</Tag>
         <Tag>dps-awarded</Tag>
         <Tag>dps-unawarded</Tag>
+        <Tag>supplier-list-light-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/MimeCode.xml</Path>
+        <Path>src/_common/codelist/MimeCode.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/ResponseCodePosNeg.xml</Path>
+        <Path>src/_common/codelist/ResponseCodePosNeg.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/ContractFolderType.xml</Path>
+        <Path>src/_common/codelist/ContractFolderType.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/ISO3166-1_Alpha2.xml</Path>
+        <Path>src/_common/codelist/ISO3166-1_Alpha2.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/reference-type.xml</Path>
+        <Path>src/_common/codelist/reference-type.xml</Path>
         <Tag>supplier-list-1.0</Tag>
+        <Tag>supplier-list-light-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>src/common/codelist/UNCL1001.xml</Path>
+        <Path>src/_common/codelist/UNCL1001.xml</Path>
         <Tag>document-folder-1.0</Tag>
     </Resource>
 
     <!-- Tags -->
     <!-- <Tag>
         <Identifier>dps-qualification</Identifier>
-        <Title>DPS Qualification</Title>
+        <Title>Qualification</Title>
         <Description>Process for qualification to a DPS project.</Description>
     </Tag>
     <Tag>
         <Identifier>dps-unsubscription</Identifier>
-        <Title>DPS Unsubscription</Title>
+        <Title>Unsubscription</Title>
         <Description>Process for unsubscription from DPS project.</Description>
     </Tag>
     <Tag>
         <Identifier>dps-awarded</Identifier>
-        <Title>DPS Awarded Notification</Title>
+        <Title>Awarded Notification</Title>
         <Description>Process to notify winning party in a DPS procurement.</Description>
     </Tag>
     <Tag>
         <Identifier>dps-unawarded</Identifier>
-        <Title>DPS Unawarded Notification</Title>
+        <Title>Unawarded Notification</Title>
         <Description>Process to notify loosing parties in a DPS procurement.</Description>
     </Tag> -->
     <Tag>
