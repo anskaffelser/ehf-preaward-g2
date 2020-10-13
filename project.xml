@@ -27,6 +27,13 @@
 
     <Resource>
         <Type>Doc-1</Type>
+        <Path>supplier-list-light-1.0/guide/</Path>
+        <Title>Implementation Guideline</Title>
+        <Tag>supplier-list-light-1.0</Tag>
+    </Resource>
+
+    <Resource>
+        <Type>Doc-1</Type>
         <Path>document-folder-1.0/guide/</Path>
         <Title>Implementation Guideline</Title>
         <Tag>document-folder-1.0</Tag>
@@ -121,6 +128,12 @@
         <Path>structure/syntax/supplier-list-1.0/supplierlist-reception-confirmation.xml</Path>
         <Title>EHF Supplier list Reception Confirmation</Title>
         <Tag>supplier-list-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>src/supplier-list-light-1.0/syntax/SupplierList.xml</Path>
+        <Title>EHF Supplier List</Title>
+        <Tag>supplier-list-light-1.0</Tag>
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
@@ -219,21 +232,12 @@
     <!-- Code lists-->
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ISO4217_2015.xml</Path>
+        <Path>src/common/codelist/ISO4217_2015.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
-        <Tag>get-evidence-1.0</Tag>
-        <Tag>dps-qualification</Tag>
-        <Tag>dps-unsubscription</Tag>
-        <Tag>dps-awarded</Tag>
-        <Tag>dps-unawarded</Tag>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/EAS.xml</Path>
+        <Path>src/common/codelist/ICD.xml</Path>
         <Tag>get-evidence-1.0</Tag>
         <Tag>dps-qualification</Tag>
         <Tag>dps-unsubscription</Tag>
@@ -242,62 +246,71 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/TrueFalse.xml</Path>
+        <Path>src/common/codelist/EAS.xml</Path>
+        <Tag>get-evidence-1.0</Tag>
+        <Tag>dps-qualification</Tag>
+        <Tag>dps-unsubscription</Tag>
+        <Tag>dps-awarded</Tag>
+        <Tag>dps-unawarded</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/DocRefContentType.xml</Path>
+        <Path>src/common/codelist/TrueFalse.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/common/codelist/DocRefContentType.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/MimeCode.xml</Path>
+        <Path>src/common/codelist/MimeCode.xml</Path>
         <Tag>get-evidence-1.0</Tag>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+        <Path>src/common/codelist/UNECERec20-11e.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20-duration.xml</Path>
+        <Path>src/common/codelist/UNECERec20-duration.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/evidence-codes.xml</Path>
+        <Path>src/common/codelist/evidence-codes.xml</Path>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ResponseCodePosNeg.xml</Path>
+        <Path>src/common/codelist/ResponseCodePosNeg.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ContractFolderType.xml</Path>
+        <Path>src/common/codelist/ContractFolderType.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
+        <Path>src/common/codelist/ISO3166-1_Alpha2.xml</Path>
         <Tag>dps-qualification</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/reference-type.xml</Path>
+        <Path>src/common/codelist/reference-type.xml</Path>
         <Tag>supplier-list-1.0</Tag>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1001.xml</Path>
+        <Path>src/common/codelist/UNCL1001.xml</Path>
         <Tag>document-folder-1.0</Tag>
     </Resource>
 
     <!-- Tags -->
-    <Tag>
+    <!-- <Tag>
         <Identifier>get-evidence-1.0</Identifier>
         <Title>EHF Get Evidence 1.0</Title>
     </Tag>
@@ -320,14 +333,18 @@
         <Identifier>dps-unawarded</Identifier>
         <Title>DPS Unawarded Notification</Title>
         <Description>Process to notify loosing parties in a DPS procurement.</Description>
+    </Tag> -->
+    <Tag>
+        <Identifier>document-folder-1.0</Identifier>
+        <Title>EHF Document Folder 1.0 RC1</Title>
     </Tag>
     <Tag>
         <Identifier>supplier-list-1.0</Identifier>
         <Title>EHF Supplier List 1.0 RC1</Title>
     </Tag>
     <Tag>
-        <Identifier>document-folder-1.0</Identifier>
-        <Title>EHF Document Folder 1.0 RC1</Title>
+        <Identifier>supplier-list-light-1.0</Identifier>
+        <Title>EHF Supplier List Light 1.0 RC1</Title>
     </Tag>
 
 </Project>

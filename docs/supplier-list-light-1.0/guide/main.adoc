@@ -1,0 +1,37 @@
+include::../settings.adoc[]
+
+:lang: en
+:doctitle: EHF Supplier list 1.0
+
+= {doctitle}
+v{revision}
+:description: This document describes EHF Supplier list ("EHF Leverandørliste" in Norwegian) EHF Supplier list Reception Confirmation ("EHF Leverandørliste Kvitteringsmelding" in Norwegian). The document is part of Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.
+:doctype: book
+:icons: font
+:toc: left
+:stem:
+:toclevels: 3
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:title-logo-image: images/logo.jpg
+
+//Variables
+:snippet-dir: ../../../rules/supplier-list-1.0/snippets
+
+{description}
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::background.adoc[]
+
+include::usecase/index.adoc[]
+
+include::descriptions/index.adoc[]
+
+include::appendix/index.adoc[]
+
+:leveloffset: -1

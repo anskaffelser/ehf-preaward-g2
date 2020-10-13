@@ -1,0 +1,16 @@
+= Introduction
+
+The Dynamic purchasing system (DPS) is an electronic procurement procedure (system) that can be established by, for example,
+a Central Purchasing body to purchase works, goods and services from Contracting Authorities.
+
+A sub-process in DPS is called EHF Supplier list, where THE Central Purchasing Body creates a list of qualified suppliers
+in the DPS. The purpose of this document is to describe EHF Supplier list process with a process diagram and use cases, then describe roles and parties together with a role diagram, and finally give
+detailed description of important parts of EHF Supplier list. Appendices with supporting information is provided at
+the end of the document.
+
+
+
+
+
+
+

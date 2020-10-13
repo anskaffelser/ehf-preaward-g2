@@ -1,0 +1,14 @@
+= Background
+
+
+The Dynamic Purchasing System (DPS) is a full electronic procurement procedure for procurement of goods, works and services, where
+a new supplier can join at any time.
+
+DPS is a two stage process:
+
+* Step 1: Initial setup- all suppliers who meet the selection criteria will be admitted to the DPS, and
+
+* Step 2: Individual contracts are awarded.
+
+
+

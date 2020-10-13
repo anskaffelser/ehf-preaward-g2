@@ -1,0 +1,23 @@
+= Process and Typical Use Cases
+
+== Process Diagram
+
+The following diagram illustrates the EHF Supplier list process.
+
+.EHF Supplier list process.
+image::images/processdiagram.png[align="center"]
+
+The main idea of supplier list, the Central Purchasing Body sends a supplier list based on qualified suppliers (Contracting Authority).
+The supplier (Contracting Authority) receives the supplier list and sends a confirmation. The Central Purchasing Body
+receives the response message from the supplier.
+
+In general, the supplier list can be updated when
+
+* a new supplier qualifies to DPS,
+* a supplier need to update their information (e.g. contact information)
+* a supplier withdraws from the competition.
+
+== Use Cases
+
+
+include::usecase1.adoc[]

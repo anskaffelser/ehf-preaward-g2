@@ -1,0 +1,20 @@
+= Parties and Roles
+
+The important parties and roles in supplier list is described below.
+
+****
+Contracting authority (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Central Purchasing body::
+Central Purchasing body is a contracting authority which provides centralised procurement of works, goods and services.
+
+****
+
+The following diagram illustrates the parties and roles involved in supplier list.
+
+{empty} +
+{empty} +
+
+.EHF Supplier list rolediagram.
+image::images/rolediagram.png[align="center"]

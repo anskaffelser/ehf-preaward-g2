@@ -1,0 +1,23 @@
+
+
+== Customization and Profile identifiers
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="5s,4,4", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| EHF Supplier list
+| ...
+| ...
+
+| EHF Supplier list Reception Confirmation
+| ...
+| ...
+
+
+|===

@@ -1,0 +1,32 @@
+
+
+=== Use Case 1
+
+
+****
+
+Description::
+This use case illustrates the use of supplier list, where the Central Purchasing system create a supplier list of
+qualified suppliers in the DPS.
+
+
+Parties involved::
+Contracting Authority +
+Central Purchasing body
+
+Assumptions::
+. The supplier parties X, Y, Z are qualified suppliers in the DPS.
+
+Flow::
+. Central Purchasing system sends a supplier list, based on qualified suppliers, to the Contracting Authorities.
+. The Contracting Authorities receives a supplier list, and updates the list in the Tender system.
+. The Tender system sends a confirmation to the Central Purchasing system.
+. The Central Purchasing system receives the message and store the information.
+
+Result::
+. The Contracting Authorities receives a updated supplier list from the Central Purchasing system, with all qualified
+suppliers in the DPS.
+
+
+
+****

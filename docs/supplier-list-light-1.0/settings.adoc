@@ -1,0 +1,11 @@
+:lang: en
+
+:doctitle: EHF Supplier list 1.0 RC1
+
+:revision: 1.0.0 RC1
+
+:date-review: dd. mm.yyyy
+:date-release: dd.mm.yyyy
+:date-mandatory: dd.mm.yyyy
+
+:snippet-dir-syntax: ../../rules/supplier-list-1.0/snippets

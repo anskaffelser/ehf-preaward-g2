@@ -1,0 +1,15 @@
+= Response
+
+In EHF Supplier Reception Confirmation the Contracting Authority need to send a response
+message to the Central Purchasing Body, by using element `cac:DocumentResponse`. The response message
+confirms that the receiver of EHF Supplier list has received the Supplier list, and refers to the specific
+EHF Supplier list.
+
+
+.Example of how to send a response in EHF Supplier list Reception Confirmation
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/supplierlist-reception-confirmation.xml[tags=DocumentResponse]
+----
+<1> Response code- always `RECEIVED`
+<2> Identifier referenced to EHF Supplier list
