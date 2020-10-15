@@ -3,11 +3,11 @@
 The important parties and roles in supplier list is described below.
 
 ****
-Contracting authority (CA)::
+Contracting Authority (CA)::
 The contracting authority or contracting entity who is buying supplies, services or tendering works.
 
-Central Purchasing body::
-Central Purchasing body is a contracting authority which provides centralised procurement of works, goods and services.
+Central Purchasing Body::
+Central Purchasing Body is a contracting authority which provides centralised procurement of works, goods and services.
 
 ****
 

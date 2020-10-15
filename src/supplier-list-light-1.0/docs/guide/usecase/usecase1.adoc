@@ -20,13 +20,8 @@ Assumptions::
 Flow::
 . Central Purchasing system sends a supplier list, based on qualified suppliers, to the Contracting Authorities.
 . The Contracting Authorities receives a supplier list, and updates the list in the Tender system.
-. The Tender system sends a confirmation to the Central Purchasing system.
-. The Central Purchasing system receives the message and store the information.
 
 Result::
-. The Contracting Authorities receives a updated supplier list from the Central Purchasing system, with all qualified
-suppliers in the DPS.
-
-
+. The Contracting Authorities receives a updated supplier list from the Central Purchasing system, with all qualified suppliers in the DPS.
 
 ****

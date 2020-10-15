@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-    <package>EHF Supplier List Light 1.0</package>
+    <package>EHF Supplier List 1.0 RC1</package>
 
     <testfolder>example</testfolder>
+    <testfolder>rules/snippets</testfolder>
+    <testfolder>rules/unit</testfolder>
 
     <configuration>
-        <identifier>ehf-supplier-list-light-1.0</identifier>
+        <identifier>ehf-preaward-g2-t14l-1.0</identifier>
         <title>EHF Supplier List 1.0 (Light)</title>
+        <declaration type="xml">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1::ParticipantList</declaration>
         <inherit>ehf-schemas</inherit>
-        <file path="rules/sch/supplier-list.sch" />
+        <file source="rules/sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch" path="sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch" />
     </configuration>
 
 </buildConfigurations>

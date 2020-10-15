@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-preaward-g2-t14l-1.0">
+	<assert>
+		<description>Verify phone number content</description>
+		<scope>EHF-T14L-R013</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EHF-T14L-R013</success>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<Telephone>+4799999999</Telephone>
+		</ParticipantList>
+    </test>
+	<test>
+		<assert>
+			<error count="2">EHF-T14L-R013</error>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<Telephone>99999999</Telephone>
+			<Telephone>+47 99 99 99 99</Telephone>
+		</ParticipantList>
+    </test>
+</testSet>

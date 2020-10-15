@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-preaward-g2-t14l-1.0">
+	<assert>
+		<description>Verify existence of only one Doffin reference</description>
+		<scope>EHF-T14L-R001</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EHF-T14L-R001</success>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<FolderReference>
+				<ID scheme="DOFFIN"/>
+			</FolderReference>
+		</ParticipantList>
+    </test>
+	<test>
+		<assert>
+			<error>EHF-T14L-R001</error>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<FolderReference>
+				<ID scheme="DOFFIN"/>
+				<ID scheme="DOFFIN"/>
+			</FolderReference>
+		</ParticipantList>
+    </test>
+</testSet>

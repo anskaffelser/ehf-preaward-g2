@@ -90,24 +90,18 @@ env:
 			-w /src \
 			alpine/git \
 			tools/ehf.sh trigger_environment)
-RULE_DOCS=$(shell test -e $(PROJECT)/$(DOCS_FOLDER) && echo true || echo false)
 docs:
-ifeq "$(RULE_DOCS)" "true"
 	$(call docker_run,docs,Creating documentation,\
-			-v $(PROJECT):/documents \
-			-v $(PROJECT)/target/site:/target \
-			-w /documents/$(DOCS_FOLDER) \
-			difi/asciidoctor)
-else
-	$(call skip,documentation)
-endif
+			-v $(PROJECT):/work \
+			anskaffelser/ehftools:edge \
+			ehf-docs -p . -t target/site)
 RULE_RULES=$(shell find $(PROJECT) -name buildconfig.xml | wc -l | xargs test "0" != && echo "true" || echo "false")
 rules:
 ifeq "$(RULE_RULES)" "true"
 	$(call docker_run,rules,Running vefa-validator,\
 			-v $(PROJECT):/src \
-			difi/vefa-validator \
-			build -x -t -n $(RULES_IDENT) -a $(RULES_FOLDER) -target target/validator /src)
+			anskaffelser/validator:2.1.0 \
+			build -x -t -n $(RULES_IDENT) -target target/validator /src)
 else
 	$(call skip,rules)
 endif

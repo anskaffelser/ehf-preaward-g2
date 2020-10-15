@@ -112,8 +112,8 @@
     </Resource>
     <Resource>
         <Type>Syntax-1</Type>
-        <Path>src/supplier-list-light-1.0/syntax/supplier-list.xml</Path>
-        <Title>EHF Supplier List</Title>
+        <Path>src/supplier-list-light-1.0/syntax/t14l-supplier-list.xml</Path>
+        <Title>EHF Supplier List Light 1.0</Title>
         <Tag>supplier-list-light-1.0</Tag>
     </Resource>
     <Resource>
@@ -144,6 +144,13 @@
         <Path>rules/supplier-list-1.0/sch/common.sch</Path>
         <Title>Rules</Title>
         <Tag>supplier-list-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Identifier>t14l-business-1.0</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>src/supplier-list-light-1.0/rules/sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch</Path>
+        <Title>Business rules for EHF Supplier List Light 1.0</Title>
+        <Tag>supplier-list-light-1.0</Tag>
     </Resource>
 
     <!-- Files -->

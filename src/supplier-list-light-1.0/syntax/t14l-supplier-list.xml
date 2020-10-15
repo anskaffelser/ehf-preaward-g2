@@ -2,71 +2,71 @@
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
     <Term>supplier-list-light</Term>
-    <Name>EHF Supplier List</Name>
+    <Name>EHF Supplier List Light 1.0</Name>
 
-    <Property key="sch:prefix">EHF-BASIC</Property>
-    <Property key="sch:identifier">supplier-list-light</Property>
+    <Property key="sch:prefix">EHF-T14L</Property>
+    <Property key="sch:identifier">t14l-basic-1.0</Property>
 
-    <Namespace prefix="pl">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
+    <Namespace prefix="es">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
 
     <Document>
-        <Term>pl:ParticipantList</Term>
-        <Name>EHF Supplier list document</Name>
+        <Term>es:ParticipantList</Term>
+        <Name>Supplier list document</Name>
 
         <Element>
-            <Term>pl:CustomizationID</Term>
+            <Term>es:CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Value type="FIXED">urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:supplier-list:1.0</Value>
         </Element>
 
         <Element>
-            <Term>pl:ProfileID</Term>
+            <Term>es:ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
             <Value type="FIXED">urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:process:light:1.0</Value>
         </Element>
 
         <Element>
-            <Term>pl:ID</Term>
+            <Term>es:ID</Term>
             <Name>Document Identifier</Name>
             <Description>Document identifier for referencing the document instance.</Description>
             <Value type="EXAMPLE">951753</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>pl:UUID</Term>
+            <Term>es:UUID</Term>
             <Name>Unique Identifier</Name>
             <Description>Universal unique identifier (UUID) for the supplier list document.</Description>
             <Value type="EXAMPLE">7c15a808-decc-4382-a0d1-d5ff2c605f1e</Value>
         </Element>
 
         <Element>
-            <Term>pl:IssueDate</Term>
+            <Term>es:IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2019-11-12</Value>
         </Element>
 
         <Element>
-            <Term>pl:IssueTime</Term>
+            <Term>es:IssueTime</Term>
             <Name>Issue Time</Name>
             <Description>The time on which the transaction instance was issued.</Description>
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
 
         <Element cardinality="1..2">
-            <Term>pl:FolderReference</Term>
+            <Term>es:FolderReference</Term>
             <Name>Folder Reference</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/reference.adoc</Property>
 
             <Element>
-                <Term>pl:ID</Term>
+                <Term>es:ID</Term>
                 <Name>Ted/Doffin Reference</Name>
                 <Description>The Dynamic purchase system's Ted/Doffin Reference number.</Description>
 
                 <Attribute>
-                    <Term>pl:scheme</Term>
+                    <Term>scheme</Term>
                     <Name>TED/Doffin scheme identifier</Name>
                     <Reference type="CODE_LIST">reference</Reference>
                     <Value type="EXAMPLE">TED</Value>
@@ -78,21 +78,21 @@
 
 
         <Element cardinality="0..n">
-            <Term>pl:ParticipatingParty</Term>
+            <Term>es:ParticipatingParty</Term>
             <Name>Participating Party in DPS</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/participating-party.adoc</Property>
 
             <Element>
-                <Term>pl:Party</Term>
+                <Term>es:Party</Term>
                 <Name>Party information</Name>
 
                 <Element cardinality="0..1">
-                    <Term>pl:CompanyID</Term>
+                    <Term>es:CompanyID</Term>
                     <Name>Company Identifier</Name>
                     <Description>Company Identifier of the Participating Party in DPS.</Description>
 
                     <Attribute>
-                        <Term>pl:scheme</Term>
+                        <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">EAS</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -101,38 +101,38 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>pl:Name</Term>
+                    <Term>es:Name</Term>
                     <Name>Name</Name>
                     <Description>The name of the Participating party in DPS.</Description>
                     <Value type="EXAMPLE">X Supplier</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>pl:ElectronicMail</Term>
+                    <Term>es:ElectronicMail</Term>
                     <Name>Company Email Address</Name>
                     <Value type="EXAMPLE">post@x-supplier.com</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>pl:Contact</Term>
+                    <Term>es:Contact</Term>
                     <Name>Contact Person of the Participating Party</Name>
 
                     <Element cardinality="0..1">
-                        <Term>pl:Name</Term>
+                        <Term>es:Name</Term>
                         <Name>Contact Name</Name>
                         <Description>Contact person's name.</Description>
                         <Value type="EXAMPLE">Ola Nordmann</Value>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>pl:Telephone</Term>
+                        <Term>es:Telephone</Term>
                         <Name>Contact Telephone number</Name>
                         <Description>Contact person's telephone number.</Description>
                         <Value type="EXAMPLE">+4799663366</Value>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>pl:ElectronicMail</Term>
+                        <Term>es:ElectronicMail</Term>
                         <Name>Contact Email Address</Name>
                         <Description>Contact person's e-mail address.</Description>
                         <Value type="EXAMPLE">ola.nordmann@x-supplier.com</Value>
@@ -141,16 +141,16 @@
             </Element>
 
             <Element cardinality="0..n">
-                <Term>pl:FolderReference</Term>
+                <Term>es:FolderReference</Term>
                 <Name>Folder Reference</Name>
 
                 <Element>
-                    <Term>pl:ID</Term>
+                    <Term>es:ID</Term>
                     <Name>Lot Reference</Name>
                     <Description>The Dynamic purchase system's Lot Reference number. Only Lot reference is allowed.</Description>
 
                     <Attribute>
-                        <Term>pl:scheme</Term>
+                        <Term>scheme</Term>
                         <Name>Lot scheme identifier</Name>
                         <Value type="FIXED">LOT</Value>
                     </Attribute>

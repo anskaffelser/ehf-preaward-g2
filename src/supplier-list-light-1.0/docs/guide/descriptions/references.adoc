@@ -4,7 +4,7 @@
 //create a supplier list in the DPS. The Central Purchasing body sends an EHF Supplier list to their customers, i.e.
 //contracting authorities.
 
-In the Supplier list Central Purchasing body MUST provide TED and DOFFIN references, on head-level, in order to
+In the Supplier List Central Purchasing Body MUST minimum provide TED or DOFFIN reference, on head-level, in order to
 ensure that suppliers are connected to correct supplier list and DPS. Use element `cac:FolderReference` to provide
 the references on head-level.
 

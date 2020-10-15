@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-preaward-g2-t14l-1.0">
+	<assert>
+		<description>Verify Norwegian organization number</description>
+		<scope>EHF-T14L-R011</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>EHF-T14L-R011</success>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<CompanyID scheme="0192">987654325</CompanyID>
+		</ParticipantList>
+    </test>
+	<test>
+		<assert>
+			<error>EHF-T14L-R011</error>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<CompanyID scheme="0192">987654321</CompanyID>
+		</ParticipantList>
+    </test>
+</testSet>

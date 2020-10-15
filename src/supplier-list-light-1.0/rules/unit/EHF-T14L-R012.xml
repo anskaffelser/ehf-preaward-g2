@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="ehf-preaward-g2-t14l-1.0">
+	<assert>
+		<description>Verify email content</description>
+		<scope>EHF-T14L-R012</scope>
+	</assert>
+	<test>
+		<assert>
+			<success count="2">EHF-T14L-R012</success>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<ElectronicMail>test@test.it</ElectronicMail>
+			<ElectronicMail>test@test.network</ElectronicMail>
+		</ParticipantList>
+    </test>
+	<test>
+		<assert>
+			<error count="2">EHF-T14L-R012</error>
+		</assert>
+		<ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
+			<ElectronicMail>test</ElectronicMail>
+			<ElectronicMail>test@test.network;test@test.it</ElectronicMail>
+		</ParticipantList>
+    </test>
+</testSet>

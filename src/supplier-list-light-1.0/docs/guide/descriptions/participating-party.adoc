@@ -3,7 +3,7 @@
 Information about the qualified suppliers need to be provided in element `cac:ParticipatingParty`. Note that,
 the Central Purchasing body need to provide LOT reference in element `cac:FolderReference`.
 
-.Example of how to implement qualified suppliers in EHF Supplier list.
+.Example of how to implement qualified suppliers in EHF Supplier List.
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/supplierlist.xml[tags=ParticipatingParty]
