@@ -10,14 +10,14 @@
         <Term>ParticipantList</Term>
         <Name>EHF Supplier list document</Name>
 
-        <Element cardinality="0..1">
+        <Element>
             <Term>CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Value type="FIXED">...</Value>
         </Element>
 
-        <Element cardinality="0..1">
+        <Element>
             <Term>ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
@@ -38,14 +38,14 @@
             <Value type="EXAMPLE">7c15a808-decc-4382-a0d1-d5ff2c605f1e</Value>
         </Element>
 
-        <Element cardinality="0..1">
+        <Element>
             <Term>IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2019-11-12</Value>
         </Element>
 
-        <Element cardinality="0..1">
+        <Element>
             <Term>IssueTime</Term>
             <Name>Issue Time</Name>
             <Description>The time on which the transaction instance was issued.</Description>
