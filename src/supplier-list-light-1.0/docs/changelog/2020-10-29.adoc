@@ -1,0 +1,11 @@
+Initial version of EHF Supplier List Light 1.0 based upon work done in EHF Supplier List 1.0.
+
+Main changes from EHF Supplier List 1.0:
+
+* Removing sending party
+* Removing receiving party
+* Removing endpoint identifier
+* Removing response message
+* Adding company identifier
+* Making issuing information mandatory
+* Improved validation

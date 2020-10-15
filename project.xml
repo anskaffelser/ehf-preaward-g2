@@ -24,6 +24,12 @@
         <Title>Implementation Guideline</Title>
         <Tag>supplier-list-light-1.0</Tag>
     </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>supplier-list-light-1.0/changelog/</Path>
+        <Title>Changelog</Title>
+        <Tag>supplier-list-light-1.0</Tag>
+    </Resource>
 
     <Resource>
         <Type>Doc-1</Type>

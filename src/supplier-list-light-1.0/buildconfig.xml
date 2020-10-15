@@ -4,7 +4,7 @@
     <package>EHF Supplier List 1.0 RC1</package>
 
     <testfolder>example</testfolder>
-    <testfolder>rules/snippets</testfolder>
+    <testfolder>docs/guide/snippets</testfolder>
     <testfolder>rules/unit</testfolder>
 
     <configuration>

@@ -8,7 +8,7 @@ the Central Purchasing body need to provide LOT reference in element `cac:Folder
 ----
 include::../{snippet-dir}/supplierlist.xml[tags=ParticipatingParty]
 ----
-<1> Electronic address identifier, where `scheme=0192`
+<1> Company identifier, where `scheme=0192` identifies a Norwegian organization
 <2> Legal name
 <3> Contact information
 <4> LOT Reference

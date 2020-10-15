@@ -1,0 +1,17 @@
+include::../settings.adoc[]
+
+:doctitle: Changelog for {doctitle}
+
+= {doctitle}
+:sectnums!:
+:sectanchors:
+:doctype: book
+:icons: font
+:toc: left
+:stem:
+:toclevels: 3
+
+
+== Version 1.0 RC1 (2020-10-29)
+
+include::2020-10-29.adoc[]

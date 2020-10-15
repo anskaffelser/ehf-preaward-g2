@@ -1,0 +1,19 @@
+:lang: en
+:doctitle: Release 2020-10-29
+
+= {doctitle}
+The Norwegian Agency for Public and Financial Management (DFØ)
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+// :title-logo-image: {shared-dir}/images/logo.jpg
+
+
+== EHF Supplier List Light 1.0 RC1
+
+include::../../../supplier-list-light-1.0/docs/changelog/2020-10-29.adoc[]
+

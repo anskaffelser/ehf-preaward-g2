@@ -1,11 +1,8 @@
 include::../settings.adoc[]
 
-:lang: en
-:doctitle: EHF Supplier List Light 1.0
-
 = {doctitle}
 v{revision}
-:description: This document describes EHF Supplier List ("EHF Leverandørliste" in Norwegian) light edition. The document is part of Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.
+:description: This document describes EHF Supplier List ("EHF Leverandørliste" in Norwegian) light edition. The document is part of The Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :toc: left
@@ -18,7 +15,8 @@ v{revision}
 :title-logo-image: images/logo.jpg
 
 //Variables
-// :snippet-dir: ../../../rules/supplier-list-1.0/snippets
+:snippet-dir: snippets
+
 
 {description}
 
