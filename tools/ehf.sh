@@ -20,6 +20,11 @@ test ! -r /src/tools/template/examples-readme || cat /src/tools/template/example
 for folder in $(find /src/rules -mindepth 2 -maxdepth 2 -name example -type d); do
 cp -r $folder/* /target/examples/
 done
+for folder in $(find /src/src/* -mindepth 1 -maxdepth 1 -name example -type d); do
+echo $folder | cut -d '/' -f 4
+mkdir /target/examples/$(echo $folder | cut -d '/' -f 4)
+cp -r $folder/* /target/examples/$(echo $folder | cut -d '/' -f 4)
+done
 test ! -r /src/tools/script/examples.sh || . /src/tools/script/examples.sh
 cd /target/examples
 rm -rf /target/examples.zip
@@ -32,6 +37,10 @@ rm -rf /target/schematron
 mkdir -p /target/schematron /target/site/files
 test ! -r /src/tools/template/schematron-readme || cat /src/tools/template/schematron-readme | envsubst > /target/schematron/README
 for sch in $(ls /src/rules/*/sch/*.sch); do
+echo "Prepare: $sch"
+schematron prepare $sch /target/schematron/$(basename $sch)
+done
+for sch in $(ls /src/src/*/rules/sch/*.sch); do
 echo "Prepare: $sch"
 schematron prepare $sch /target/schematron/$(basename $sch)
 done

@@ -12,7 +12,7 @@
         <title>EHF Supplier List 1.0 (Light)</title>
         <declaration type="xml">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1::ParticipantList</declaration>
         <inherit>ehf-schemas</inherit>
-        <file source="rules/sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch" path="sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch" />
+        <file source="rules/sch/T14L-SUPPLIER-LIST-1.0.sch" path="sch/T14L-SUPPLIER-LIST-1.0.sch" />
     </configuration>
 
 </buildConfigurations>

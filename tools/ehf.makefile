@@ -1,5 +1,6 @@
 #!make
 # This is a generated file. Please make sure to edit source files.
+IMAGE := anskaffelser/ehftools:edge
 PROJECT := $(if $(PROJECT),$(PROJECT),$(shell dirname $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))))
 IDENIFIER := $(if $(IDENIFIER),$(IDENIFIER),unknown)
 TITLE := $(if $(TITLE),$(TITLE),Unknown)
@@ -53,7 +54,7 @@ clean:
 ifeq "$(RULE_CLEAN)" "true"
 	$(call docker_run,clean,Removing old target folder,\
 			-v $(PROJECT):/src \
-			alpine:3.6 \
+			$(IMAGE) \
 			rm -rf /src/target)
 else
 	$(call skip,cleaning)
@@ -61,7 +62,7 @@ endif
 ownership:
 	$(call docker_run,ownership,Fixing ownership,\
 			-v $(PROJECT):/src \
-			alpine:3.6 \
+			$(IMAGE) \
 			chown -R $(shell id -g ${USER}).$(shell id -g ${USER}) /src/target)
 serve:
 	$(call docker_run,serve,Serve serve,\
@@ -72,12 +73,8 @@ serve:
 			python3 -m http.server 8000 -b 0.0.0.0)
 pull:
 	$(call fold_start,docker_pull,Pulling Docker images)
-	$(call docker_pull,alpine:3.6)
-	$(call docker_pull,difi/vefa-structure:0.7)
-	$(call docker_pull,difi/vefa-validator)
-	$(call docker_pull,difi/asciidoctor)
+	$(call docker_pull,$(IMAGE))
 	$(call docker_pull,klakegg/schematron)
-	$(call docker_pull,alpine/git)
 	$(call fold_end,docker_pull)
 env:
 	$(call docker_run,environment,Creating environment file,\
@@ -88,20 +85,20 @@ env:
 			-e RELEASE="$(RELEASE)" \
 			--entrypoint sh \
 			-w /src \
-			alpine/git \
+			$(IMAGE) \
 			tools/ehf.sh trigger_environment)
 docs:
 	$(call docker_run,docs,Creating documentation,\
 			-v $(PROJECT):/work \
-			anskaffelser/ehftools:edge \
+			$(IMAGE) \
 			ehf-docs -p . -t target/site)
 RULE_RULES=$(shell find $(PROJECT) -name buildconfig.xml | wc -l | xargs test "0" != && echo "true" || echo "false")
 rules:
 ifeq "$(RULE_RULES)" "true"
 	$(call docker_run,rules,Running vefa-validator,\
-			-v $(PROJECT):/src \
-			anskaffelser/validator:2.1.0 \
-			build -x -t -n $(RULES_IDENT) -target target/validator /src)
+			-v $(PROJECT):/work \
+			$(IMAGE) \
+			validator build -x -t -n $(RULES_IDENT) -target target/validator /work)
 else
 	$(call skip,rules)
 endif
@@ -109,9 +106,10 @@ RULE_STRUCTURE=$(shell (test -e $(PROJECT)/project.xml && echo true) || echo fal
 structure:
 ifeq "$(RULE_STRUCTURE)" "true"
 	$(call docker_run,structure,Running vefa-structure,\
-			-v $(PROJECT):/src \
+			-v $(PROJECT):/work \
 			-v $(PROJECT)/target:/target \
-			difi/vefa-structure:0.7)
+			$(IMAGE) \
+			structure)
 else
 	$(call skip,structure)
 endif
@@ -119,9 +117,9 @@ RULE_XSD=$(shell test -d $(PROJECT)/xsd && find $(PROJECT)/xsd -mindepth 1 -maxd
 xsd:
 ifeq "$(RULE_XSD)" "true"
 	$(call docker_run,xsd,Packaging XSD files,\
-			-v $(PROJECT):/src \
+			-v $(PROJECT):/work \
 			-v $(PROJECT)/target:/target \
-			klakegg/schematron \
+			$(IMAGE) \
 			sh tools/ehf.sh trigger_xsd)
 else
 	$(call skip,xsds)
@@ -130,9 +128,9 @@ RULE_SCRIPTS=$(shell test -d $(PROJECT)/scripts && find $(PROJECT)/scripts -maxd
 scripts:
 ifeq "$(RULE_SCRIPTS)" "true"
 	$(call docker_run,scripts,Running scripts,\
-			-v $(PROJECT):/src \
+			-v $(PROJECT):/work \
 			-v $(PROJECT)/target:/target \
-			klakegg/schematron \
+			$(IMAGE) \
 			sh tools/ehf.sh trigger_scripts)
 else
 	$(call skip,scripts)
@@ -154,7 +152,8 @@ ifeq "$(RULE_EXAMPLE)" "true"
 	$(call docker_run,examples,Packaging example files,\
 			-v $(PROJECT):/src \
 			-v $(PROJECT)/target:/target \
-			klakegg/schematron \
+			-w /src \
+			$(IMAGE) \
 			sh tools/ehf.sh trigger_examples)
 else
 	$(call skip,example files)

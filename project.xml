@@ -154,7 +154,7 @@
     <Resource>
         <Identifier>t14l-business-1.0</Identifier>
         <Type>native:Schematron</Type>
-        <Path>src/supplier-list-light-1.0/rules/sch/T14L-SUPPLIER-LIST-1.0-LIGHT.sch</Path>
+        <Path>src/supplier-list-light-1.0/rules/sch/T14L-SUPPLIER-LIST-1.0.sch</Path>
         <Title>Business rules for EHF Supplier List Light 1.0</Title>
         <Tag>supplier-list-light-1.0</Tag>
     </Resource>
