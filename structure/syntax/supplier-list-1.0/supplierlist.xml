@@ -4,61 +4,61 @@
     <Term>Supplierlist</Term>
     <Name>EHF Supplier list</Name>
 
-    <Namespace>urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
+    <Namespace prefix="sl">urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1</Namespace>
 
     <Document>
-        <Term>ParticipantList</Term>
+        <Term>sl:ParticipantList</Term>
         <Name>EHF Supplier list document</Name>
 
         <Element>
-            <Term>CustomizationID</Term>
+            <Term>sl:CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Value type="FIXED">...</Value>
         </Element>
 
         <Element>
-            <Term>ProfileID</Term>
+            <Term>sl:ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
             <Value type="FIXED">...</Value>
         </Element>
 
         <Element>
-            <Term>ID</Term>
+            <Term>sl:ID</Term>
             <Name>Document Identifier</Name>
             <Description>Document identifier for referencing the document instance.</Description>
             <Value type="EXAMPLE">951753</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>UUID</Term>
+            <Term>sl:UUID</Term>
             <Name>Unique Identifier</Name>
             <Description>Universal unique identifier (UUID) for the supplier list document.</Description>
             <Value type="EXAMPLE">7c15a808-decc-4382-a0d1-d5ff2c605f1e</Value>
         </Element>
 
         <Element>
-            <Term>IssueDate</Term>
+            <Term>sl:IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2019-11-12</Value>
         </Element>
 
         <Element>
-            <Term>IssueTime</Term>
+            <Term>sl:IssueTime</Term>
             <Name>Issue Time</Name>
             <Description>The time on which the transaction instance was issued.</Description>
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
 
         <Element cardinality="0..1">
-            <Term>SenderParty</Term>
+            <Term>sl:SenderParty</Term>
             <Name>Central Purchasing Body</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/sender-party.adoc</Property>
 
             <Element cardinality="0..1">
-                <Term>EndpointID</Term>
+                <Term>sl:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the Central Purchasing Body.</Description>
 
@@ -71,32 +71,32 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Name</Term>
+                <Term>sl:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Central Purchasing Body.</Description>
                 <Value type="EXAMPLE">ABC Innkjøpssentral</Value>
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Contact</Term>
+                <Term>sl:Contact</Term>
                 <Name>Contact Information</Name>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>sl:Name</Term>
                     <Name>Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Janne Jensen</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Telephone</Term>
+                    <Term>sl:Telephone</Term>
                     <Name>Telephone</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">99999977</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>ElectronicMail</Term>
+                    <Term>sl:ElectronicMail</Term>
                     <Name>Electronic mail</Name>
                     <Description>Contact person's e-mail address.</Description>
                     <Value type="EXAMPLE">janne.jensen@abc.no</Value>
@@ -105,12 +105,12 @@
         </Element>
 
         <Element cardinality="0..1">
-            <Term>ReceiverParty</Term>
+            <Term>sl:ReceiverParty</Term>
             <Name>Contracting Authority Connected to Central Purchasing Body</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/receiver-party.adoc</Property>
 
             <Element cardinality="0..1">
-                <Term>EndpointID</Term>
+                <Term>sl:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the Contracting Authority.</Description>
 
@@ -123,32 +123,32 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Name</Term>
+                <Term>sl:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the Contracting Authority.</Description>
                 <Value type="EXAMPLE">QYZ AS</Value>
             </Element>
 
             <Element cardinality="0..1">
-                <Term>Contact</Term>
+                <Term>sl:Contact</Term>
                 <Name>Contact Information</Name>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>sl:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Even Evensen</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Telephone</Term>
+                    <Term>sl:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">99551133</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>ElectronicMail</Term>
+                    <Term>sl:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
                     <Description>Contact person's e-mail address.</Description>
                     <Value type="EXAMPLE">even.evensen@qyz.no</Value>
@@ -157,12 +157,12 @@
         </Element>
 
         <Element cardinality="0..n">
-            <Term>FolderReference</Term>
+            <Term>sl:FolderReference</Term>
             <Name>Folder Reference</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/reference.adoc</Property>
 
             <Element>
-                <Term>ID</Term>
+                <Term>sl:ID</Term>
                 <Name>Ted/Doffin Reference</Name>
                 <Description>The Dynamic purchase system's Ted/Doffin Reference number. Remark that the supplier list MUST contain
                     both Doffin and Ted reference number.</Description>
@@ -180,16 +180,16 @@
 
 
         <Element>
-            <Term>ParticipatingParty</Term>
+            <Term>sl:ParticipatingParty</Term>
             <Name>Participating Party in DPS</Name>
             <Property key="doc">structure/docs/supplier-list-1.0/participating-party.adoc</Property>
 
             <Element>
-                <Term>Party</Term>
+                <Term>sl:Party</Term>
                 <Name>Party</Name>
 
                 <Element cardinality="0..1">
-                    <Term>EndpointID</Term>
+                    <Term>sl:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>Electronic Address Identifier of the Participating Party in DPS.</Description>
 
@@ -202,32 +202,32 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Name</Term>
+                    <Term>sl:Name</Term>
                     <Name>Name</Name>
                     <Description>The name of the Participating party in DPS.</Description>
                     <Value type="EXAMPLE">X Supplier</Value>
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>Contact</Term>
+                    <Term>sl:Contact</Term>
                     <Name>Contact Information of the Participating Party in DPS</Name>
 
                     <Element cardinality="0..1">
-                        <Term>Name</Term>
+                        <Term>sl:Name</Term>
                         <Name>Contact Name</Name>
                         <Description>Contact person's name.</Description>
                         <Value type="EXAMPLE">Ola Nordmann</Value>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>Telephone</Term>
+                        <Term>sl:Telephone</Term>
                         <Name>Contact Telephone number</Name>
                         <Description>Contact person's telephone number.</Description>
                         <Value type="EXAMPLE">99663366</Value>
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>ElectronicMail</Term>
+                        <Term>sl:ElectronicMail</Term>
                         <Name>Contact Email Address</Name>
                         <Description>Contact person's e-mail address.</Description>
                         <Value type="EXAMPLE">ola.nordmann@x-supplier.com</Value>
@@ -236,11 +236,11 @@
             </Element>
 
             <Element cardinality="0..n">
-                <Term>FolderReference</Term>
+                <Term>sl:FolderReference</Term>
                 <Name>Folder Reference</Name>
 
                 <Element>
-                    <Term>ID</Term>
+                    <Term>sl:ID</Term>
                     <Name>Lot Reference</Name>
                     <Description>The Dynamic purchase system's Lot Reference number. Only Lot reference is allowed.</Description>
 
