@@ -17,12 +17,12 @@
         <Title>Implementation Guideline</Title>
         <Tag>supplier-list-1.0</Tag>
     </Resource>
-    <!--<Resource>
+    <Resource>
         <Type>Doc-1</Type>
         <Path>supplier-list-1.0/changelog/</Path>
         <Title>Changelog</Title>
         <Tag>supplier-list-1.0</Tag>
-    </Resource> -->
+    </Resource>
 
     <Resource>
         <Type>Doc-1</Type>
@@ -41,6 +41,12 @@
         <Type>Doc-1</Type>
         <Path>document-folder-1.0/guide/</Path>
         <Title>Implementation Guideline</Title>
+        <Tag>document-folder-1.0</Tag>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>document-folder-1.0/changelog/</Path>
+        <Title>Changelog</Title>
         <Tag>document-folder-1.0</Tag>
     </Resource>
 
@@ -146,14 +152,14 @@
     <Resource>
         <Identifier>document-folder</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/document-folder-1.0/sch/common.sch</Path>
+        <Path>rules/document-folder-1.0/sch/EHF-DF.sch</Path>
         <Title>Rules</Title>
         <Tag>document-folder-1.0</Tag>
     </Resource>
     <Resource>
         <Identifier>supplier-list</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/supplier-list-1.0/sch/common.sch</Path>
+        <Path>rules/supplier-list-1.0/sch/EHF-SL.sch</Path>
         <Title>Rules</Title>
         <Tag>supplier-list-1.0</Tag>
     </Resource>

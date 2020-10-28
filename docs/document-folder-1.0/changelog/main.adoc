@@ -1,0 +1,24 @@
+include::../settings.adoc[]
+:lang: en
+:doctitle: Changelog EHF Document Folder
+
+
+= {doctitle}
+:description: This document describes the changelog of EHF Document folder. The document is part of Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+
+{description}
+
+:leveloffset: +1
+
+include::index.adoc[]
+
+:leveloffset: -1

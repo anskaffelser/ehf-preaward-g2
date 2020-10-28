@@ -11,8 +11,10 @@
 	<ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 	<ns prefix="u" uri="utils"/>
 
+	<!-- Functions rules -->
   <xi:include href="../../../src/_common/function/mod11.xml"/>
 
+	<!-- organization number and references rules -->
   <pattern>
     <rule context="sl:EndpointID[@scheme = '0192']">
         <assert id="EHF-SL-R001"
