@@ -16,146 +16,89 @@ endef
 define docker_run
 	$(call fold_start,$(1),$(2))
 	@docker run --rm -i $(3) || touch $(PROJECT)/.failed
-	$(call fold_end,$(1))
 	@if [ -e $(PROJECT)/.failed ]; then \
 		rm $(PROJECT)/.failed; \
 		echo "\033[1;31mFailed\033[0m"; \
 	fi
 endef
-ifeq "${TRAVIS}" "true"
-define fold_end
-	@echo "\ntravis_fold:end:$(1)\r";
-endef
-else
-define fold_end
-endef
-endif
-ifeq "${TRAVIS}" "true"
-define fold_start
-	@echo -n "travis_fold:start:$(1)";
-	@echo "\033[33;1m$(2)\033[0m"
-endef
-else
 define fold_start
 	@echo "\033[33;1m$(2)\033[0m"
 endef
-endif
 define skip
 	@echo "\033[2;37mSkipping $(1)\033[0m"
 endef
-ifeq "${TRAVIS}" "true"
-default: pull build
-else
-default: clean build ownership
-endif
+default: clean build
 build: env $(BUILD)
 RULE_CLEAN=$(shell (test -e $(PROJECT)/target && echo true) || echo false)
 clean:
 ifeq "$(RULE_CLEAN)" "true"
-	$(call docker_run,clean,Removing old target folder,\
-			-v $(PROJECT):/src \
-			$(IMAGE) \
-			rm -rf /src/target)
+	$(call fold_start,clean,Removing old target folder)
+	@rm -rf $(PROJECT)/target
 else
 	$(call skip,cleaning)
 endif
-ownership:
-	$(call docker_run,ownership,Fixing ownership,\
-			-v $(PROJECT):/src \
-			$(IMAGE) \
-			chown -R $(shell id -g ${USER}).$(shell id -g ${USER}) /src/target)
+init:
+	@mkdir -p target
 serve:
-	$(call docker_run,serve,Serve serve,\
-			-v $(PROJECT):/src \
-			-w /src/target \
-			-p 8000:8000 \
-			python:3-alpine \
-			python3 -m http.server 8000 -b 0.0.0.0)
+	$(call fold_start,serve,Serve serve)
+	@ruby -run -e httpd target --bind-address 0.0.0.0 --port 8000
 pull:
 	$(call fold_start,docker_pull,Pulling Docker images)
 	$(call docker_pull,$(IMAGE))
-	$(call docker_pull,klakegg/schematron)
-	$(call fold_end,docker_pull)
-env:
-	$(call docker_run,environment,Creating environment file,\
-			-v $(PROJECT):/src \
-			-v $(PROJECT)/target:/target \
-			-e IDENTIFIER="$(IDENTIFIER)" \
-			-e TITLE="$(TITLE)" \
-			-e RELEASE="$(RELEASE)" \
-			--entrypoint sh \
-			-w /src \
-			$(IMAGE) \
-			tools/ehf.sh trigger_environment)
-docs:
-	$(call docker_run,docs,Creating documentation,\
-			-v $(PROJECT):/work \
-			$(IMAGE) \
-			ehf-docs -p . -t target/site)
+env: init
+	$(call fold_start,environment,Creating environment file)
+	@sh tools/ehf.sh trigger_environment
+docs: init
+	$(call fold_start,docs,Creating documentation)
+	@ehf-docs -p . -t target/site
 RULE_RULES=$(shell find $(PROJECT) -name buildconfig.xml | wc -l | xargs test "0" != && echo "true" || echo "false")
-rules:
+rules: init
 ifeq "$(RULE_RULES)" "true"
-	$(call docker_run,rules,Running vefa-validator,\
-			-v $(PROJECT):/work \
-			$(IMAGE) \
-			validator build -x -t -n $(RULES_IDENT) -target target/validator /work)
+	$(call fold_start,rules,Running vefa-validator)
+	validator build -x -t -n $(RULES_IDENT) -target target/validator /work
 else
 	$(call skip,rules)
 endif
 RULE_STRUCTURE=$(shell (test -e $(PROJECT)/project.xml && echo true) || echo false)
-structure:
+structure: init
 ifeq "$(RULE_STRUCTURE)" "true"
-	$(call docker_run,structure,Running vefa-structure,\
-			-v $(PROJECT):/work \
-			-v $(PROJECT)/target:/target \
-			$(IMAGE) \
-			structure)
+	$(call fold_start,structure,Running vefa-structure)
+	@structure
 else
 	$(call skip,structure)
 endif
 RULE_XSD=$(shell test -d $(PROJECT)/xsd && find $(PROJECT)/xsd -mindepth 1 -maxdepth 1 -type d | wc -l | xargs test '0' != && echo true || echo "false")
-xsd:
+xsd: init
 ifeq "$(RULE_XSD)" "true"
-	$(call docker_run,xsd,Packaging XSD files,\
-			-v $(PROJECT):/work \
-			-v $(PROJECT)/target:/target \
-			$(IMAGE) \
-			sh tools/ehf.sh trigger_xsd)
+	$(call fold_start,xsd,Packaging XSD files)
+	@sh tools/ehf.sh trigger_xsd
 else
 	$(call skip,xsds)
 endif
 RULE_SCRIPTS=$(shell test -d $(PROJECT)/scripts && find $(PROJECT)/scripts -maxdepth 1 -name '*.sh' | wc -l | xargs test "0" != && echo true || echo false)
-scripts:
+scripts: init
 ifeq "$(RULE_SCRIPTS)" "true"
-	$(call docker_run,scripts,Running scripts,\
-			-v $(PROJECT):/work \
-			-v $(PROJECT)/target:/target \
-			$(IMAGE) \
-			sh tools/ehf.sh trigger_scripts)
+	$(call fold_start,scripts,Running scripts)
+	@sh tools/ehf.sh trigger_scripts
 else
 	$(call skip,scripts)
 endif
 RULE_SCHEMATRON=$(shell test -e $(PROJECT)/rules && find $(PROJECT)/rules -mindepth 2 -maxdepth 2 -name sch -type d | wc -l | xargs test "0" != && echo true || echo false)
-schematron:
+schematron: init
 ifeq "$(RULE_SCHEMATRON)" "true"
-	$(call docker_run,schematron,Packaging Schematron files,\
-			-v $(PROJECT):/src \
-			-v $(PROJECT)/target:/target \
-			klakegg/schematron \
-			sh tools/ehf.sh trigger_schematron)
+	$(call fold_start,schematron,Packaging Schematron files)
+	@sh tools/ehf.sh trigger_schematron
 else
 	$(call skip,schematron)
 endif
 RULE_EXAMPLE=$(shell test -d $(PROJECT)/rules && find $(PROJECT)/rules -mindepth 2 -maxdepth 2 -name example -type d | wc -l | xargs test "0" != && echo true || echo false)
-example:
+example: init
 ifeq "$(RULE_EXAMPLE)" "true"
-	$(call docker_run,examples,Packaging example files,\
-			-v $(PROJECT):/src \
-			-v $(PROJECT)/target:/target \
-			-w /src \
-			$(IMAGE) \
-			sh tools/ehf.sh trigger_examples)
+	$(call fold_start,example,Packaging example files)
+	@sh tools/ehf.sh trigger_examples
 else
 	$(call skip,example files)
 endif
-.PHONY: default build clean ownership serve pull env docs rules structure xsd scripts schematron example
+docker:
+	@docker run --rm -i -p 8000:8000 -u $$(id -u) -v $$(pwd):/work $(IMAGE) make
+.PHONY: default build clean serve pull env docs rules structure xsd scripts schematron example

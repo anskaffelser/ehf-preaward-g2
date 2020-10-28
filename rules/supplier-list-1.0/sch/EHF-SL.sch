@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -6,13 +5,13 @@
 				xmlns:u="utils"
 				schemaVersion="iso" queryBinding="xslt2">
 
-	<title>Rules for EHF Supplier List Light 1.0</title>
+	<title>Rules for EHF Supplier List 1.0</title>
 
 	<ns prefix="sl" uri="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1"/>
 	<ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 	<ns prefix="u" uri="utils"/>
 
-  <xi:include href="../../../_common/function/mod11.xml"/>
+  <xi:include href="../../../src/_common/function/mod11.xml"/>
 
   <pattern>
     <rule context="sl:EndpointID[@scheme = '0192']">
