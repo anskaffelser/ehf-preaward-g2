@@ -1,7 +1,9 @@
+# This is used from within the target folder when building using GitHub.
+
 site_draft:
   id: ehf-preaward-g2-draft
   type: site
-  path: target/site
+  path: site
   properties:
     domain: anskaffelser.dev
     path: preaward/g2/spec/draft
@@ -10,7 +12,7 @@ site_current:
   mode: release
   id: ehf-preaward-g2-current
   type: site
-  path: target/site
+  path: site
   properties:
     domain: anskaffelser.dev
     path: preaward/g2/spec/current

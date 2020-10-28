@@ -1,5 +1,6 @@
 #!/bin/sh
 # This is a generated file. Please make sure to edit source files.
+set -e
 trigger_environment() (
 rm -f target/env
 append() {
