@@ -270,7 +270,6 @@
         <Description>Process to notify loosing parties in a DPS procurement.</Description>
     </Tag> -->
 
-    <!-- 
     <Tag>
         <Identifier>document-folder-1.0</Identifier>
         <Title>EHF Document Folder 1.0 RC1</Title>
@@ -279,7 +278,6 @@
         <Identifier>supplier-list-1.0</Identifier>
         <Title>EHF Supplier List 1.0 RC1</Title>
     </Tag>
-    -->
 
     <Tag>
         <Identifier>supplier-list-light-1.0</Identifier>
