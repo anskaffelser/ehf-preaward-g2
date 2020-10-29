@@ -10,17 +10,6 @@ RULES_FOLDER := $(if $(RULES_FOLDER),$(RULES_FOLDER),rules)
 RULES_IDENT := $(if $(RULES_IDENT),$(RULES_IDENT),rules)
 BUILD = structure example schematron xsd rules docs scripts
 .DEFAULT_GOAL = default
-define docker_pull
-	@docker pull $(1)
-endef
-define docker_run
-	$(call fold_start,$(1),$(2))
-	@docker run --rm -i $(3) || touch $(PROJECT)/.failed
-	@if [ -e $(PROJECT)/.failed ]; then \
-		rm $(PROJECT)/.failed; \
-		echo "\033[1;31mFailed\033[0m"; \
-	fi
-endef
 define fold_start
 	@echo "\033[33;1m$(2)\033[0m"
 endef
@@ -42,9 +31,6 @@ init:
 serve:
 	$(call fold_start,serve,Serve serve)
 	@ruby -run -e httpd target --bind-address 0.0.0.0 --port 8000
-pull:
-	$(call fold_start,docker_pull,Pulling Docker images)
-	$(call docker_pull,$(IMAGE))
 env: init
 	$(call fold_start,environment,Creating environment file)
 	@sh tools/ehf.sh trigger_environment
@@ -55,7 +41,7 @@ RULE_RULES=$(shell find $(PROJECT) -name buildconfig.xml | wc -l | xargs test "0
 rules: init
 ifeq "$(RULE_RULES)" "true"
 	$(call fold_start,rules,Running vefa-validator)
-	validator build -x -t -n $(RULES_IDENT) -target target/validator /work
+	@validator build -x -t -n $(RULES_IDENT) -b $(RELEASE) -target target/validator $(PROJECT)
 else
 	$(call skip,rules)
 endif

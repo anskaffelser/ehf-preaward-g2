@@ -1,0 +1,5 @@
+.Example of Reference
+[source, xml, indent=0]
+----
+include::src/supplier-list-light-1.0/docs/guide/snippets/supplierlist.xml[tags=Reference]
+----

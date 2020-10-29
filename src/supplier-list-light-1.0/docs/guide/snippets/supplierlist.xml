@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ParticipantList xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:ParticipantList-1">
 
-    <CustomizationID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:supplier-list:1.0</CustomizationID>
-    <ProfileID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:process:light:1.0</ProfileID>
+  <CustomizationID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:supplier-list:1.0</CustomizationID>
+  <ProfileID>urn:fdc:anskaffelser.no:2020:ehf:preaward:g2:process:light:1.0</ProfileID>
 
-    <ID>1</ID>
-    <UUID>7c15a808-decc-4382-a0d1-d5ff2c605f1</UUID>
-    <IssueDate>2019-09-09</IssueDate>
-    <IssueTime>15:00:00</IssueTime>
+  <ID>1</ID>
+  <UUID>7c15a808-decc-4382-a0d1-d5ff2c605f1</UUID>
+  <IssueDate>2019-09-09</IssueDate>
+  <IssueTime>15:00:00</IssueTime>
 
-    <!-- tag::Reference[] -->
-    <!-- tag::Reference-TED[] -->
-    <FolderReference>
-        <ID scheme="TED">1458</ID> <!--1-->
+  <!-- tag::Reference[] -->
+  <!-- tag::Reference-TED[] -->
+  <FolderReference>
+    <ID scheme="TED">1458</ID> <!--1-->
+  </FolderReference>
+  <!-- end::Reference-TED[] -->
+  <!-- tag::Reference-DOFFIN[] -->
+  <FolderReference>
+    <ID scheme="DOFFIN">518</ID> <!--1-->
+  </FolderReference>
+  <!-- end::Reference-DOFFIN[] -->
+  <!-- end::Reference[] -->
+
+  <!-- tag::ParticipatingParty[] -->
+  <ParticipatingParty>
+    <Party>
+      <CompanyID scheme="0192">987654325</CompanyID> <!--1-->
+      <Name>Delta AS</Name> <!--2-->
+      <ElectronicMail>post@delta.no</ElectronicMail>
+      <Contact> <!--3-->
+        <Name>Helge Eriksson</Name>
+        <Telephone>+4798765432</Telephone>
+        <ElectronicMail>helge.eriksson@delta.no</ElectronicMail>
+      </Contact>
+    </Party>
+    <FolderReference> <!--4-->
+      <ID scheme="LOT">01</ID>
     </FolderReference>
-    <!-- end::Reference-TED[] -->
-    <!-- tag::Reference-DOFFIN[] -->
-    <FolderReference>
-        <ID scheme="DOFFIN">518</ID> <!--1-->
-    </FolderReference>
-    <!-- end::Reference-DOFFIN[] -->
-    <!-- end::Reference[] -->
-
-
-    <!-- tag::ParticipatingParty[] -->
-    <ParticipatingParty>
-        <Party>
-            <CompanyID scheme="0192">987654325</CompanyID> <!--1-->
-            <Name>Delta AS</Name> <!--2-->
-            <ElectronicMail>post@delta.no</ElectronicMail>
-            <Contact> <!--3-->
-                <Name>Helge Eriksson</Name>
-                <Telephone>+4798765432</Telephone>
-                <ElectronicMail>helge.eriksson@delta.no</ElectronicMail>
-            </Contact>
-        </Party>
-        <FolderReference> <!--4-->
-            <ID scheme="LOT">01</ID>
-        </FolderReference>
-    </ParticipatingParty>
-    <!-- end::ParticipatingParty[] -->
+  </ParticipatingParty>
+  <!-- end::ParticipatingParty[] -->
 
 </ParticipantList>

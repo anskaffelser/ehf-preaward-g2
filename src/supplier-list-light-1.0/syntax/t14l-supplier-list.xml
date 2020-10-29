@@ -58,7 +58,7 @@
         <Element cardinality="1..2">
             <Term>es:FolderReference</Term>
             <Name>Folder Reference</Name>
-            <Property key="doc">structure/docs/supplier-list-1.0/reference.adoc</Property>
+            <Property key="doc">src/supplier-list-light-1.0/syntax/docs/reference.adoc</Property>
 
             <Element>
                 <Term>es:ID</Term>
@@ -76,20 +76,20 @@
             </Element>
         </Element>
 
-
         <Element cardinality="0..n">
             <Term>es:ParticipatingParty</Term>
             <Name>Participating Party in DPS</Name>
-            <Property key="doc">structure/docs/supplier-list-1.0/participating-party.adoc</Property>
+            <Property key="doc">src/supplier-list-light-1.0/syntax/docs/participating-party.adoc</Property>
 
             <Element>
                 <Term>es:Party</Term>
                 <Name>Party information</Name>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>es:CompanyID</Term>
                     <Name>Company Identifier</Name>
                     <Description>Company Identifier of the Participating Party in DPS.</Description>
+                    <Reference type="RULE">EHF-T14L-R011</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -100,7 +100,7 @@
                     <Value type="EXAMPLE">999999995</Value>
                 </Element>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>es:Name</Term>
                     <Name>Name</Name>
                     <Description>The name of the Participating party in DPS.</Description>
@@ -111,13 +111,14 @@
                     <Term>es:ElectronicMail</Term>
                     <Name>Company Email Address</Name>
                     <Value type="EXAMPLE">post@x-supplier.com</Value>
+                    <Reference type="RULE">EHF-T14L-R012</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>es:Contact</Term>
                     <Name>Contact Person of the Participating Party</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>es:Name</Term>
                         <Name>Contact Name</Name>
                         <Description>Contact person's name.</Description>
@@ -129,13 +130,15 @@
                         <Name>Contact Telephone number</Name>
                         <Description>Contact person's telephone number.</Description>
                         <Value type="EXAMPLE">+4799663366</Value>
+                        <Reference type="RULE">EHF-T14L-R013</Reference>
                     </Element>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>es:ElectronicMail</Term>
                         <Name>Contact Email Address</Name>
                         <Description>Contact person's e-mail address.</Description>
                         <Value type="EXAMPLE">ola.nordmann@x-supplier.com</Value>
+                        <Reference type="RULE">EHF-T14L-R012</Reference>
                     </Element>
                 </Element>
             </Element>
@@ -148,6 +151,8 @@
                     <Term>es:ID</Term>
                     <Name>Lot Reference</Name>
                     <Description>The Dynamic purchase system's Lot Reference number. Only Lot reference is allowed.</Description>
+                    <Reference type="RULE">EHF-T14L-R001</Reference>
+                    <Reference type="RULE">EHF-T14L-R002</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>

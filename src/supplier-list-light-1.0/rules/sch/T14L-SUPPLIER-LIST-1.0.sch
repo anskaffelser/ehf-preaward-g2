@@ -18,6 +18,27 @@
     <include href="../../../../target/generated/t14l-basic-1.0.sch"/>
 
     <pattern>
+        <!-- Rules: Empty elements -->
+
+        <rule context="es:ParticipantList | es:FolderReference | es:ParticipatingParty | es:Party | es:ElectronicMail | es:Telephone">
+            <!-- Skipping -->
+        </rule>
+
+        <rule context="es:Contact">
+            <assert id="EHF-T14L-R021"
+                    test="count(*) != 0"
+                    flag="fatal">Document MUST not contain empty elements.</assert>
+        </rule>
+        
+        <rule context="es:*">
+            <assert id="EHF-T14L-R022"
+                    test="normalize-space() != ''"
+                    flag="fatal">Document MUST not contain empty elements.</assert>
+        </rule>
+
+    </pattern>
+
+    <pattern>
         <!-- Rules: References -->
 
         <rule context="es:ParticipantList">

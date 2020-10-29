@@ -60,6 +60,16 @@ jobs:
         with:
           name: target
 
+      - name: Upload validation artifact
+        uses: klakegg/github-upload@v0.9.1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "validator/no.anskaffelser.ehf.preaward.g2-${TAG}.asice"
+          label: "Validation artifacts for VEFA Validator 2.x"
+          type: "application/vnd.difi.validator.v2+zip"
+
       - name: Upload examples files
         uses: klakegg/github-upload@v0.9.1
         if: startsWith(github.ref, 'refs/tags/')

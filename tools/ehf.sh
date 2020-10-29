@@ -19,18 +19,22 @@ rm -rf target/examples
 mkdir -p target/examples target/site/files
 test ! -r tools/template/examples-readme || cat tools/template/examples-readme | envsubst > target/examples/README
 for folder in $(find rules -mindepth 2 -maxdepth 2 -name example -type d); do
+if [ ! -e "$folder/.skip" ]; then
 mkdir -p target/examples/$(echo $folder | cut -d '/' -f 2)
 cp -r $folder/* target/examples/$(echo $folder | cut -d '/' -f 2)/
+fi
 done
 for folder in $(find src -mindepth 2 -maxdepth 2 -name example -type d); do
+if [ ! -e "$folder/.skip" ]; then
 mkdir -p target/examples/$(echo $folder | cut -d '/' -f 2)
 cp -r $folder/* target/examples/$(echo $folder | cut -d '/' -f 2)/
+fi
 done
 test ! -r tools/script/examples.sh || . tools/script/examples.sh
 rm -rf target/examples.zip
 current=$(pwd)
 cd target/examples
-zip -9r ../examples.zip *
+zip -D9r ../examples.zip *
 cp $current/target/examples.zip $current/target/site/files/examples.zip
 )
 trigger_schematron() (
@@ -39,22 +43,26 @@ rm -rf target/schematron
 mkdir -p target/schematron target/site/files
 test ! -r tools/template/schematron-readme || cat tools/template/schematron-readme | envsubst > target/schematron/README
 for sch in $(ls rules/*/sch/*.sch); do
+if [ ! -e "$(dirname $sch)/.skip" ]; then
 echo "Prepare: $sch"
 mkdir -p target/schematron/$(echo $sch | cut -d '/' -f 2)
 saxon -s:$sch -xsl:/usr/share/xslt/iso-schematron/iso_dsdl_include.xsl \
  | saxon -s:- -xsl:/usr/share/xslt/iso-schematron/iso_abstract_expand.xsl -o:target/schematron/$(echo $sch | cut -d '/' -f 2)/$(basename $sch)
+fi
 done
 for sch in $(ls src/*/rules/sch/*.sch); do
+if [ ! -e "$(dirname $sch)/.skip" ]; then
 echo "Prepare: $sch"
 mkdir -p target/schematron/$(echo $sch | cut -d '/' -f 2)
 saxon -s:$sch -xsl:/usr/share/xslt/iso-schematron/iso_dsdl_include.xsl \
  | saxon -s:- -xsl:/usr/share/xslt/iso-schematron/iso_abstract_expand.xsl -o:target/schematron/$(echo $sch | cut -d '/' -f 2)/$(basename $sch)
+fi
 done
 test ! -r tools/script/schematron.sh || . tools/script/schematron.sh
 rm -rf target/schematron.zip
 current=$(pwd)
 cd target/schematron
-zip -9 -r ../schematron.zip *
+zip -D9r ../schematron.zip *
 cp $current/target/schematron.zip $current/target/site/files/schematron.zip
 )
 trigger_xsd() (
@@ -69,7 +77,7 @@ cp -r $folder /tmp/$name
 cd /tmp/$name
 test ! -e prepare.sh || . prepare.sh
 rm -rf prepare.sh
-zip -9 -r $current/target/xsd/$name.zip *
+zip -D9r $current/target/xsd/$name.zip *
 cp $current/target/xsd/$name.zip $current/target/site/files/xsd-$name.zip
 cd $current
 done
