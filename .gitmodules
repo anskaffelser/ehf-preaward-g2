@@ -1,0 +1,4 @@
+[submodule "_source/ehf-cv"]
+	path = _source/ehf-cv
+	url = https://github.com/anskaffelser/ehf-cv.git
+	branch = master
