@@ -8,11 +8,7 @@ build: gitsubs
 init: gitsubs
 
 gitsubs:
-	@if ! git ls-files --stage -- _source/ehf-cv | grep -q '^160000 '; then \
-		echo "EHF CV gitlink is missing; commit _source/ehf-cv as a submodule before building." >&2; \
-		exit 1; \
-	fi
-	@git submodule update --init --recursive -- _source/ehf-cv
+	git submodule update --init --recursive _source/ehf-cv
 
 .PHONY: gitsubs
 
