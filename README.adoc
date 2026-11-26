@@ -3,3 +3,6 @@
 // Release date: *2018-11-15*
 
 Please use link:https://anskaffelser.dev/preaward/g2/[Anskaffelser.dev] for easy access to EHF resources and other related resources.
+
+Run `make build` to generate the site, including EHF CV under `target/site/cv1.0`.
+The build initializes the EHF CV submodule and requires Docker.
